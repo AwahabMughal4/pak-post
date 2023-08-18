@@ -1,0 +1,120 @@
+.slider {
+    position: relative;
+    height: 60vh;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-content {
+    position: relative;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 70%;
+    left: 450px;
+    font-size: 3rem;
+    color: #ff0000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    top: 70%;
+    right: 450px;
+    font-size: 3rem;
+    color: #ff0000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .active.dot {
+    background-color: #ff0000;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+  .image-heading {
+    position: absolute;
+    bottom: 40;
+    left: 0;
+    width: 100%;
+    padding: 1px;
+    margin-top: 5px;
+    color: #ff0000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; 
+    line-height: 1.4;
+    font: 1em sans-serif;
+  }
+  
+  .image-description {
+    position: absolute;
+    top: 220px; 
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.4;
+    font: 1em sans-serif;
+  }
+  
+  .read-more-button {
+    background-color: #ed1b24;
+    display: inline-block;
+    margin-top: 110px;
+    margin-left: 70px;
+    padding: 8px 46px;
+    color: #fff;
+    border: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  } 
+  .read-more-button:hover {
+    background-color: #d13038;
+  }
