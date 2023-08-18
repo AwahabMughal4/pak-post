@@ -265,7 +265,7 @@ export default function Footer() {
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Support</ListHeader>
-            <Box as="a" href={"#"}>
+            <Box as="a" href={"/faqs"}>
               FAQs
             </Box>
             <Box as="a" href={"#"}>
