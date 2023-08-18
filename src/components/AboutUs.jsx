@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className="about-us-container">
       <div className="background-image" >
-        <img src={image1}/>
+        <img src={image1} alt="About us" className="object-cover w-full opacity-50 h-full" />
       </div>
       <div className="history-section">
         {/* History section content */}
