@@ -10,19 +10,22 @@ import {
   Text,
   Center,
   Box,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { Questions } from "../DataObjects/data";
 
 const Sections = ({ question, answer }) => {
+  const [isLargerThan62] = useMediaQuery("(min-width: 62em)");
   return (
     <AccordionItem>
       <AccordionButton
         display="flex"
         alignItems="center"
         justifyContent="space-between"
-        p={4}
+        py={4}
+        px={isLargerThan62 ? "4" : "2"}
         _hover={{ bg: "#ed1b24", color: "white" }}
         _expanded={{ bg: "#ed1b24", color: "white" }}
       >
@@ -37,15 +40,17 @@ const Sections = ({ question, answer }) => {
 };
 
 export default function FAQs() {
+  const [isLargerThan62] = useMediaQuery("(min-width: 62em)");
   return (
     <>
       <Center>
         <Text
-          fontSize={"5xl"}
+          fontSize={isLargerThan62 ? "5xl" : "4xl"}
           fontWeight="bold"
           color={"white"}
           bgColor={"#ed1b24"}
-          p={"5"}
+          py={"5"}
+          px={isLargerThan62 ? "5" : "2"}
           transform="skewX(-10deg)"
           borderRadius={"none"}
           display={"inline-block"}
@@ -60,14 +65,14 @@ export default function FAQs() {
         w={"80%"}
         m={"auto"}
         my={5}
-        p={"10"}
+        py={"10"}
+        px={isLargerThan62 ? "10" : "4"}
         align={"center"}
         justify={"center"}
         bg={useColorModeValue("gray.50", "gray.800")}
       >
         <Box w={"100%"}>
           <Accordion
-            allowMultiple
             allowToggle
             width={"100%"}
             minW={"lg"}
