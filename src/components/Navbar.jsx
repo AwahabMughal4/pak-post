@@ -28,10 +28,14 @@ const Navbar = () => {
 
             <Link to={"/services"}>
               <li className="px-8 py-2 space-x-5 text-white  hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]">
-                Services
+                Mail Service
               </li>
             </Link>
-
+            <Link to={"/services"}>
+              <li className="px-8 py-2 space-x-5 text-white  hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]">
+                Express Service
+              </li>
+            </Link>
             <Link to={"/stamps"}>
               <li className="px-8 py-2 space-x-5 text-white hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">
                 Stamps
