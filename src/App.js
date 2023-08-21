@@ -7,8 +7,8 @@ import './styles/App.css';
 import './styles/StampsSlider.css';
 
 import Services from "./components/Services";
-import News from "./components/News";
 import FAQs from "./components/FAQs";
+import NewsTenders from "./components/NewsTenders";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/services" element={<Services/>}/>
-        <Route path="/news" element={<News/>}/>
+        <Route path="/news" element={<NewsTenders/>}/>
         <Route path="/faqs" element={<FAQs/>}/>
       </Routes>
       <Footer/>

@@ -63,55 +63,6 @@ export const News = [
     date: "2021-01-01",
     link: "/",
   },
-  {
-    id: 2,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 3,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 4,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 5,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 6,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 7,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 8,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
 ];
 
 export const Tenders = [

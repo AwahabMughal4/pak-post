@@ -1,5 +1,5 @@
 import React from "react";
-import { SliderData } from "../DataObjects/SliderData";
+import { SliderData } from "../DataObjects/StampsSlider";
 
 import HeroSection from "./HomeSubcomponents/HeroSection";
 import Track from "./HomeSubcomponents/Track";
