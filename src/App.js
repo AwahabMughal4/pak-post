@@ -7,6 +7,7 @@ import './styles/App.css';
 import './styles/StampsSlider.css';
 
 import Services from "./components/Services";
+import News from "./components/News";
 import FAQs from "./components/FAQs";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/services" element={<Services/>}/>
+        <Route path="/news" element={<News/>}/>
         <Route path="/faqs" element={<FAQs/>}/>
       </Routes>
       <Footer/>
