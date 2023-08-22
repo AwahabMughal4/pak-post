@@ -19,7 +19,7 @@ const History = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex"
-        w={"10%"}
+        w={"100%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
@@ -40,7 +40,7 @@ const History = () => {
           borderRadius={"none"}
         >
           History
-          <ChevronDownIcon fontSize="24px" />
+          <ChevronDownIcon fontSize="30px" />
         </Text>
       </AccordionButton>
       <AccordionPanel pb={4}>
@@ -92,7 +92,7 @@ const Network = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex"
-        w={"20%"}
+        w={"100%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
@@ -113,7 +113,7 @@ const Network = () => {
           borderRadius={"none"}
         >
           Postal Network
-          <ChevronDownIcon fontSize="24px" />
+          <ChevronDownIcon fontSize="30px" />
         </Text>
       </AccordionButton>
       <AccordionPanel pb={4}>
@@ -145,7 +145,7 @@ const Structure = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex"
-        w={"30%"}
+        w={"100%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
@@ -166,7 +166,7 @@ const Structure = () => {
           borderRadius={"none"}
         >
           Structure and Organization
-          <ChevronDownIcon fontSize="24px" />
+          <ChevronDownIcon fontSize="30px" />
         </Text>
       </AccordionButton>
       <AccordionPanel pb={4}>
@@ -197,7 +197,7 @@ const Roles = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex"
-        w={"10%"}
+        w={"100%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
@@ -217,8 +217,8 @@ const Roles = () => {
           transform="skewX(-10deg)"
           borderRadius={"none"}
         >
-          History
-          <ChevronDownIcon fontSize="24px" />
+          Roles and Organization
+          <ChevronDownIcon fontSize="30px" />
         </Text>
       </AccordionButton>
       <AccordionPanel pb={4}>
@@ -265,7 +265,7 @@ const AboutUs = () => {
         />
       </div>
       <div className="head-text">
-        <p className="mt-[3rem] text-5xl italic text-center font-serif">
+        <p className="mt-[3rem] text-5xl italic text-center text-[#ed1b24] font-serif font-bold">
           "Making every delivery count for people and planet"
         </p>
       </div>
@@ -274,13 +274,13 @@ const AboutUs = () => {
         <div className=" mt-[5rem]">
           <h1 className="text-2xl inline-block ml-[3rem]">
             <Text
-              fontSize={"3xl"}
+              fontSize={"2xl"}
               fontWeight="bold"
               color={"white"}
               bgColor={"#ed1b24"}
               p={"2"}
-              borderRadius={"none"}
               transform="skewX(-10deg)"
+              borderRadius={"none"}
             >
               About Us
             </Text>
@@ -300,7 +300,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="images-container flex mt-[5rem] flex-col md:flex-row">
+      <div className="images-container flex mt-[7rem] flex-col md:flex-row">
         <div className="round-image1 flex-row align-center justify-center ml-[17rem]">
           <img
             src={image2}
@@ -386,7 +386,7 @@ const AboutUs = () => {
         </Box>
       </div>
 
-      <div className="Roles-drop flex mt-[5rem] ml-[5rem]">
+      <div className="Roles-drop flex mt-[5rem] ml-[5rem] mb-[3rem]">
         <Box w={"90% "}>
           <Accordion
             allowToggle

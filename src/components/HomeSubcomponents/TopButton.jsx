@@ -14,7 +14,7 @@ export default function TopButton() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 1400) {
+      if (window.pageYOffset > 800) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
