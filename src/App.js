@@ -10,6 +10,7 @@ import Services from "./components/Services";
 import NewsTenders from "./components/NewsTenders";
 import ContactUs from "./components/ContactUs";
 import FAQs from "./components/FAQs";
+import Complaints from "./components/Complaints";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/news" element={<NewsTenders/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/faqs" element={<FAQs/>}/>
+        <Route path="/complaints" element={<Complaints/>}/>
       </Routes>
       <Footer/>
     </Router>
