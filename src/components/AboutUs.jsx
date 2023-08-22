@@ -265,7 +265,7 @@ const AboutUs = () => {
         />
       </div>
       <div className="head-text">
-        <p className="mt-[3rem] text-5xl italic text-center font-serif">
+        <p className="mt-[3rem] text-5xl italic text-center text-[#ed1b24] font-serif">
           "Making every delivery count for people and planet"
         </p>
       </div>
