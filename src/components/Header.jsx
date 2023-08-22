@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <>
-      <div className="flex flex-row ">
+      <div className="flex flex-row">
         <div className="flex flex-row w-full mr-7 items-center justify-end space-x-3 ">
           <div className="flex flex-row  text-black pt-1   items-end">
             <div className="flex flex-row space-x-1 items-center cursor-pointer hover:scale-105 transform transition-all px-2">

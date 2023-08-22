@@ -7,8 +7,9 @@ import './styles/App.css';
 import './styles/StampsSlider.css';
 
 import Services from "./components/Services";
-import FAQs from "./components/FAQs";
 import NewsTenders from "./components/NewsTenders";
+import ContactUs from "./components/ContactUs";
+import FAQs from "./components/FAQs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/news" element={<NewsTenders/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/faqs" element={<FAQs/>}/>
       </Routes>
       <Footer/>
