@@ -232,10 +232,10 @@ export default function Footer() {
             <Box as="a" href={"#"}>
               Home
             </Box>
-            <Box as="a" href={"#"}>
+            <Box as="a" href={"/aboutUs"}>
               About us
             </Box>
-            <Box as="a" href={"#"}>
+            <Box as="a" href={"/careers"}>
               Careers
             </Box>
             <Box as="a" href={"#"}>

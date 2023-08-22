@@ -9,6 +9,7 @@ import './styles/StampsSlider.css';
 import Services from "./components/Services";
 import News from "./components/News";
 import FAQs from "./components/FAQs";
+import Careers from "./components/Careers";
 import AboutUs from "./components/AboutUs";
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
         <Route path="/services" element={<Services/>}/>
         <Route path="/news" element={<News/>}/>
         <Route path="/faqs" element={<FAQs/>}/>
+        <Route path="/careers" element={<Careers/>}/>
         <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/aboutUs" element={<AboutUs/>}/>
       </Routes>
       <Footer/>
     </Router>
