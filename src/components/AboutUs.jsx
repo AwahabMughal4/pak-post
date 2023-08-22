@@ -19,7 +19,7 @@ const History = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex"
-        w={"100%"}
+        w={"10%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
@@ -44,7 +44,7 @@ const History = () => {
         </Text>
       </AccordionButton>
       <AccordionPanel pb={4}>
-        <Text color="gray.600">
+        <Text className="mt-[1rem]">
           Pakistan Post office is a state enterprise dedicated to providing wide
           range of postal products and public services. It is the premier
           national postal communication service holding together a vast country
@@ -92,7 +92,7 @@ const Network = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex"
-        w={"100%"}
+        w={"16%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
@@ -117,7 +117,7 @@ const Network = () => {
         </Text>
       </AccordionButton>
       <AccordionPanel pb={4}>
-        <Text color="gray.600">
+        <Text className="mt-[1rem]">
           Pakistan Post is providing postal services in every nook and corner of
           the country through a network of around 13,000 post offices. Pakistan
           Post is providing delivery services to about 20 million households and
@@ -145,7 +145,7 @@ const Structure = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex"
-        w={"100%"}
+        w={"24%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
@@ -170,7 +170,7 @@ const Structure = () => {
         </Text>
       </AccordionButton>
       <AccordionPanel pb={4}>
-        <Text color="gray.600">
+        <Text className="mt-[1rem]">
           The administrative control of Pakistan Post Office Department at the
           policy planning level is vested in a high powered Management Board
           headed by a Chairperson who is also the Director General of the
@@ -197,7 +197,7 @@ const Roles = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex"
-        w={"100%"}
+        w={"21%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
@@ -222,7 +222,7 @@ const Roles = () => {
         </Text>
       </AccordionButton>
       <AccordionPanel pb={4}>
-        <Text color="gray.600">
+        <Text className="mt-[1rem]">
           The post office in Pakistan has a broad and varied role. It provides
           and important communication link to individuals, communities and
           businesses for
