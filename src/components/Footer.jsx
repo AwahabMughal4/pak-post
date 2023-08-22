@@ -92,7 +92,7 @@ const Footer = () => (
         Support
       </p>
       <Link
-        to={"/"}
+        to={"/faqs"}
         className=" hover:font-semibold hover:md:text-md md:text-sm"
       >
         FAQs
