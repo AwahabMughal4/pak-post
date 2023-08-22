@@ -3,6 +3,7 @@ import image1 from "../assets/AboutUs/timthumb.jpg";
 import image2 from "../assets/AboutUs/2023-08-18-shahid-ashraf-tarar-federal-minister-for-communications.jpeg";
 import image3 from "../assets/AboutUs/2022-07-15-m-khurram-agha-secretary-sb.jpeg";
 import image4 from "../assets/AboutUs/HafizShakilDGJPG.jpg";
+
 import {
   Accordion,
   AccordionItem,
@@ -18,12 +19,14 @@ const History = () => {
   return (
     <AccordionItem border={"none"}>
       <AccordionButton
-        display="flex"
+        fontFamily={"serif"}
+        display="flex justify-center items-centered"
         w={"10%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
-        px={isLargerThan62 ? "4" : "2"}
+        // px={isLargerThan62 ? "4" : "2"}
+        ml={"49.5rem"}
         _hover={{ color: "white", transform: "skewX(-10deg)" }}
         _expanded={{
           color: "white",
@@ -32,12 +35,12 @@ const History = () => {
       >
         <Text
           fontSize={"2xl"}
-          fontWeight="bold"
+          fontWeight="semibold"
           color={"white"}
           bgColor={"#ed1b24"}
           p={"2"}
-          transform="skewX(-10deg)"
-          borderRadius={"none"}
+          // transform="skewX(-10deg)"
+          borderRadius={"6px"}
         >
           History
           <ChevronDownIcon fontSize="30px" />
@@ -91,12 +94,14 @@ const Network = () => {
   return (
     <AccordionItem border={"none"}>
       <AccordionButton
-        display="flex"
-        w={"16%"}
+        fontFamily={"serif"}
+        display="flex justify-center items-centered"
+        w={"23%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
-        px={isLargerThan62 ? "4" : "2"}
+        // px={isLargerThan62 ? "4" : "2"}
+        ml={"47rem"}
         _hover={{ color: "white", transform: "skewX(-10deg)" }}
         _expanded={{
           color: "white",
@@ -105,12 +110,12 @@ const Network = () => {
       >
         <Text
           fontSize={"2xl"}
-          fontWeight="bold"
+          fontWeight="semibold"
           color={"white"}
           bgColor={"#ed1b24"}
           p={"2"}
-          transform="skewX(-10deg)"
-          borderRadius={"none"}
+          // transform="skewX(-10deg)"
+          borderRadius={"6px"}
         >
           Postal Network
           <ChevronDownIcon fontSize="30px" />
@@ -144,12 +149,14 @@ const Structure = () => {
   return (
     <AccordionItem border={"none"}>
       <AccordionButton
-        display="flex"
-        w={"24%"}
+        fontFamily={"serif"}
+        display="flex justify-center items-centered"
+        w={"23%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
-        px={isLargerThan62 ? "4" : "2"}
+        // px={isLargerThan62 ? "4" : "2"}
+        ml={"44rem"}
         _hover={{ color: "white", transform: "skewX(-10deg)" }}
         _expanded={{
           color: "white",
@@ -158,12 +165,12 @@ const Structure = () => {
       >
         <Text
           fontSize={"2xl"}
-          fontWeight="bold"
+          fontWeight="semibold"
           color={"white"}
           bgColor={"#ed1b24"}
           p={"2"}
-          transform="skewX(-10deg)"
-          borderRadius={"none"}
+          // transform="skewX(-10deg)"
+          borderRadius={"6px"}
         >
           Structure and Organization
           <ChevronDownIcon fontSize="30px" />
@@ -196,12 +203,14 @@ const Roles = () => {
   return (
     <AccordionItem border={"none"}>
       <AccordionButton
+        fontFamily={"serif"}
         display="flex"
         w={"21%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
-        px={isLargerThan62 ? "4" : "2"}
+        // px={isLargerThan62 ? "4" : "2"}
+        ml={"45rem"}
         _hover={{ color: "white", transform: "skewX(-10deg)" }}
         _expanded={{
           color: "white",
@@ -210,12 +219,12 @@ const Roles = () => {
       >
         <Text
           fontSize={"2xl"}
-          fontWeight="bold"
+          fontWeight="semibold"
           color={"white"}
           bgColor={"#ed1b24"}
           p={"2"}
-          transform="skewX(-10deg)"
-          borderRadius={"none"}
+          // transform="skewX(-10deg)"
+          borderRadius={"6px"}
         >
           Roles and Organization
           <ChevronDownIcon fontSize="30px" />
@@ -345,7 +354,7 @@ const AboutUs = () => {
       </div>
 
       <div className="History-drop flex mt-[5rem] ml-[5rem]">
-        <Box w={"90% "}>
+        <Box w={"90%"}>
           <Accordion
             allowToggle
             width={"100%"}
@@ -358,7 +367,7 @@ const AboutUs = () => {
         </Box>
       </div>
 
-      <div className="Network-drop flex mt-[5rem] ml-[5rem]">
+      <div className="Network-drop flex mt-[2rem] ml-[5rem]">
         <Box w={"90% "}>
           <Accordion
             allowToggle
@@ -372,21 +381,7 @@ const AboutUs = () => {
         </Box>
       </div>
 
-      <div className="Structure-drop flex mt-[5rem] ml-[5rem]">
-        <Box w={"90% "}>
-          <Accordion
-            allowToggle
-            width={"100%"}
-            minW={"lg"}
-            bg={"white"}
-            rounded={"lg"}
-          >
-            <Structure />
-          </Accordion>
-        </Box>
-      </div>
-
-      <div className="Roles-drop flex mt-[5rem] ml-[5rem] mb-[3rem]">
+      <div className="Roles-drop flex mt-[2rem] ml-[5rem]">
         <Box w={"90% "}>
           <Accordion
             allowToggle
@@ -396,6 +391,20 @@ const AboutUs = () => {
             rounded={"lg"}
           >
             <Roles />
+          </Accordion>
+        </Box>
+      </div>
+
+      <div className="Structure-drop flex mt-[2rem] ml-[5rem] mb-[4rem]">
+        <Box w={"90% "}>
+          <Accordion
+            allowToggle
+            width={"100%"}
+            minW={"lg"}
+            bg={"white"}
+            rounded={"lg"}
+          >
+            <Structure />
           </Accordion>
         </Box>
       </div>
