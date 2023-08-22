@@ -8,6 +8,7 @@ import './styles/StampsSlider.css';
 
 import Services from "./components/Services";
 import NewsTenders from "./components/NewsTenders";
+import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import FAQs from "./components/FAQs";
 import Complaints from "./components/Complaints";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/news" element={<NewsTenders/>}/>
+        <Route path="/about" element={<AboutUs/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/faqs" element={<FAQs/>}/>
         <Route path="/complaints" element={<Complaints/>}/>
