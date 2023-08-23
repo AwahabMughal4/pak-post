@@ -35,7 +35,7 @@ const NewsSection = () => {
           </h1>
           <div className=" p-3 overflow-y-auto h-[70%] bg-gray-200">
             {News.map((news) => {
-              return <Info key={news.id} title={news.title} date={news.date} />;
+              return <Info key={news.id} title={news.title} />;
             })}
           </div>
           <button className="my-4 px-4 py-3 bg-[color:var(--primary-color)] hover:bg-[color:var(--secondary-color)] cursor-pointer text-white">

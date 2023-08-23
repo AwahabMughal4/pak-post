@@ -2,167 +2,167 @@ import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import TopButton from "./HomeSubcomponents/TopButton";
+import { Box } from "@chakra-ui/react";
+
 import React from "react";
 
 const Footer = () => (
-  <div>
-    {/* // Main container */}
-    <div className="flex justify-evenly bg-gradient-to-b from-zinc-300 to-neutral-200 md:flex-row flex-wrap flex-col ">
-      {/* Map div */}
-      <div>
-        <p className="text-red-700 hover:text-black hover:font-bold font-semibold text-lg shadow-2xl">
-          Find
-        </p>
-        <iframe
-          title="maps"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13278.459640807303!2d73.0602569!3d33.6930342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfc30f467ee5%3A0xad2e51d473060cf1!2sPakistan%20Post!5e0!3m2!1sen!2s!4v1692255400823!5m2!1sen!2s"
-          width="300"
-          height="210"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          className="relative bottom-0 right-2"
-        ></iframe>
-      </div>
+  <div className="flex justify-evenly bg-gradient-to-b from-zinc-300 to-neutral-200 md:flex-row flex-wrap flex-col">
+    {/* Map div */}
+    <div className="m-[1rem]">
+      <iframe
+        title="maps"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13278.459640807303!2d73.0602569!3d33.6930342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfc30f467ee5%3A0xad2e51d473060cf1!2sPakistan%20Post!5e0!3m2!1sen!2s!4v1692255400823!5m2!1sen!2s"
+        width="300"
+        height="210"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        className="relative bottom-0 right-2"
+      ></iframe>
+    </div>
 
-      {/* Quick Links */}
-      <div className="md:mt-3">
-        <p className="text-red-700 hover:text-black hover:font-bold font-semibold text-lg shadow-2xl">
-          Pages
-        </p>
-        <Link to={"/"} className=" hover:font-semibold md:text-sm ">
-          Home
-        </Link>
-        <br />
-        <Link
-          to={"/about"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm "
-        >
-          About Us
-        </Link>
-        <br />
-        <Link
-          to={"/careers"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm "
-        >
-          Careers
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          Official Emails
-        </Link>
-      </div>
-      {/* Pages */}
-      <div className="md:mt-3">
-        <p className="shadow-2xl text-red-700 hover:text-black hover:font-bold  font-semibold text-lg">
-          Quick Links
-        </p>
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          Rest Houses
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          UMS Envelops
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          Active Tenders
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          Reg/UnReg Envelops
-        </Link>
-      </div>
-      {/* Support */}
-      <div className="md:mt-3">
-        <p className="shadow-2xl text-red-700 hover:text-black hover:font-bold  font-semibold text-lg">
-          Support
-        </p>
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          FAQs
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          Privacy
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          Help
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          Queries & Info
-        </Link>
-      </div>
-      {/* Contact us */}
-      <div className="md:mt-3">
-        <p className="shadow-2xl text-red-700 hover:text-black hover:font-bold  font-semibold text-lg">
-          Contact us
-        </p>
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          111-111-117
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          Customer Support
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          customercare@pakpost.gov.pk
-        </Link>
-        <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
-          Director General Pakistan Post Office, G-8/4 Islamabad.
-        </Link>
-      </div>
+    {/* Quick Links */}
+    <div className="md:mt-3">
+      <p className="text-red-700 hover:text-black hover:font-bold font-semibold text-lg shadow-2xl">
+        Pages
+      </p>
+      <Link to={"/"} className=" hover:font-semibold md:text-sm ">
+        Home
+      </Link>
+      <br />
+      <Link
+        to={"/about"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm "
+      >
+        About Us
+      </Link>
+      <br />
+      <Link
+        to={"/careers"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm "
+      >
+        Career
+      </Link>
+      <br />
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        Official Emails
+      </Link>
+    </div>
+    {/* Pages */}
+    <div className="md:mt-3">
+      <p className="shadow-2xl text-red-700 hover:text-black hover:font-bold  font-semibold text-lg">
+        Quick Links
+      </p>
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        Rest Houses
+      </Link>
+      <br />
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        UMS Envelops
+      </Link>
+      <br />
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        Active Tenders
+      </Link>
+      <br />
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        Reg/UnReg Envelops
+      </Link>
+    </div>
+    {/* Support */}
+    <div className="md:mt-3">
+      <p className="shadow-2xl text-red-700 hover:text-black hover:font-bold  font-semibold text-lg">
+        Support
+      </p>
+      <Link
+        to={"/faqs"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        FAQs
+      </Link>
+      <br />
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        Privacy
+      </Link>
+      <br />
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        Help
+      </Link>
+      <br />
+      <Link
+        to={"/complaints"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        Queries & Info
+      </Link>
+    </div>
+    {/* Contact us */}
+    <div className="md:mt-3">
+      <p className="shadow-2xl text-red-700 hover:text-black hover:font-bold  font-semibold text-lg">
+        Contact us
+      </p>
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        111-111-117
+      </Link>
+      <br />
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        Customer Support
+      </Link>
+      <br />
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        customercare@pakpost.gov.pk
+      </Link>
+      <br />
+      <Link
+        to={"/"}
+        className=" hover:font-semibold hover:md:text-md md:text-sm"
+      >
+        Director General Pakistan Post Office, G-8/4 Islamabad.
+      </Link>
     </div>
     {/* relative */}
-    <div className="relative bottom-[195px] left-[1465px] bg-white px-1  h-[42] w-8 rounded-md ">
+    <div className="relative top-[3rem] left-[1rem] bg-white px-1 h-[5rem] w-8 rounded-md">
       <FacebookIcon style={{ color: "blue" }} />
       <br />
       <InstagramIcon style={{ color: "FF5722" }} />
       <br />
       <TwitterIcon style={{ color: "0288D1" }} />
     </div>
+    <Box as="a" href={"#"} position={"absolute"} bottom={"20"} right={"2"}>
+      <TopButton />
+    </Box>
   </div>
 );
 
@@ -214,6 +214,7 @@ export default Footer;
 //     <Box
 //       bg={useColorModeValue("gray.50", "gray.900")}
 //       color={useColorModeValue("gray.700", "gray.200")}
+//       borderTop={"2px solid #ed1b24"}
 //     >
 //       <Container as={Stack} maxW={"6xl"} py={10}>
 //         <SimpleGrid
@@ -232,10 +233,10 @@ export default Footer;
 //             <Box as="a" href={"#"}>
 //               Home
 //             </Box>
-//             <Box as="a" href={"/aboutUs"}>
+//             <Box as="a" href={"#"}>
 //               About us
 //             </Box>
-//             <Box as="a" href={"/careers"}>
+//             <Box as="a" href={"#"}>
 //               Careers
 //             </Box>
 //             <Box as="a" href={"#"}>
