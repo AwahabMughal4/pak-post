@@ -33,14 +33,14 @@ const Footer = () => (
       </Link>
       <br />
       <Link
-        to={"/"}
+        to={"/about"}
         className=" hover:font-semibold hover:md:text-md md:text-sm "
       >
         About Us
       </Link>
       <br />
       <Link
-        to={"/"}
+        to={"/careers"}
         className=" hover:font-semibold hover:md:text-md md:text-sm "
       >
         Career
