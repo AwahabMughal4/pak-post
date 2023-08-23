@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SliderData } from "../../DataObjects/SliderData";
+import { SliderData } from "../../DataObjects/StampsSlider";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Center, Heading } from "@chakra-ui/react";
 
