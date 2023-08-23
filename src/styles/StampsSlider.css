@@ -118,3 +118,19 @@
   .read-more-button:hover {
     background-color: #d13038;
   }
+
+@media only screen and (max-width: 730px) {
+  .left-arrow {
+    top: 88%;
+    left: 90%;
+  }
+  
+  .right-arrow {
+    top: 88%;
+    right: 90%;
+  }
+
+  .dot {
+    margin: 5px 5px;
+  }
+}

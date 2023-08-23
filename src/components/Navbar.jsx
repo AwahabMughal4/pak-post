@@ -108,7 +108,6 @@ import {
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Icon,
@@ -116,7 +115,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   Image,
 } from "@chakra-ui/react";
@@ -201,22 +199,20 @@ export default function WithSubnavigation() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("white");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={4}>
+    <Stack direction={"row"} spacing={{ lg: "1", xl: "4" }}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label} w={"fit-content"}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Box
                 as="a"
-                p={2}
+                p={{ lg: "1", xl: "2" }}
                 href={navItem.href ?? "#"}
-                fontSize={"lg"}
-                fontWeight={500}
+                fontSize={{ lg: "md", xl: "lg" }}
+                fontWeight={{ lg: "400", xl: "500" }}
                 className="hover:transform hover:-skew-x-12 -skew-x-12 text-white hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]"
               >
                 {navItem.label}
