@@ -12,6 +12,7 @@ import {
 import {
   ContactSideData,
   ContactDG,
+  ContactCCC,
   ContactGB,
   ContactAJK,
   ContactPGP,
@@ -147,6 +148,28 @@ const Contacts = () => {
         </Center>
         <Flex flexWrap={"wrap"} justifyContent={"center"}>
           {ContactDG.map((Contact) => (
+            <Card
+              designation={Contact.designation}
+              name={Contact.name}
+              email={Contact.email}
+              phone={Contact.phone}
+            />
+          ))}
+        </Flex>
+      </div>
+      <div id="ccc">
+        <Heading
+          p={"1rem"}
+          textAlign={"center"}
+          color={"white"}
+          bgColor={"#ed1b24"}
+          transform="skewX(-10deg)"
+          mt={"1rem"}
+        >
+          Customer Care Centers
+        </Heading>
+        <Flex flexWrap={"wrap"} justifyContent={"center"}>
+          {ContactCCC.map((Contact) => (
             <Card
               designation={Contact.designation}
               name={Contact.name}
