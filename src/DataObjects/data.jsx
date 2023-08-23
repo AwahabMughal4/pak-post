@@ -81,55 +81,6 @@ export const News = [
     date: "2021-01-01",
     link: "/",
   },
-  {
-    id: 2,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 3,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 4,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 5,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 6,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 7,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
-  {
-    id: 8,
-    title:
-      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri",
-    date: "2021-01-01",
-    link: "/",
-  },
 ];
 
 export const Tenders = [
@@ -194,21 +145,24 @@ export const Tenders = [
 export const Questions = [
   {
     id: 1,
+    question: "What is prohibited to be transmitted by the post?",
+    answer:
+      "Anything which is sent in contravention of any  enactment or government orders. An indecent or obscene printing, painting, photograph, lithograph, engraving, book, or card or any other indecent or obscene articles.",
+    link1: "Prohibited Items List 1",
+    link2: "Prohibited Items List 2",
+    link3: "Prohibited Items List for International Mail",
+  },
+  {
+    id: 2,
     question: "What is International Reply Coupon?",
     answer:
       "International Reply Coupons enable a sender of a letter to prepay a reply in any member country of the Universal Postal Union. A sender could enclose these coupons in the letter, which on receipt could be presented by addressee on the postal counter for receipt of the postage stamp.",
   },
   {
-    id: 2,
+    id: 3,
     question: "What happens to an undeliverable article?",
     answer:
       "An article with an incomplete or ineligible address is consigned to Returned Letter Office, while article of an unknown addressee is either redirected in case fresh address is known or kept in deposit for seven days before sending it back to sender or to the Returned Letter Office.",
-  },
-  {
-    id: 3,
-    question: "What is prohibited to be transmitted by the post?",
-    answer:
-      "Anything which is sent in contravention of any  enactment or government orders. An indecent or obscene printing, painting, photograph, lithograph, engraving, book, or card or any other indecent or obscene articles.",
   },
   {
     id: 4,
