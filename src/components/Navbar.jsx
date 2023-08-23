@@ -1,8 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isMailService, setIsmailservice] = useState(false);
+
+  const handlehoverMail = () => {
+    setIsmailservice(true);
+  };
+
+  const handlehoverMailEnd = () => {
+    setIsmailservice(false);
+  };
   return (
     <div className="py-2 pl-5 ">
       <div className="flex flex-row space-x-2 items-center justify-between">
@@ -25,13 +35,29 @@ const Navbar = () => {
                 Home
               </li>
             </Link>
+            <div className="relative">
+              <Link to={"#"}>
+                <li
+                  className="px-8 py-2 space-x-5 text-white hover:transform hover:-skew-x-12 font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]"
+                  onMouseEnter={handlehoverMail}
+                  
+                >
+                  Mail Service
+                </li>
+              </Link>
+              {isMailService && (
+                <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md  -skew-x-12" onMouseLeave={handlehoverMailEnd}>
+                  <Link to="/domesticservices" className="block px-4 py-2 text-white font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">Domestic Mail</Link>
+                  <Link to="/internationalservices" className="block px-4 py-2 text-white font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">International Mail</Link>
+                </div>
+              )}
+            </div>
 
-            <Link to={"/services"}>
+            <Link to={"/expressservices"}>
               <li className="px-8 py-2 space-x-5 text-white  hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]">
-                Services
+                Express Service
               </li>
             </Link>
-
             <Link to={"/stamps"}>
               <li className="px-8 py-2 space-x-5 text-white hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">
                 Stamps

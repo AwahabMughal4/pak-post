@@ -5,7 +5,11 @@ import Home from "./components/Home";
 import './styles/App.css';
 import './styles/StampsSlider.css';
 
+
 import Services from "./components/Services";
+import Domestic_Mail from "./components/Domestic_Mail";
+import International_Mail from "./components/International_Mail";
+import Express_Services from "./components/Express_Services";
 import NewsTenders from "./components/NewsTenders";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
@@ -20,6 +24,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/services" element={<Services/>}/>
+        <Route path="/domesticservices" element={<Domestic_Mail/>}/>
+        <Route path="/internationalservices" element={<International_Mail/>}/>
+        <Route path="/expressservices" element={<Express_Services/>}/>
         <Route path="/news" element={<NewsTenders/>}/>
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
