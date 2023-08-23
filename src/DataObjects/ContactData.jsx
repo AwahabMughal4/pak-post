@@ -1,5 +1,6 @@
 export const ContactSideData = [
   { name: "Directorate General", id: "dg" },
+  { name: "Customer Care Centers", id: "ccc" },
   { name: "FC & GB Circle Islamabad", id: "gbc" },
   { name: "AJK Circle Muzaffarabad", id: "ajkc" },
   { name: "Postmaster General Punjab", id: "gpun" },
@@ -86,6 +87,98 @@ export const ContactDG = [
     name: "Dr. Jamal Yosuf, Registrar, WAFAQI MOHTASIB (OMBUDSMAN)'S SECRETARIAT, Head Office, Wafaqi Mohtasib Secretarait, Constitution Avenue G-5/2, Islamabad",
     email: "ombuds.munawarsajjad@gmail.com",
     phone: "051-9213886",
+  },
+];
+export const ContactCCC = [
+  {
+    designation: "PMG LAHORE",
+    name: "AD (Comp)",
+    email: "ccpmgpunjab@yahoo.com",
+    phone: "042-99213502",
+  },
+  {
+    designation: "PMG KARACHI",
+    name: "PMG KHI",
+    email: "pmgkarachi@yahoo.com",
+    phone: " 021-99250106 &  021-99250106",
+  },
+  {
+    designation: "PMG HYDERABAD",
+    name: "APMG(OP)",
+    email: "Pmg-nschyd@yahoo.com",
+    phone: "022-9200358",
+  },
+  {
+    designation: "PMG MULTAN",
+    name: "APMG",
+    email: "pmgmul@gmail.com",
+    phone: "061-9201104",
+  },
+  {
+    designation: "PMG RAWALPINDI",
+    name: "AD(CC & Sav)",
+    email: "adccpmgnprwp@gmail.com",
+    phone: "051-9270049",
+  },
+  {
+    designation: "PMG ISLAMABAD",
+    name: "APMG(FS)",
+    email: "pmgibd@yahoo.com",
+    phone: "051-9261908 & 051-9260389",
+  },
+  {
+    designation: "PMG QUETTA",
+    name: "PA To PMG",
+    email: "Pmgquetta@yahoo.com",
+    phone: "081-9211529",
+  },
+  {
+    designation: "PMG PESHAWAR",
+    name: "AD (Comp)",
+    email: "pmgpsh@pakpost.gov.pk & ad.compt.psh@pakpost.gov.pk",
+    phone: "091-9212246 & 091-9213331",
+  },
+  {
+    designation: "PMG AJK, MUZAFFARABAD",
+    name: "APMG",
+    email: "ajkregion@gmail.com",
+    phone: "05822-921301 & 05822-921304",
+  },
+  {
+    designation: "Controller IMO (P) KARACHI",
+    name: "Controller IMO (Parcel)",
+    email: "pkkhid@gmail.com",
+    phone: "021-99211130",
+  },
+  {
+    designation: "Dy. Controller IMO (L) KARACHI",
+    name: "Dy. Controller IMO (L)",
+    email: "gcss.prime@gmail.com",
+    phone: "021-99240532",
+  },
+  {
+    designation: "Dy. Controller EP KARACHI",
+    name: "Dy. Controller (EP)",
+    email: "dcepkhi.pakpost.gov@gmail.com",
+    phone: "021-99333126",
+  },
+  {
+    designation: "Controller IMO Islamabad",
+    name: "Controller IMO",
+    email: "pkisba@gmail.com",
+    phone: "051-9281273",
+  },
+  {
+    designation: "Controller IMO Lahore",
+    name: "Controller IMO Lahore",
+    email: "parcelexportlahore@yahoo.com",
+    phone: "042-99214632",
+  },
+  {
+    designation: "Dy. Controller Foreign Post SIALKOT",
+    name: "Dy. Controller F.P",
+    email: "asfpskt@yahoo.com",
+    phone: "052-9250046",
   },
 ];
 export const ContactGB = [
