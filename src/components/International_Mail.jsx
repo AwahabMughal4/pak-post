@@ -32,7 +32,7 @@ const International_Mail = () => {
                 <div className='flex flex-wrap'>
                     {InternationalServices.map((item) => {
                         return (
-                            <ServiceCard icon={item.icon} heading={item.title} description={item.description} />
+                            <ServiceCard icon={item.icon} heading={item.title} description={item.description} pdfPath={item.pdfPath}/>
                         )
                     })}
                 </div>

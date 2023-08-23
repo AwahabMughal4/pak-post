@@ -1,7 +1,9 @@
-import { Card, CardBody, CardFooter, CardHeader, Heading, SimpleGrid, Text, Button,Image,Stack,Divider,ButtonGroup } from '@chakra-ui/react'
+import { Card, CardBody, CardFooter, CardHeader, Heading, SimpleGrid, Text, Button, Image, Stack, Divider, ButtonGroup } from '@chakra-ui/react'
 import React from 'react'
-
 const ServiceCard = (props) => {
+    const openPdfInNewWindow = () => {
+        window.open(props.pdfPath, '_blank');
+      };
     return (
         <div className='w-[25%] h-[70%]'>
             <Card maxW='sm' className='w-full h-[400px] justify-center m-3'>
@@ -16,15 +18,14 @@ const ServiceCard = (props) => {
                         <Text>
                             {props.description}
                         </Text>
-                        
+
                     </Stack>
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                        <Button variant='solid' colorScheme='red'>
-                            Learn More
-                        </Button>
-                        
+                    <Button variant='solid' colorScheme='red' onClick={openPdfInNewWindow}>
+                        Read More
+                    </Button>
                 </CardFooter>
             </Card>
         </div>
