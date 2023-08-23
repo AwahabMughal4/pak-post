@@ -18,6 +18,30 @@ import printedpaperpdf from "../assets/ServicesPDF/Mail Services/Domestic Servic
 import literatureforblindpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Literature For Blind.pdf"
 import smallpacketspdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Small Packets.pdf"
 import newspaperpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/NewsPaper.pdf"
+import CertificateOfPostingpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Certificate Of Posting.pdf"
+import RecallOfPostedArticlespdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Recall Of Posted Articles.pdf"
+import PostRestantepdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Post Restante.pdf"
+import ValuePayablePostpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Value Payable Post.pdf"
+import PostBoxesAndBagspdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Post Boxes And Bags.pdf"
+import Registrationpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Value Added Services/Registration.pdf"
+import Insurancepdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Value Added Services/Insurance.pdf"
+import Letterpdf from "../assets/ServicesPDF/Mail Services/International Services/Letter.pdf"
+import Parcelpdf from "../assets/ServicesPDF/Mail Services/International Services/Parcel.pdf"
+import ExpressMailServicepdf from "../assets/ServicesPDF/Mail Services/International Services/Express Mail Service.pdf"
+import ExpressMailServicePluspdf from "../assets/ServicesPDF/Mail Services/International Services/Express Mail Service Plus.pdf"
+import TermsAndConditionspdf from "../assets/ServicesPDF/Mail Services/International Services/Terms And Conditions.pdf"
+import CustomInspectionpdf from "../assets/ServicesPDF/Mail Services/International Services/Custom Inspection.pdf"
+import ProhibitedItemspdf from "../assets/ServicesPDF/Mail Services/International Services/Prohibited Items.pdf"
+import UrgentMailServicepdf from "../assets/ServicesPDF/Express Services/UMS/Urgent Mail Service.pdf"
+import CounterCollectionpdf from "../assets/ServicesPDF/Mail Services/Express Services/UMS/Counter Collection.pdf"
+import UrgentMailServiceRatespdf from "../assets/ServicesPDF/Mail Services/Express Services/UMS/Urgent Mail Service Rates.pdf"
+import UMSCashOnDeliverypdf from "../assets/ServicesPDF/Mail Services/Express Services/UMS/UMS Cash on Delivery.pdf"
+import UrgentMoneyOrderpdf from "../assets/ServicesPDF/Mail Services/Express Services/Urgent Money Order.pdf"
+import FaxMoneyOrderpdf from "../assets/ServicesPDF/Mail Services/Express Services/Fax Money Order.pdf"
+import FaxMailpdf from "../assets/ServicesPDF/Mail Services/Express Services/Fax Mail.pdf"
+import ElectronicMoneyOrderpdf from "../assets/ServicesPDF/Mail Services/Express Services/Electronic Money Order.pdf"
+import Remittancepdf from "../assets/ServicesPDF/Mail Services/Express Services/Remittance.pdf"
+
 
 
 export const navlinks = [
@@ -264,6 +288,7 @@ export const MiscellaneousServices = [
     title: "Certificate Of Posting",
     description: "Pak Post assures mail posting via certificates, nominal fee charged.",
     icon: newspaper,
+    
   },
   {
     id: 2,
