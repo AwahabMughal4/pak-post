@@ -47,14 +47,16 @@ const History = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex justify-center items-centered"
-        w={"10%"}
+        w={"100%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
         px={isLargerThan62 ? "4" : "2"}
-        _hover={{ color: "white", transform: "skewX(-10deg)" }}
+        bg={"#ed1b24"}
+        _hover={{ bg: "#ed1b24", color: "#ed1b24", transform: "skewX(-10deg)" }}
         _expanded={{
-          color: "white",
+          bg: "#ed1b24",
+          color: "#ed1b24",
           transform: "skewX(-10deg)",
         }}
       >
@@ -64,6 +66,7 @@ const History = () => {
           color={"white"}
           bgColor={"#ed1b24"}
           p={"2"}
+          pl={"4rem"}
           transform="skewX(-10deg)"
           borderRadius={"none"}
         >
@@ -120,14 +123,16 @@ const Network = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex justify-center items-centered"
-        w={"23%"}
+        w={"100%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
         px={isLargerThan62 ? "4" : "2"}
-        _hover={{ color: "white", transform: "skewX(-10deg)" }}
+        bg={"#ed1b24"}
+        _hover={{ bg: "#ed1b24", color: "#ed1b24", transform: "skewX(-10deg)" }}
         _expanded={{
-          color: "white",
+          bg: "#ed1b24",
+          color: "#ed1b24",
           transform: "skewX(-10deg)",
         }}
       >
@@ -137,6 +142,7 @@ const Network = () => {
           color={"white"}
           bgColor={"#ed1b24"}
           p={"2"}
+          pl={"4rem"}
           transform="skewX(-10deg)"
           borderRadius={"none"}
         >
@@ -173,14 +179,16 @@ const Structure = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex justify-center items-centered"
-        w={"24%"}
+        w={"100%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
         px={isLargerThan62 ? "4" : "2"}
-        _hover={{ color: "white", transform: "skewX(-10deg)" }}
+        bg={"#ed1b24"}
+        _hover={{ bg: "#ed1b24", color: "#ed1b24", transform: "skewX(-10deg)" }}
         _expanded={{
-          color: "white",
+          bg: "#ed1b24",
+          color: "#ed1b24",
           transform: "skewX(-10deg)",
         }}
       >
@@ -190,6 +198,7 @@ const Structure = () => {
           color={"white"}
           bgColor={"#ed1b24"}
           p={"2"}
+          pl={"4rem"}
           transform="skewX(-10deg)"
           borderRadius={"none"}
         >
@@ -225,14 +234,16 @@ const Roles = () => {
     <AccordionItem border={"none"}>
       <AccordionButton
         display="flex justify-center items-centered"
-        w={"21%"}
+        w={"100%"}
         alignItems="center"
         justifyContent="space-between"
         py={1}
         px={isLargerThan62 ? "4" : "2"}
-        _hover={{ color: "white", transform: "skewX(-10deg)" }}
+        bg={"#ed1b24"}
+        _hover={{ bg: "#ed1b24", color: "white", transform: "skewX(-10deg)" }}
         _expanded={{
-          color: "white",
+          bg: "#ed1b24",
+          color: "#ed1b24",
           transform: "skewX(-10deg)",
         }}
       >
@@ -242,6 +253,7 @@ const Roles = () => {
           color={"white"}
           bgColor={"#ed1b24"}
           p={"2"}
+          pl={"4rem"}
           transform="skewX(-10deg)"
           borderRadius={"none"}
         >
