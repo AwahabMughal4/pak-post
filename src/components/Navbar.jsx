@@ -40,15 +40,27 @@ const Navbar = () => {
                 <li
                   className="px-8 py-2 space-x-5 text-white hover:transform hover:-skew-x-12 font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]"
                   onMouseEnter={handlehoverMail}
-                  
                 >
                   Mail Service
                 </li>
               </Link>
               {isMailService && (
-                <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md  -skew-x-12" onMouseLeave={handlehoverMailEnd}>
-                  <Link to="/domesticservices" className="block px-4 py-2 text-white font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">Domestic Mail</Link>
-                  <Link to="/internationalservices" className="block px-4 py-2 text-white font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">International Mail</Link>
+                <div
+                  className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md  -skew-x-12"
+                  onMouseLeave={handlehoverMailEnd}
+                >
+                  <Link
+                    to="/domesticservices"
+                    className="block px-4 py-2 text-white font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]"
+                  >
+                    Domestic Mail
+                  </Link>
+                  <Link
+                    to="/internationalservices"
+                    className="block px-4 py-2 text-white font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]"
+                  >
+                    International Mail
+                  </Link>
                 </div>
               )}
             </div>

@@ -463,7 +463,7 @@ const AboutUs = () => {
       </div>
       <div className="head-text">
         <p className="mt-[3rem] text-5xl italic text-center text-[#ed1b24] font-serif font-bold">
-          "Making every delivery count for people and planet"
+          "Delivery & Information at lightning Speed."
         </p>
       </div>
 
