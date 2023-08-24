@@ -74,7 +74,12 @@ export default function gridListWith() {
       </Stack>
 
       <Container maxW={"5xl"} mt={12}>
-        <Flex flexWrap="wrap" gridGap={6} justify="center">
+        <Flex
+          flexWrap="wrap"
+          gridGap={6}
+          justifyContent="center"
+          alignItems={"center"}
+        >
           <Card
             heading={"Universal Postal Union"}
             img={upu}
