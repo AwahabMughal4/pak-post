@@ -31,7 +31,7 @@ const Domestic_Mail = () => {
         <div className='flex flex-wrap'>
           {TraditionalServices.map((item) => {
             return (
-              <ServiceCard icon={item.icon} heading={item.title} description={item.description} />
+              <ServiceCard icon={item.icon} heading={item.title} description={item.description} pdfPath={item.pdfPath}/>
             )
           })}
         </div>
@@ -43,7 +43,7 @@ const Domestic_Mail = () => {
       <div className='flex flex-wrap'>
           {MiscellaneousServices.map((item) => {
             return (
-              <ServiceCard icon={item.icon} heading={item.title} description={item.description} />
+              <ServiceCard icon={item.icon} heading={item.title} description={item.description} pdfPath={item.pdfPath}/>
             )
           })}
         </div>

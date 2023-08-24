@@ -32,7 +32,7 @@ const Express_Services = () => {
                 <div className='flex flex-wrap'>
                     {ExpressServices.map((item) => {
                         return (
-                            <ServiceCard icon={item.icon} heading={item.title} description={item.description} />
+                            <ServiceCard icon={item.icon} heading={item.title} description={item.description} pdfPath={item.pdfPath}/>
                         )
                     })}
                 </div>
