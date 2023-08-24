@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import './styles/App.css';
 import './styles/StampsSlider.css';
 
-
 import Domestic_Mail from "./components/Domestic_Mail";
 import International_Mail from "./components/International_Mail";
 import Express_Services from "./components/Express_Services";
