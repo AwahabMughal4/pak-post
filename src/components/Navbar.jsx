@@ -1,106 +1,3 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import { useState } from "react";
-
-// const Navbar = () => {
-//   const [isMailService, setIsmailservice] = useState(false);
-
-//   const handlehoverMail = () => {
-//     setIsmailservice(true);
-//   };
-
-//   const handlehoverMailEnd = () => {
-//     setIsmailservice(false);
-//   };
-//   return (
-//     <div className="py-2 pl-5 ">
-//       <div className="flex flex-row space-x-2 items-center justify-between">
-//         <Link to={"/"}>
-//           <div className="flex flex-row items-center space-x-2">
-//             <img
-//               src={logo}
-//               alt=""
-//               className="w-[60px] h-[30px] cursor-pointer"
-//             />
-//             <h1 className="text-[25px] font-bold italic text-[color:var(--primary-color)]">
-//               PAKISTAN POST
-//             </h1>
-//           </div>
-//         </Link>
-//         <div className=" ">
-//           <ul className=" bg-[color:var(--primary-color)] ml-2 rounded-l-full  flex flex-row h-full">
-//             <Link to={"/"}>
-//               <li className="px-8 py-2 space-x-5 border-l  hover:transform hover:-skew-x-12 -skew-x-12 h-full text-white font-bold hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]">
-//                 Home
-//               </li>
-//             </Link>
-//             <div className="relative">
-//               <Link to={"#"}>
-//                 <li
-//                   className="px-8 py-2 space-x-5 text-white hover:transform hover:-skew-x-12 font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]"
-//                   onMouseEnter={handlehoverMail}
-
-//                 >
-//                   Mail Service
-//                 </li>
-//               </Link>
-//               {isMailService && (
-//                 <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md  -skew-x-12" onMouseLeave={handlehoverMailEnd}>
-//                   <Link to="/domesticservices" className="block px-4 py-2 text-white font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">Domestic Mail</Link>
-//                   <Link to="/internationalservices" className="block px-4 py-2 text-white font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">International Mail</Link>
-//                 </div>
-//               )}
-//             </div>
-
-//             <Link to={"/expressservices"}>
-//               <li className="px-8 py-2 space-x-5 text-white  hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]">
-//                 Express Service
-//               </li>
-//             </Link>
-//             <Link to={"/stamps"}>
-//               <li className="px-8 py-2 space-x-5 text-white hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">
-//                 Stamps
-//               </li>
-//             </Link>
-
-//             <Link to={"/news"}>
-//               <li className="px-8 py-2 space-x-5 text-white  hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">
-//                 News/Tenders
-//               </li>
-//             </Link>
-
-//             <Link to={"/track"}>
-//               <li className="px-8 py-2 space-x-5 text-white hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">
-//                 Track
-//               </li>
-//             </Link>
-
-//             <Link to={"/about"}>
-//               <li className="px-8 py-2 space-x-5 text-white  hover:transform hover:-skew-x-12  font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">
-//                 About Us
-//               </li>
-//             </Link>
-
-//             <Link to={"/contact"}>
-//               <li className="px-8 py-2 space-x-5 text-white hover:transform hover:-skew-x-12 font-bold hover:bg-[color:var(--secondary-color)] bg-[color:var(--primary-color)]">
-//                 Contact Us
-//               </li>
-//             </Link>
-
-//             <Link to={"/tools"}>
-//               <li className="px-8 py-2 space-x-5 text-white  hover:transform  ml-1 font-bold hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]">
-//                 Quick Tools
-//               </li>
-//             </Link>
-//           </ul>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
-
 ("use client");
 
 import {
@@ -118,13 +15,9 @@ import {
   useDisclosure,
   Image,
 } from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import logo from "../assets/logo.jpg";
+import { Link } from "react-router-dom";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -199,34 +92,31 @@ export default function WithSubnavigation() {
 }
 
 const DesktopNav = () => {
-  const popoverContentBgColor = useColorModeValue("white", "gray.800");
-
   return (
     <Stack direction={"row"} spacing={{ lg: "1", xl: "4" }}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label} w={"fit-content"}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <Box
-                as="a"
-                p={{ lg: "1", xl: "2" }}
-                href={navItem.href ?? "#"}
-                fontSize={{ lg: "md", xl: "lg" }}
-                fontWeight={{ lg: "400", xl: "500" }}
-                className="hover:transform hover:-skew-x-12 -skew-x-12 text-white hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]"
-              >
-                {navItem.label}
-              </Box>
+              <Link to={navItem.href ?? "#"}>
+                <Box
+                  p={{ lg: "1", xl: "2" }}
+                  fontSize={{ lg: "md", xl: "lg" }}
+                  fontWeight={{ lg: "400", xl: "500" }}
+                  className="hover:transform hover:-skew-x-[-10] -skew-x-[-10] text-white hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]"
+                >
+                  {navItem.label}
+                </Box>
+              </Link>
             </PopoverTrigger>
 
             {navItem.children && (
               <PopoverContent
-                border={0}
-                boxShadow={"xl"}
-                bg={popoverContentBgColor}
+                borderRadius={"none"}
+                bgColor={"#ed1b24"}
                 p={4}
-                rounded={"xl"}
-                minW={"sm"}
+                w={"fit-content"}
+                mt={"0.5rem"}
               >
                 <Stack>
                   {navItem.children.map((child) => (
@@ -244,39 +134,30 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
-    <Box
-      as="a"
-      href={href}
-      role={"group"}
-      display={"block"}
-      p={2}
-      rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
-    >
-      <Stack direction={"row"} align={"center"}>
-        <Box>
-          <Text
-            transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
-            fontWeight={500}
-          >
-            {label}
-          </Text>
-          <Text fontSize={"sm"}>{subLabel}</Text>
-        </Box>
-        <Flex
-          transition={"all .3s ease"}
-          transform={"translateX(-10px)"}
-          opacity={0}
-          _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
-          justify={"flex-end"}
-          align={"center"}
-          flex={1}
-        >
-          <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
-        </Flex>
-      </Stack>
-    </Box>
+    <Link to={href}>
+      <Box
+        role={"group"}
+        display={"block"}
+        fontSize={{ lg: "md", xl: "lg" }}
+        fontWeight={{ lg: "400", xl: "500" }}
+        className="hover:transform hover:-skew-x-[-10] -skew-x-[-10] text-white hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]"
+        p={"0.5rem"}
+        border={"1px solid white"}
+      >
+        <Stack direction={"row"} align={"center"}>
+          <Box>
+            <Text
+              transition={"all .3s ease"}
+              // _groupHover={{ color: "pink.400" }}
+              fontWeight={500}
+            >
+              {label}
+            </Text>
+            <Text fontSize={"sm"}>{subLabel}</Text>
+          </Box>
+        </Stack>
+      </Box>
+    </Link>
   );
 };
 
@@ -299,32 +180,32 @@ const MobileNavItem = ({ label, children, href }) => {
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>
-      <Box
-        py={2}
-        as="a"
-        href={href ?? "#"}
-        justifyContent="space-between"
-        alignItems="center"
-        _hover={{
-          textDecoration: "none",
-        }}
-      >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
+      <Link to={href ?? "#"}>
+        <Box
+          py={2}
+          justifyContent="space-between"
+          alignItems="center"
+          _hover={{
+            textDecoration: "none",
+          }}
         >
-          {label}
-        </Text>
-        {children && (
-          <Icon
-            as={ChevronDownIcon}
-            transition={"all .25s ease-in-out"}
-            transform={isOpen ? "rotate(180deg)" : ""}
-            w={6}
-            h={6}
-          />
-        )}
-      </Box>
+          <Text
+            fontWeight={600}
+            color={useColorModeValue("gray.600", "gray.200")}
+          >
+            {label}
+          </Text>
+          {children && (
+            <Icon
+              as={ChevronDownIcon}
+              transition={"all .25s ease-in-out"}
+              transform={isOpen ? "rotate(180deg)" : ""}
+              w={6}
+              h={6}
+            />
+          )}
+        </Box>
+      </Link>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
         <Stack
@@ -337,9 +218,11 @@ const MobileNavItem = ({ label, children, href }) => {
         >
           {children &&
             children.map((child) => (
-              <Box as="a" key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Box>
+              <Link to={child.href}>
+                <Box key={child.label} py={2}>
+                  {child.label}
+                </Box>
+              </Link>
             ))}
         </Stack>
       </Collapse>
