@@ -387,7 +387,7 @@ export const InternationalServices = [
     icon: prohibited,
   },
 ];
-export const ExpressServices = [
+export const ExpressService = [
   {
     id: 1,
     title: "Urgent Mail Service",

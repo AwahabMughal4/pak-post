@@ -150,7 +150,10 @@ const Footer = () => (
           customercare@pakpost.gov.pk
         </a>
         <br />
-        <a className=" hover:font-semibold hover:md:text-md md:text-sm">
+        <a
+          href="/"
+          className=" hover:font-semibold hover:md:text-md md:text-sm"
+        >
           Director General Pakistan Post Office, G-8/4 Islamabad.
         </a>
       </div>
