@@ -1,9 +1,12 @@
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
+import './styles/App.css';
+import './styles/StampsSlider.css';
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import './styles/App.css';
-import './styles/StampsSlider.css';
+import PostCodes from "./components/PostCodes";
 
 import DomesticMail from "./components/DomesticMail";
 import InternationalMail from "./components/InternationalMail";
@@ -21,6 +24,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/post-code" element={<PostCodes/>}/>
         <Route path="/domesticservices" element={<DomesticMail/>}/>
         <Route path="/internationalservices" element={<InternationalMail/>}/>
         <Route path="/expressservices" element={<ExpressServices/>}/>

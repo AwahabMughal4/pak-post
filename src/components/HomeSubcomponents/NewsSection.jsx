@@ -47,7 +47,7 @@ const NewsSection = () => {
             News
           </h1>
           <div className=" p-3 overflow-y-auto h-[70%] bg-gray-200">
-            {Tenders.map((news) => {
+            {News.map((news) => {
               return (
                 <BasicCard key={news.id} date={news.date} title={news.title} />
               );
