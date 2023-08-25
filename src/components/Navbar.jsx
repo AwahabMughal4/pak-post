@@ -71,6 +71,7 @@ export default function WithSubnavigation() {
           justify={"flex-end"}
           direction={"row"}
           spacing={4}
+          zIndex={"2"}
         >
           <Flex
             display={{ base: "none", lg: "flex" }}

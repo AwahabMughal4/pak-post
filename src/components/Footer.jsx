@@ -129,12 +129,12 @@ const Footer = () => (
         <p className="shadow-2xl text-[#ed1b24] font-semibold text-lg">
           Contact us
         </p>
-        <Link
-          to={"/"}
+        <a
+          href="tel:111-111-117"
           className=" hover:font-semibold hover:md:text-md md:text-sm"
         >
           111-111-117
-        </Link>
+        </a>
         <br />
         <Link
           to={"/"}
@@ -143,19 +143,16 @@ const Footer = () => (
           Customer Support
         </Link>
         <br />
-        <Link
-          to={"/"}
+        <a
+          href="mailto:customercare@pakpost.gov.pk"
           className=" hover:font-semibold hover:md:text-md md:text-sm"
         >
           customercare@pakpost.gov.pk
-        </Link>
+        </a>
         <br />
-        <Link
-          to={"/"}
-          className=" hover:font-semibold hover:md:text-md md:text-sm"
-        >
+        <a className=" hover:font-semibold hover:md:text-md md:text-sm">
           Director General Pakistan Post Office, G-8/4 Islamabad.
-        </Link>
+        </a>
       </div>
       <VStack
         justifyContent={"space-between"}
@@ -164,13 +161,13 @@ const Footer = () => (
         bottom="80px"
         right={["16px", "84px"]}
       >
-        <Box as="a" href={"#"}>
+        <Box as="a" href={"https://www.facebook.com/PakistanPostOffice.PK"}>
           <AiFillFacebook size={"40"} color="red" />
         </Box>
-        <Box as="a" href={"#"}>
+        <Box as="a" href={"https://www.instagram.com/pakistan.post/"}>
           <AiFillInstagram size={"40"} color="red" />
         </Box>
-        <Box as="a" href={"#"}>
+        <Box as="a" href={"https://twitter.com/PakPostOffice"}>
           <AiFillTwitterSquare size={"40"} color="red" />
         </Box>
       </VStack>
