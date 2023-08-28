@@ -2,15 +2,12 @@ import {
   Card,
   CardBody,
   CardFooter,
-  CardHeader,
   Heading,
-  SimpleGrid,
   Text,
   Button,
   Image,
   Stack,
   Divider,
-  ButtonGroup,
 } from "@chakra-ui/react";
 import React from "react";
 const ServiceCard = (props) => {
