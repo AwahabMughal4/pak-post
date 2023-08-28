@@ -104,7 +104,7 @@ const Footer = () => (
         </Link>
         <br />
         <Link
-          to={"/"}
+          to={"/privacy"}
           className=" hover:font-semibold hover:md:text-md md:text-sm"
         >
           Privacy

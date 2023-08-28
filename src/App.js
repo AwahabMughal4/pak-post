@@ -14,6 +14,8 @@ import ContactUs from "./components/ContactUs";
 import FAQs from "./components/FAQs";
 import Careers from "./components/Careers";
 import Complaints from "./components/Complaints";
+import LocateUs from "./components/LocatePostOffices";
+import Privacy from "./components/Privacy";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="/faqs" element={<FAQs/>}/>
         <Route path="/careers" element={<Careers/>}/>
         <Route path="/complaints" element={<Complaints/>}/>
+        <Route path="/locateus" element={<LocateUs/>}/>
+        <Route path="/privacy" element={<Privacy/>}/>
       </Routes>
       <Footer/>
     </Router>
