@@ -16,6 +16,11 @@ import Careers from "./components/Careers";
 import Complaints from "./components/Complaints";
 import Complaint from "./components/Complaint";
 import RestHouses from "./components/RestHouses";
+import LocateUs from "./components/LocatePostOffices";
+import Privacy from "./components/Privacy";
+import Manuals from "./components/Queries&Info";
+import { Tracking } from "./components/Tracking";
+import { CalculatePostage } from "./components/CalculatePostage";
 
 function App() {
   return (
@@ -34,6 +39,11 @@ function App() {
         <Route path="/complaints" element={<Complaints/>}/>
         <Route path="/customersupport" element={<Complaint/>}/>
         <Route path="/Rest Houses" element={<RestHouses/>}/>
+        <Route path="/locateus" element={<LocateUs/>}/>
+        <Route path="/privacy" element={<Privacy/>}/>
+        <Route path="/manuals" element={<Manuals/>}/>
+        <Route path="/tracking" element={<Tracking/>}/>
+        <Route path="/postage" element={<CalculatePostage/>}/>
       </Routes>
       <Footer/>
     </Router>
