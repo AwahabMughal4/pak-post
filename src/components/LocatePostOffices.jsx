@@ -51,7 +51,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
           fontWeight="bold"
           borderBottom={"2px solid #ed1b24"}
         >
-          Contact Us
+          Locate Us
         </Text>
       </Flex>
       {LocateUsData.map((link) => (
