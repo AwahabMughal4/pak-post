@@ -1,15 +1,28 @@
-import React from "react";
-import { News } from "../../DataObjects/data";
+import * as React from "react";
+import { News, Tenders } from "../../DataObjects/data";
 import { Center, Heading } from "@chakra-ui/react";
 
-const Info = (props) => {
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Text,
+  Button,
+} from "@chakra-ui/react";
+const BasicCard = (props) => {
   return (
-    <div className="">
-      <h1 className="hover:text-red-500 cursor-pointer font-bold text-md">
-        {props.title}
-      </h1>
-      <p>{props.date}</p>
-    </div>
+    <Card>
+      <CardHeader>
+        <Heading size="md"> {props.title}</Heading>
+      </CardHeader>
+      <CardBody>
+        <Text>{props.date}</Text>
+      </CardBody>
+      <CardFooter>
+        <Button>View here</Button>
+      </CardFooter>
+    </Card>
   );
 };
 
@@ -35,7 +48,9 @@ const NewsSection = () => {
           </h1>
           <div className=" p-3 overflow-y-auto h-[70%] bg-gray-200">
             {News.map((news) => {
-              return <Info key={news.id} title={news.title} date={news.date} />;
+              return (
+                <BasicCard key={news.id} date={news.date} title={news.title} />
+              );
             })}
           </div>
           <button className="my-4 px-4 py-3 bg-[color:var(--primary-color)] hover:bg-[color:var(--secondary-color)] cursor-pointer text-white">
@@ -48,8 +63,10 @@ const NewsSection = () => {
             Tender
           </h1>
           <div className=" p-3 overflow-y-auto  h-[70%] bg-gray-200">
-            {News.map((news) => {
-              return <Info key={news.id} title={news.title} date={news.date} />;
+            {Tenders.map((news) => {
+              return (
+                <BasicCard key={news.id} title={news.title} date={news.date} />
+              );
             })}
           </div>
           <button className="my-4 px-4 py-3 bg-[color:var(--primary-color)] hover:bg-[color:var(--secondary-color)] cursor-pointer text-white">

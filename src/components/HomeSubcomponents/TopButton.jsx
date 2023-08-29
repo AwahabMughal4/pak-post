@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ArrowUpIcon } from "@chakra-ui/icons";
+import { AiOutlineArrowUp } from "react-icons/ai";
 import { Box, Button } from "@chakra-ui/react";
 
 export default function TopButton() {
@@ -14,7 +14,7 @@ export default function TopButton() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 1400) {
+      if (window.pageYOffset > 800) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -33,17 +33,11 @@ export default function TopButton() {
           onClick={scrollToTop}
           position="fixed"
           bottom="20px"
-          right={["16px", "84px"]}
+          right={["16px", "20px"]}
           zIndex={3}
         >
-          <Button
-            size={"sm"}
-            rightIcon={<ArrowUpIcon />}
-            bgColor={"#ed1b24"}
-            color={"white"}
-            variant="solid"
-          >
-            Scroll To Top
+          <Button bgColor={"#ed1b24"} color={"white"} variant="solid">
+            <AiOutlineArrowUp size={"30"} color="white" />
           </Button>
         </Box>
       )}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SliderData } from "../../DataObjects/SliderData";
+import { SliderData } from "../../DataObjects/StampsSlider";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Center, Heading } from "@chakra-ui/react";
 
@@ -23,15 +23,16 @@ const ImageSlider = ({ slides }) => {
     <>
       <Center>
         <Heading
-          m={"auto"}
+          m={{ base: "1rem", sm: "2rem" }}
+          mb={{ base: "5rem", sm: "5rem" }}
           display={"inline-block"}
           borderBottom={"2px solid red"}
-          p={"2"}
+          p={2}
         >
           Historic Stamps
         </Heading>
       </Center>
-      <section className="slider">
+      <section className="slider w-[100%]">
         <div className="slider-content">
           {SliderData.map((slide, index) => {
             return (
