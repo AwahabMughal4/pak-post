@@ -6,12 +6,20 @@ import newspaper from "../assets/ServicesSectionImages/newspaper.jpg";
 import paper from "../assets/ServicesSectionImages/printed papers.jpg";
 import letter from "../assets/ServicesSectionImages/ordinary letters.jpg";
 import letter2 from "../assets/ServicesSectionImages/letter.png";
-import parcel from "../assets/ServicesSectionImages/parcel.png";
+import parcel from "../assets/ServicesSectionImages/news.png";
 import ems from "../assets/ServicesSectionImages/ems plus.png";
 import emsplus from "../assets/ServicesSectionImages/ems plus-2.jpg";
 import termcondition from "../assets/ServicesSectionImages/terms and conditions.png";
 import inspection from "../assets/ServicesSectionImages/custom inspection-2.jpg";
 import prohibited from "../assets/ServicesSectionImages/prohibited items.jpg";
+import insurance from "../assets/ServicesSectionImages/insurance.png";
+import postbox from "../assets/ServicesSectionImages/postbox.png";
+import registeration from "../assets/ServicesSectionImages/registeration.png";
+import paypost from "../assets/ServicesSectionImages/ums-cashondelivery.png";
+import certificate from "../assets/ServicesSectionImages/certificate.png";
+import recall from "../assets/ServicesSectionImages/recall.png";
+import postres from "../assets/ServicesSectionImages/postres.png";
+import packets from "../assets/ServicesSectionImages/smallpackets.png";
 
 import ordinaryletterpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Ordinary Mail.pdf";
 import printedpaperpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Printed Papers.pdf";
@@ -271,7 +279,7 @@ export const TraditionalServices = [
     title: "Small Packets",
     description:
       "Pak Post supports small businesses with affordable shipping for trade patterns and merchandise samples",
-    icon: "https://img.icons8.com/color/48/000000/circled-envelope.png",
+    icon: packets,
     pdfPath: smallpacketspdf,
   },
   {
@@ -279,7 +287,7 @@ export const TraditionalServices = [
     title: "Register Newspapers & Parcels  ",
     description:
       "Pak Post facilitates delivery of news papers all over Pakistan at exceptionally low rates.",
-    icon: newspaper,
+    icon: parcel,
     pdfPath: newspaperpdf,
   },
 ];
@@ -289,49 +297,49 @@ export const MiscellaneousServices = [
     title: "Certificate Of Posting",
     description:
       "Pak Post assures mail posting via certificates, nominal fee charged.",
-    icon: newspaper,
+    icon: certificate,
   },
   {
     id: 2,
     title: "Recall of Posted Articles",
     description:
       "Sender-requested postal article recall aids reconsideration, preserving relationships from impulsivity.",
-    icon: newspaper,
+    icon: recall,
   },
   {
     id: 3,
     title: "Post Restante",
     description:
       "Poste Restante serves transient postal needs, limited to three months.",
-    icon: newspaper,
+    icon: postres,
   },
   {
     id: 4,
     title: "Value Payable Post",
     description:
       "Value-payable system caters to pay-on-receipt and recovery needs.",
-    icon: newspaper,
+    icon: paypost,
   },
   {
     id: 5,
     title: "Post Boxes and Bags",
     description:
       "Pak Post provides post box rental for prepaid mail in urban areas.",
-    icon: newspaper,
+    icon: postbox,
   },
   {
     id: 6,
     title: "Registration",
     description:
       "Registration enhances article security during postal transmission, applying special precautions.",
-    icon: newspaper,
+    icon: registeration,
   },
   {
     id: 7,
     title: "Insurance",
     description:
       "Insurance safeguards articles during transmission; covers registered mail, valuables, gold, currency.",
-    icon: newspaper,
+    icon: insurance,
   },
 ];
 

@@ -40,6 +40,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
       borderColor={useColorModeValue("gray.200", "gray.700")}
       w={"20%"}
       pos="sticky"
+      top={0}
       h="full"
       {...rest}
     >

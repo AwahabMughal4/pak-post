@@ -59,7 +59,7 @@ const Footer = () => (
         </Link>
       </div>
       {/* Pages */}
-      <div className="md:my-3 sm:my-6">
+      {/* <div className="md:my-3 sm:my-6">
         <p className="shadow-2xl text-[#ed1b24] font-semibold text-lg">
           Quick Links
         </p>
@@ -90,7 +90,7 @@ const Footer = () => (
         >
           Reg/UnReg Envelops
         </Link>
-      </div>
+      </div> */}
       {/* Support */}
       <div className="md:my-3 sm:my-6">
         <p className="shadow-2xl text-[#ed1b24] font-semibold text-lg">
@@ -111,14 +111,14 @@ const Footer = () => (
         </Link>
         <br />
         <Link
-          to={"/"}
+          to={"/guesthouses"}
           className=" hover:font-semibold hover:md:text-md md:text-sm"
         >
-          Help
+          Guest Houses
         </Link>
         <br />
         <Link
-          to={"/complaints"}
+          to={"/manuals"}
           className=" hover:font-semibold hover:md:text-md md:text-sm"
         >
           Queries & Info
@@ -151,7 +151,8 @@ const Footer = () => (
         </a>
         <br />
         <a
-          href="/"
+          href="https://goo.gl/maps/Z3urncNCH9Tx4fnGA"
+          target="blank"
           className=" hover:font-semibold hover:md:text-md md:text-sm"
         >
           Director General Pakistan Post Office, G-8/4 Islamabad.
