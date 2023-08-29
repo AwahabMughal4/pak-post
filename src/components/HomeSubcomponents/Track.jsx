@@ -5,7 +5,6 @@ import {
   FormLabel,
   HStack,
   Heading,
-
   Input,
   Stack,
   VStack,
@@ -23,9 +22,6 @@ const Track = () => {
           p={"auto"}
           mt={"0"}
         >
-
-
-
           <HStack>
             <Input
               type="text"
@@ -34,19 +30,16 @@ const Track = () => {
               transform="skewX(-10deg)"
               borderRadius={"none"}
               placeholder="Enter your tracking id"
-
               h={{ base: "35px", sm: "50px" }}
-
             />
             <Button
               backgroundColor={"#ED1B24"}
               color={"white"}
-
+              type="submit"
               p={{ base: "1", sm: "2" }}
               fontSize={{ base: "xl", sm: "3xl" }}
               fontWeight={{ base: "400", sm: "600" }}
               h={{ base: "35px", sm: "50px" }}
-
               w={"100px"}
               transform="skewX(-10deg)"
               borderRadius={"none"}
@@ -128,7 +121,6 @@ const Track = () => {
             Find{"\u00A0"}Postal{"\u00A0"}Code
           </Heading>
         </Link>
-
       </HStack>
     </VStack>
   );
