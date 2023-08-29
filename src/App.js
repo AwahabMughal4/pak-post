@@ -14,8 +14,6 @@ import ContactUs from "./components/ContactUs";
 import FAQs from "./components/FAQs";
 import Careers from "./components/Careers";
 import Complaints from "./components/Complaints";
-import Complaint from "./components/Complaint";
-import RestHouses from "./components/RestHouses";
 
 function App() {
   return (
@@ -32,8 +30,6 @@ function App() {
         <Route path="/faqs" element={<FAQs/>}/>
         <Route path="/careers" element={<Careers/>}/>
         <Route path="/complaints" element={<Complaints/>}/>
-        <Route path="/customersupport" element={<Complaint/>}/>
-        <Route path="/Rest Houses" element={<RestHouses/>}/>
       </Routes>
       <Footer/>
     </Router>
