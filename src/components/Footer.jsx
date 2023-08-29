@@ -64,7 +64,7 @@ const Footer = () => (
           Quick Links
         </p>
         <Link
-          to={"/Rest Houses"}
+          to={"/"}
           className=" hover:font-semibold hover:md:text-md md:text-sm"
         >
           Rest Houses
@@ -137,7 +137,7 @@ const Footer = () => (
         </a>
         <br />
         <Link
-          to={"/customersupport"}
+          to={"/"}
           className=" hover:font-semibold hover:md:text-md md:text-sm"
         >
           Customer Support
