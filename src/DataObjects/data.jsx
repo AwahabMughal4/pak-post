@@ -1,25 +1,32 @@
 import gpo1 from "../assets/HeroCarouselImages/DGPPO.jpg";
 import gpo2 from "../assets/HeroCarouselImages/gpo.jpeg";
 import gpo3 from "../assets/HeroCarouselImages/mur.jpg";
-import blind from "../assets/ServicesSectionImages/literature for blind.jpg";
-import newspaper from "../assets/ServicesSectionImages/newspaper.jpg";
-import paper from "../assets/ServicesSectionImages/printed papers.jpg";
-import letter from "../assets/ServicesSectionImages/ordinary letters.jpg";
+import blind from "../assets/ServicesSectionImages/literature.png";
+import coin from "../assets/ServicesSectionImages/coin.png";
+import letter from "../assets/ServicesSectionImages/letter.png";
 import letter2 from "../assets/ServicesSectionImages/letter.png";
 import parcel from "../assets/ServicesSectionImages/news.png";
+import parcel2 from "../assets/ServicesSectionImages/parcel.png";
 import ems from "../assets/ServicesSectionImages/ems plus.png";
 import emsplus from "../assets/ServicesSectionImages/ems plus-2.jpg";
-import termcondition from "../assets/ServicesSectionImages/terms and conditions.png";
-import inspection from "../assets/ServicesSectionImages/custom inspection-2.jpg";
-import prohibited from "../assets/ServicesSectionImages/prohibited items.jpg";
+import termcondition from "../assets/ServicesSectionImages/terms.png";
+import inspection from "../assets/ServicesSectionImages/inspection.png";
+import prohibited from "../assets/ServicesSectionImages/prohibited.png";
 import insurance from "../assets/ServicesSectionImages/insurance.png";
 import postbox from "../assets/ServicesSectionImages/postbox.png";
 import registeration from "../assets/ServicesSectionImages/registeration.png";
-import paypost from "../assets/ServicesSectionImages/ums-cashondelivery.png";
+import paypost from "../assets/ServicesSectionImages/paypost.png";
 import certificate from "../assets/ServicesSectionImages/certificate.png";
 import recall from "../assets/ServicesSectionImages/recall.png";
 import postres from "../assets/ServicesSectionImages/postres.png";
 import packets from "../assets/ServicesSectionImages/smallpackets.png";
+import cod from "../assets/ServicesSectionImages/cod.png";
+import fax from "../assets/ServicesSectionImages/fax.png";
+import faxmoney from "../assets/ServicesSectionImages/money.png";
+import printedpaper from "../assets/ServicesSectionImages/printedpapers.png";
+import urgent from "../assets/ServicesSectionImages/urgentmoney.png";
+import emo from "../assets/ServicesSectionImages/emo.png";
+import remittance from "../assets/ServicesSectionImages/remittence.png";
 
 import ordinaryletterpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Ordinary Mail.pdf";
 import printedpaperpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Printed Papers.pdf";
@@ -263,7 +270,7 @@ export const TraditionalServices = [
     id: 2,
     title: "Printed Papers",
     description: "Text Books & Other than Text Books",
-    icon: paper,
+    icon: printedpaper,
     pdfPath: printedpaperpdf,
   },
   {
@@ -357,7 +364,7 @@ export const InternationalServices = [
     title: "Parcel",
     description:
       "Seamless global parcel service, ensuring secure international delivery and tracking.",
-    icon: parcel,
+    icon: parcel2,
   },
   {
     id: 3,
@@ -407,55 +414,55 @@ export const ExpressService = [
     title: "Counter Collection",
     description:
       "In-person item pickup service for added convenience in express shipping.",
-    icon: paper,
+    icon: coin,
   },
   {
     id: 3,
     title: "Urgent Mail Service Rates",
     description:
       "Pricing details for fast and efficient urgent mail delivery services.",
-    icon: blind,
+    icon: letter,
   },
   {
     id: 4,
     title: "UMS Cash on Delivery ",
     description:
       "Fast delivery with payment collection option for urgent mail services.",
-    icon: "https://img.icons8.com/color/48/000000/circled-envelope.png",
+    icon: cod,
   },
   {
     id: 5,
     title: "Urgent Money Order ",
     description:
       "Swift and secure money transfers through Urgent Money Order service.",
-    icon: newspaper,
+    icon: urgent,
   },
   {
     id: 6,
     title: "Fax Money Order",
     description:
       "Money transfer via fax for convenient and efficient transactions.",
-    icon: blind,
+    icon: faxmoney,
   },
   {
     id: 7,
     title: "Fax Mail",
     description:
       "Document transmission service using fax technology for quick communication.",
-    icon: "https://img.icons8.com/color/48/000000/circled-envelope.png",
+    icon: fax,
   },
   {
     id: 8,
     title: "Electronic Money Order ",
     description:
       "Digital payment method for secure and efficient money transfers.",
-    icon: newspaper,
+    icon: emo,
   },
   {
     id: 9,
     title: "Remittance",
     description:
       "Efficient international money transfer service for cross-border remittances.",
-    icon: newspaper,
+    icon: remittance,
   },
 ];

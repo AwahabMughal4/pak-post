@@ -17,6 +17,7 @@ import Complaints from "./components/Complaints";
 import LocateUs from "./components/LocatePostOffices";
 import Privacy from "./components/Privacy";
 import Manuals from "./components/Queries&Info";
+import { Tracking } from "./components/Tracking";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/locateus" element={<LocateUs/>}/>
         <Route path="/privacy" element={<Privacy/>}/>
         <Route path="/manuals" element={<Manuals/>}/>
+        <Route path="/tracking" element={<Tracking/>}/>
       </Routes>
       <Footer/>
     </Router>
