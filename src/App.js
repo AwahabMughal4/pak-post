@@ -23,7 +23,7 @@ function App() {
     <Router>
       <Header/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" exact element={<Home/>}/>
         <Route path="/tracking" element={<TrackingData/>}/>
         <Route path="/domesticservices" element={<DomesticMail/>}/>
         <Route path="/internationalservices" element={<InternationalMail/>}/>

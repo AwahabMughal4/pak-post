@@ -10,10 +10,21 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Track = () => {
   const [articleId, setArticleId] = useState("");
+  const navigate = useNavigate();
+
+  const handleTrackClick = async () => {
+    try {
+      const trackingUrl = `/tracking/${"articleId"}`;
+      navigate(trackingUrl);
+    } catch (error) {
+      console.error("Error:", error);
+      // Handle error here
+    }
+  };
 
   return (
     <VStack my={"1.3rem"} p={"1rem"}>
@@ -36,7 +47,7 @@ const Track = () => {
               onChange={(e) => setArticleId(e.target.value)}
               h={{ base: "35px", sm: "50px" }}
             />
-            <Link to={{ pathname: "/tracking", articleid: articleId }}>
+            <Link to={"/tracking"}>
               <Button
                 backgroundColor={"#ED1B24"}
                 color={"white"}
@@ -47,6 +58,7 @@ const Track = () => {
                 w={"100px"}
                 transform="skewX(-10deg)"
                 borderRadius={"none"}
+                onClick={handleTrackClick}
                 css={{
                   "&:hover": {
                     backgroundColor: "#ca242d",
