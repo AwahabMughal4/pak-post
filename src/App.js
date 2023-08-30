@@ -6,6 +6,7 @@ import './styles/StampsSlider.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import TrackingData from "./components/HomeSubcomponents/TrackingData";
 
 import DomesticMail from "./components/DomesticMail";
 import InternationalMail from "./components/InternationalMail";
@@ -23,6 +24,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/tracking" element={<TrackingData/>}/>
         <Route path="/domesticservices" element={<DomesticMail/>}/>
         <Route path="/internationalservices" element={<InternationalMail/>}/>
         <Route path="/expressservices" element={<ExpressServices/>}/>
