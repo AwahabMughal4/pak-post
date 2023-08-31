@@ -21,7 +21,8 @@ const ServiceCard = (props) => {
           <Image
             src={props.icon}
             borderRadius="none"
-            className="w-[250px] h-[150px] border-2 border-red-800 justify-center items-center"
+            className="w-[250px] h-[150px] border-2 border-red-800 justify-center items-center object-contain align-middle ml-[3rem]"
+            aspectRatio={3 / 2}
           />
           <Stack mt="4" spacing="3">
             <Heading size="md">{props.heading}</Heading>
