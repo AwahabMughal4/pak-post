@@ -106,7 +106,7 @@ const SearchTable1 = () => {
           <div className="overflow-hidden border border-zinc-200">
             <div className="max-h-96 overflow-y-scroll">
               <table className="min-w-full text-center text-sm font-white">
-                <tbody className="border-b bg-red-600 font-sans font-semibold text-white shadow-xl">
+                <tbody className="border-b bg-red-600 font-sans font-semibold text-white shadow-xl sticky top-0">
                   <tr>
                     <th scope="col" className="px-6 py-2 font-semibold">
                       SNO
@@ -239,7 +239,7 @@ const SearchTable2 = () => {
           <div className="overflow-hidden border border-zinc-200">
             <div className="max-h-96 overflow-y-scroll">
               <table className="min-w-full text-center text-sm font-white">
-                <tbody className="border-b bg-red-600 font-sans font-semibold text-white shadow-xl">
+                <tbody className="border-b bg-red-600 font-sans font-semibold text-white shadow-xl sticky top-0">
                   <tr>
                     <th scope="col" className="px-6 py-2 font-semibold">
                       SNO
