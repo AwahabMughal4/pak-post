@@ -77,6 +77,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
 
 const NavItem = ({ children, id, ...rest }) => {
   return (
+    
     <Box
       as="a"
       href={`#${id}`}
