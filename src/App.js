@@ -16,6 +16,8 @@ import Careers from "./components/Careers";
 import Complaints from "./components/Complaints";
 import Complaint from "./components/Complaint";
 import RestHouses from "./components/RestHouses";
+import { TrackingId } from "./components/TrackingId";
+import PostalCodeTable from "./components/PostalCodeTable";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path="/complaints" element={<Complaints/>}/>
         <Route path="/customersupport" element={<Complaint/>}/>
         <Route path="/Rest Houses" element={<RestHouses/>}/>
+        <Route path="/tracking" element={<TrackingId/>}/>
+        <Route path="/postcode" element={<PostalCodeTable/>}/>
       </Routes>
       <Footer/>
     </Router>
