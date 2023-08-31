@@ -1,6 +1,6 @@
 import * as React from "react";
 import { News, Tenders } from "../../DataObjects/data";
-import { Center, Heading } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading } from "@chakra-ui/react";
 
 import {
   Card,
@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 const BasicCard = (props) => {
   return (
-    <Card>
+    <Card my={"1rem"}>
       <CardHeader>
         <Heading size="md"> {props.title}</Heading>
       </CardHeader>
@@ -28,7 +28,7 @@ const BasicCard = (props) => {
 
 const NewsSection = () => {
   return (
-    <>
+    <div>
       <Center>
         <Heading
           fontSize={{ base: "2xl", sm: "4xl" }}
@@ -41,40 +41,83 @@ const NewsSection = () => {
         </Heading>
       </Center>
 
-      <div className="flex flex-col justify-center h-[75vh] bg-gray-200 p-5 my-10 md:flex-row">
-        <div className="news w-[50%] h-[100%]  bg-white mx-20 px-3 ">
-          <h1 className="text-3xl  text-[color:var(--primary-color)] border-b-2 border-[color:var(--primary-color)] py-1 mb-6 inline-block">
+      <Flex wrap={{ base: "wrap", sm: "nowrap" }}>
+        <Card mx={"2rem"} my={{ base: "2rem", sm: "0" }} shadow={"xl"}>
+          <Heading m={"1rem"} textColor={"#ED1B24"}>
             News
-          </h1>
-          <div className=" p-3 overflow-y-auto h-[70%] bg-gray-200">
+          </Heading>
+          <Box
+            bgColor={"gray.200"}
+            p={"1rem"}
+            h={["75vh", "50vh"]}
+            overflowY={"scroll"}
+          >
             {News.map((news) => {
               return (
                 <BasicCard key={news.id} date={news.date} title={news.title} />
               );
             })}
-          </div>
-          <button className="my-4 px-4 py-3 bg-[color:var(--primary-color)] hover:bg-[color:var(--secondary-color)] cursor-pointer text-white">
-            Read More
-          </button>
-        </div>
-        <div className="border-r-2 border-[color:var(--primary-color)] h-[70%] m-auto"></div>
-        <div className="tenders w-[50%] h-[100%]  bg-white mx-20 px-3 ">
-          <h1 className="text-3xl  text-[color:var(--primary-color)] border-b-2 border-[color:var(--primary-color)] py-1 mb-6 inline-block">
-            Tender
-          </h1>
-          <div className=" p-3 overflow-y-auto  h-[70%] bg-gray-200">
+          </Box>
+
+          <Button
+            as="a"
+            href={"/news"}
+            width="200px"
+            size="lg"
+            backgroundColor={"#ED1B24"}
+            color={"white"}
+            m={"2rem"}
+            display={"flex"}
+            transform="skewX(-10deg)"
+            borderRadius={"none"}
+            css={{
+              "&:hover": {
+                backgroundColor: "#ca242d",
+              },
+            }}
+          >
+            Read more
+          </Button>
+        </Card>
+        <Card mx={"2rem"} my={{ base: "2rem", sm: "0" }} shadow={"xl"}>
+          <Heading m={"1rem"} textColor={"#ED1B24"}>
+            Tenders
+          </Heading>
+          <Box
+            bgColor={"gray.200"}
+            p={"1rem"}
+            h={["75vh", "50vh"]}
+            overflowY={"scroll"}
+          >
             {Tenders.map((news) => {
               return (
                 <BasicCard key={news.id} title={news.title} date={news.date} />
               );
             })}
-          </div>
-          <button className="my-4 px-4 py-3 bg-[color:var(--primary-color)] hover:bg-[color:var(--secondary-color)] cursor-pointer text-white">
-            Read More
-          </button>
-        </div>
-      </div>
-    </>
+          </Box>
+
+          <Button
+            as="a"
+            href={"/news"}
+            width="200px"
+            size="lg"
+            backgroundColor={"#ED1B24"}
+            color={"white"}
+            m={"2rem"}
+            display={"flex"}
+            transform="skewX(-10deg)"
+            borderRadius={"none"}
+            css={{
+              "&:hover": {
+                backgroundColor: "#ca242d",
+              },
+            }}
+          >
+            Read more
+          </Button>
+        </Card>
+      </Flex>
+    </div>
   );
 };
 

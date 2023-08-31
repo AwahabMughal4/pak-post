@@ -17,8 +17,7 @@ const ServicesRight = () => {
       width="90%"
       minHeight="50vh"
       alignItems="center"
-      px={isLargerThan62 ? "16" : "6"}
-      py="16"
+      p={isLargerThan62 ? "16" : "6"}
       m={"auto"}
       marginTop={"10"}
       marginBottom={"10"}
@@ -82,7 +81,7 @@ const ServicesRight = () => {
 
       <Flex
         w={isLargerThan62 ? "40%" : "full"}
-        mb={isLargerThan62 ? "0" : "6"}
+        my={isLargerThan62 ? "0" : "6"}
         alignItems="center"
         justifyContent="center"
       >

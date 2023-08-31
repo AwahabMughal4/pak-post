@@ -48,7 +48,9 @@ const ImageSlider = ({ slides }) => {
                     <div className="text-container">
                       <p className="image-heading">{slide.heading}</p>
                       <p className="image-description">{slide.description}</p>
-                      <button className="read-more-button">Read More</button>
+                      <button className="read-more-button skew-x-[-10deg]">
+                        Read More
+                      </button>
                     </div>
                     <div className="arrows">
                       <IoIosArrowForward

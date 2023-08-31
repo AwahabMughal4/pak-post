@@ -17,8 +17,7 @@ const ServicesLeft = () => {
       width="90%"
       minHeight="50vh"
       alignItems="center"
-      px={isLargerThan62 ? "16" : "6"}
-      py="16"
+      p={isLargerThan62 ? "16" : "6"}
       m={"auto"}
       marginTop={"10"}
       marginBottom={"10"}
