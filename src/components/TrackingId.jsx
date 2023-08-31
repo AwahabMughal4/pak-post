@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Tracking = () => {
+export const TrackingId = () => {
   // Mock data for tracking information
   const trackingData = {
     trackingId: "123456789",

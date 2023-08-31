@@ -4,15 +4,19 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.1.0",
+    "@chakra-ui/next-js": "^2.1.5",
     "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.3",
+    "@mui/icons-material": "^5.14.7",
     "@mui/material": "^5.14.5",
     "@react-pdf/renderer": "^3.1.12",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "framer-motion": "^10.15.2",
     "mssql": "^9.2.0",
     "react": "^18.2.0",
@@ -21,10 +25,14 @@
     "react-router-dom": "^6.15.0",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:server": "node server/server.js",
+    "dev": "concurrently \"npm start\" \"npm run start:server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -48,6 +56,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^8.2.1",
     "tailwindcss": "^3.3.3"
   }
 }
