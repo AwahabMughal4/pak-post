@@ -5,15 +5,22 @@ import Home from "./components/Home";
 import './styles/App.css';
 import './styles/StampsSlider.css';
 
-import Domestic_Mail from "./components/Domestic_Mail";
-import International_Mail from "./components/International_Mail";
-import Express_Services from "./components/Express_Services";
+import DomesticMail from "./components/DomesticMail";
+import InternationalMail from "./components/InternationalMail";
+import ExpressServices from "./components/ExpressServices";
 import NewsTenders from "./components/NewsTenders";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import FAQs from "./components/FAQs";
 import Careers from "./components/Careers";
 import Complaints from "./components/Complaints";
+import Complaint from "./components/Complaint";
+import RestHouses from "./components/RestHouses";
+import LocateUs from "./components/LocatePostOffices";
+import Privacy from "./components/Privacy";
+import Manuals from "./components/Queries&Info";
+import { Tracking } from "./components/Tracking";
+import { CalculatePostage } from "./components/CalculatePostage";
 
 function App() {
   return (
@@ -21,15 +28,22 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/domesticservices" element={<Domestic_Mail/>}/>
-        <Route path="/internationalservices" element={<International_Mail/>}/>
-        <Route path="/expressservices" element={<Express_Services/>}/>
+        <Route path="/domesticservices" element={<DomesticMail/>}/>
+        <Route path="/internationalservices" element={<InternationalMail/>}/>
+        <Route path="/expressservices" element={<ExpressServices/>}/>
         <Route path="/news" element={<NewsTenders/>}/>
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/faqs" element={<FAQs/>}/>
         <Route path="/careers" element={<Careers/>}/>
         <Route path="/complaints" element={<Complaints/>}/>
+        <Route path="/customersupport" element={<Complaint/>}/>
+        <Route path="/Rest Houses" element={<RestHouses/>}/>
+        <Route path="/locateus" element={<LocateUs/>}/>
+        <Route path="/privacy" element={<Privacy/>}/>
+        <Route path="/manuals" element={<Manuals/>}/>
+        <Route path="/tracking" element={<Tracking/>}/>
+        <Route path="/postage" element={<CalculatePostage/>}/>
       </Routes>
       <Footer/>
     </Router>

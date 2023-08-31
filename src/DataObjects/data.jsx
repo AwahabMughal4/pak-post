@@ -1,48 +1,61 @@
 import gpo1 from "../assets/HeroCarouselImages/DGPPO.jpg";
 import gpo2 from "../assets/HeroCarouselImages/gpo.jpeg";
 import gpo3 from "../assets/HeroCarouselImages/mur.jpg";
-import blind from "../assets/ServicesSectionImages/literature for blind.jpg";
-import newspaper from "../assets/ServicesSectionImages/newspaper.jpg";
-import paper from "../assets/ServicesSectionImages/printed papers.jpg";
-import letter from "../assets/ServicesSectionImages/ordinary letters.jpg";
-import letter2 from "../assets/ServicesSectionImages/letter.png"
-import parcel from "../assets/ServicesSectionImages/parcel.png"
-import ems from "../assets/ServicesSectionImages/ems plus.png"
-import emsplus from "../assets/ServicesSectionImages/ems plus-2.jpg"
-import termcondition from "../assets/ServicesSectionImages/terms and conditions.png"
-import inspection from "../assets/ServicesSectionImages/custom inspection-2.jpg"
-import prohibited from "../assets/ServicesSectionImages/prohibited items.jpg"
+import blind from "../assets/ServicesSectionImages/literature.png";
+import coin from "../assets/ServicesSectionImages/coin.png";
+import letter from "../assets/ServicesSectionImages/letter.png";
+import letter2 from "../assets/ServicesSectionImages/letter.png";
+import parcel from "../assets/ServicesSectionImages/news.png";
+import parcel2 from "../assets/ServicesSectionImages/parcel.png";
+import ems from "../assets/ServicesSectionImages/ems plus.png";
+import emsplus from "../assets/ServicesSectionImages/ems plus-2.jpg";
+import termcondition from "../assets/ServicesSectionImages/terms.png";
+import inspection from "../assets/ServicesSectionImages/inspection.png";
+import prohibited from "../assets/ServicesSectionImages/prohibited.png";
+import insurance from "../assets/ServicesSectionImages/insurance.png";
+import postbox from "../assets/ServicesSectionImages/postbox.png";
+import registeration from "../assets/ServicesSectionImages/registeration.png";
+import paypost from "../assets/ServicesSectionImages/paypost.png";
+import certificate from "../assets/ServicesSectionImages/certificate.png";
+import recall from "../assets/ServicesSectionImages/recall.png";
+import postres from "../assets/ServicesSectionImages/postres.png";
+import packets from "../assets/ServicesSectionImages/smallpackets.png";
+import cod from "../assets/ServicesSectionImages/cod.png";
+import fax from "../assets/ServicesSectionImages/fax.png";
+import faxmoney from "../assets/ServicesSectionImages/money.png";
+import printedpaper from "../assets/ServicesSectionImages/printedpapers.png";
+import urgent from "../assets/ServicesSectionImages/urgentmoney.png";
+import emo from "../assets/ServicesSectionImages/emo.png";
+import remittance from "../assets/ServicesSectionImages/remittence.png";
 
-import ordinaryletterpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Ordinary Mail.pdf"
-import printedpaperpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Printed Papers.pdf"
-import literatureforblindpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Literature For Blind.pdf"
-import smallpacketspdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Small Packets.pdf"
-import newspaperpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/NewsPaper.pdf"
-// import CertificateOfPostingpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Certificate Of Posting.pdf"
-// import RecallOfPostedArticlespdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Recall Of Posted Articles.pdf"
-// import PostRestantepdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Post Restante.pdf"
-// import ValuePayablePostpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Value Payable Post.pdf"
-// import PostBoxesAndBagspdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Post Boxes And Bags.pdf"
-// import Registrationpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Value Added Services/Registration.pdf"
-// import Insurancepdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Value Added Services/Insurance.pdf"
-// import Letterpdf from "../assets/ServicesPDF/Mail Services/International Services/Letter.pdf"
-// import Parcelpdf from "../assets/ServicesPDF/Mail Services/International Services/Parcel.pdf"
-// import ExpressMailServicepdf from "../assets/ServicesPDF/Mail Services/International Services/Express Mail Service.pdf"
-// import ExpressMailServicePluspdf from "../assets/ServicesPDF/Mail Services/International Services/Express Mail Service Plus.pdf"
-// import TermsAndConditionspdf from "../assets/ServicesPDF/Mail Services/International Services/Terms And Conditions.pdf"
-// import CustomInspectionpdf from "../assets/ServicesPDF/Mail Services/International Services/Custom Inspection.pdf"
-// import ProhibitedItemspdf from "../assets/ServicesPDF/Mail Services/International Services/Prohibited Items.pdf"
-// import UrgentMailServicepdf from "../assets/ServicesPDF/Express Services/UMS/Urgent Mail Service.pdf"
-// import CounterCollectionpdf from "../assets/ServicesPDF/Mail Services/Express Services/UMS/Counter Collection.pdf"
-// import UrgentMailServiceRatespdf from "../assets/ServicesPDF/Mail Services/Express Services/UMS/Urgent Mail Service Rates.pdf"
-// import UMSCashOnDeliverypdf from "../assets/ServicesPDF/Mail Services/Express Services/UMS/UMS Cash on Delivery.pdf"
-// import UrgentMoneyOrderpdf from "../assets/ServicesPDF/Mail Services/Express Services/Urgent Money Order.pdf"
-// import FaxMoneyOrderpdf from "../assets/ServicesPDF/Mail Services/Express Services/Fax Money Order.pdf"
-// import FaxMailpdf from "../assets/ServicesPDF/Mail Services/Express Services/Fax Mail.pdf"
-// import ElectronicMoneyOrderpdf from "../assets/ServicesPDF/Mail Services/Express Services/Electronic Money Order.pdf"
-// import Remittancepdf from "../assets/ServicesPDF/Mail Services/Express Services/Remittance.pdf"
-
-
+import ordinaryletterpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Ordinary Mail.pdf";
+import printedpaperpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Printed Papers.pdf";
+import literatureforblindpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Literature For Blind.pdf";
+import smallpacketspdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/Small Packets.pdf";
+import newspaperpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Traditional Services/NewsPaper.pdf";
+// // import CertificateOfPostingpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Certificate Of Posting.pdf"
+// // import RecallOfPostedArticlespdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Recall Of Posted Articles.pdf"
+// // import PostRestantepdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Post Restante.pdf"
+// // import ValuePayablePostpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Value Payable Post.pdf"
+// // import PostBoxesAndBagspdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Miscellaneous Services/Post Boxes And Bags.pdf"
+// // import Registrationpdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Value Added Services/Registration.pdf"
+// // import Insurancepdf from "../assets/ServicesPDF/Mail Services/Domestic Services/Value Added Services/Insurance.pdf"
+// // import Letterpdf from "../assets/ServicesPDF/Mail Services/International Services/Letter.pdf"
+// // import Parcelpdf from "../assets/ServicesPDF/Mail Services/International Services/Parcel.pdf"
+// // import ExpressMailServicepdf from "../assets/ServicesPDF/Mail Services/International Services/Express Mail Service.pdf"
+// // import ExpressMailServicePluspdf from "../assets/ServicesPDF/Mail Services/International Services/Express Mail Service Plus.pdf"
+// // import TermsAndConditionspdf from "../assets/ServicesPDF/Mail Services/International Services/Terms And Conditions.pdf"
+// // import CustomInspectionpdf from "../assets/ServicesPDF/Mail Services/International Services/Custom Inspection.pdf"
+// // import ProhibitedItemspdf from "../assets/ServicesPDF/Mail Services/International Services/Prohibited Items.pdf"
+// // import UrgentMailServicepdf from "../assets/ServicesPDF/Express Services/UMS/Urgent Mail Service.pdf"
+// // import CounterCollectionpdf from "../assets/ServicesPDF/Mail Services/Express Services/UMS/Counter Collection.pdf"
+// // import UrgentMailServiceRatespdf from "../assets/ServicesPDF/Mail Services/Express Services/UMS/Urgent Mail Service Rates.pdf"
+// // import UMSCashOnDeliverypdf from "../assets/ServicesPDF/Mail Services/Express Services/UMS/UMS Cash on Delivery.pdf"
+// // import UrgentMoneyOrderpdf from "../assets/ServicesPDF/Mail Services/Express Services/Urgent Money Order.pdf"
+// // import FaxMoneyOrderpdf from "../assets/ServicesPDF/Mail Services/Express Services/Fax Money Order.pdf"
+// // import FaxMailpdf from "../assets/ServicesPDF/Mail Services/Express Services/Fax Mail.pdf"
+// // import ElectronicMoneyOrderpdf from "../assets/ServicesPDF/Mail Services/Express Services/Electronic Money Order.pdf"
+// // import Remittancepdf from "../assets/ServicesPDF/Mail Services/Express Services/Remittance.pdf"
 
 export const navlinks = [
   {
@@ -257,123 +270,139 @@ export const TraditionalServices = [
     id: 2,
     title: "Printed Papers",
     description: "Text Books & Other than Text Books",
-    icon: paper,
-    pdfPath:printedpaperpdf,
+    icon: printedpaper,
+    pdfPath: printedpaperpdf,
   },
   {
     id: 3,
     title: "Literature For Blind",
-    description: "Transmission of blind literature packets any kind, periodicals and books impressed in Braille",
+    description:
+      "Transmission of blind literature packets any kind, periodicals and books impressed in Braille",
     icon: blind,
-    pdfPath:literatureforblindpdf,
+    pdfPath: literatureforblindpdf,
   },
   {
     id: 4,
     title: "Small Packets",
-    description: "Pak Post supports small businesses with affordable shipping for trade patterns and merchandise samples",
-    icon: "https://img.icons8.com/color/48/000000/circled-envelope.png",
-    pdfPath:smallpacketspdf,
+    description:
+      "Pak Post supports small businesses with affordable shipping for trade patterns and merchandise samples",
+    icon: packets,
+    pdfPath: smallpacketspdf,
   },
   {
     id: 5,
     title: "Register Newspapers & Parcels  ",
-    description: "Pak Post facilitates delivery of news papers all over Pakistan at exceptionally low rates.",
-    icon: newspaper,
-    pdfPath:newspaperpdf,
+    description:
+      "Pak Post facilitates delivery of news papers all over Pakistan at exceptionally low rates.",
+    icon: parcel,
+    pdfPath: newspaperpdf,
   },
 ];
 export const MiscellaneousServices = [
   {
     id: 1,
     title: "Certificate Of Posting",
-    description: "Pak Post assures mail posting via certificates, nominal fee charged.",
-    icon: newspaper,
-    
+    description:
+      "Pak Post assures mail posting via certificates, nominal fee charged.",
+    icon: certificate,
   },
   {
     id: 2,
     title: "Recall of Posted Articles",
-    description: "Sender-requested postal article recall aids reconsideration, preserving relationships from impulsivity.",
-    icon: newspaper,
+    description:
+      "Sender-requested postal article recall aids reconsideration, preserving relationships from impulsivity.",
+    icon: recall,
   },
   {
     id: 3,
     title: "Post Restante",
-    description: "Poste Restante serves transient postal needs, limited to three months.",
-    icon: newspaper,
+    description:
+      "Poste Restante serves transient postal needs, limited to three months.",
+    icon: postres,
   },
   {
     id: 4,
     title: "Value Payable Post",
-    description: "Value-payable system caters to pay-on-receipt and recovery needs.",
-    icon: newspaper,
+    description:
+      "Value-payable system caters to pay-on-receipt and recovery needs.",
+    icon: paypost,
   },
   {
     id: 5,
     title: "Post Boxes and Bags",
-    description: "Pak Post provides post box rental for prepaid mail in urban areas.",
-    icon: newspaper,
+    description:
+      "Pak Post provides post box rental for prepaid mail in urban areas.",
+    icon: postbox,
   },
   {
     id: 6,
     title: "Registration",
-    description: "Registration enhances article security during postal transmission, applying special precautions.",
-    icon: newspaper,
+    description:
+      "Registration enhances article security during postal transmission, applying special precautions.",
+    icon: registeration,
   },
   {
     id: 7,
     title: "Insurance",
-    description: "Insurance safeguards articles during transmission; covers registered mail, valuables, gold, currency.",
-    icon: newspaper,
-  }
-]
+    description:
+      "Insurance safeguards articles during transmission; covers registered mail, valuables, gold, currency.",
+    icon: insurance,
+  },
+];
 
 export const InternationalServices = [
   {
     id: 1,
     title: "Letter",
-    description: "Efficient international letter delivery with reliable global connectivity and tracking.",
+    description:
+      "Efficient international letter delivery with reliable global connectivity and tracking.",
     icon: letter2,
     // pdfPath:letterpdf,
   },
   {
     id: 2,
     title: "Parcel",
-    description: "Seamless global parcel service, ensuring secure international delivery and tracking.",
-    icon: parcel,
+    description:
+      "Seamless global parcel service, ensuring secure international delivery and tracking.",
+    icon: parcel2,
   },
   {
     id: 3,
     title: "Express Mail Service",
-    description: "Swift international express mail, ensuring rapid delivery with reliable tracking.",
+    description:
+      "Swift international express mail, ensuring rapid delivery with reliable tracking.",
     icon: ems,
   },
   {
     id: 4,
     title: "Express Mail Service Plus",
-    description: "Enhanced express mail with added features for swift international delivery.",
+    description:
+      "Enhanced express mail with added features for swift international delivery.",
     icon: emsplus,
   },
   {
     id: 5,
     title: "Terms & Conditions ",
-    description: "Clear guidelines outlining terms and conditions for seamless transactions.",
+    description:
+      "Clear guidelines outlining terms and conditions for seamless transactions.",
     icon: termcondition,
   },
   {
     id: 6,
     title: "Custom Inspection ",
-    description: "Thorough examination ensuring compliance with customs regulations for international shipments.",
+    description:
+      "Thorough examination ensuring compliance with customs regulations for international shipments.",
     icon: inspection,
   },
   {
     id: 7,
     title: "Prohibited Items",
-    description: "Restricted goods not allowed for international shipping due to safety regulations.",
+    description:
+      "Restricted goods not allowed for international shipping due to safety regulations.",
     icon: prohibited,
   },
 ];
-export const ExpressServices = [
+export const ExpressService = [
   {
     id: 1,
     title: "Urgent Mail Service",
@@ -383,49 +412,57 @@ export const ExpressServices = [
   {
     id: 2,
     title: "Counter Collection",
-    description: "In-person item pickup service for added convenience in express shipping.",
-    icon: paper,
+    description:
+      "In-person item pickup service for added convenience in express shipping.",
+    icon: coin,
   },
   {
     id: 3,
     title: "Urgent Mail Service Rates",
-    description: "Pricing details for fast and efficient urgent mail delivery services.",
-    icon: blind,
+    description:
+      "Pricing details for fast and efficient urgent mail delivery services.",
+    icon: letter,
   },
   {
     id: 4,
     title: "UMS Cash on Delivery ",
-    description: "Fast delivery with payment collection option for urgent mail services.",
-    icon: "https://img.icons8.com/color/48/000000/circled-envelope.png",
+    description:
+      "Fast delivery with payment collection option for urgent mail services.",
+    icon: cod,
   },
   {
     id: 5,
     title: "Urgent Money Order ",
-    description: "Swift and secure money transfers through Urgent Money Order service.",
-    icon: newspaper,
+    description:
+      "Swift and secure money transfers through Urgent Money Order service.",
+    icon: urgent,
   },
   {
     id: 6,
     title: "Fax Money Order",
-    description: "Money transfer via fax for convenient and efficient transactions.",
-    icon: blind,
+    description:
+      "Money transfer via fax for convenient and efficient transactions.",
+    icon: faxmoney,
   },
   {
     id: 7,
     title: "Fax Mail",
-    description: "Document transmission service using fax technology for quick communication.",
-    icon: "https://img.icons8.com/color/48/000000/circled-envelope.png",
+    description:
+      "Document transmission service using fax technology for quick communication.",
+    icon: fax,
   },
   {
     id: 8,
     title: "Electronic Money Order ",
-    description: "Digital payment method for secure and efficient money transfers.",
-    icon: newspaper,
+    description:
+      "Digital payment method for secure and efficient money transfers.",
+    icon: emo,
   },
   {
     id: 9,
     title: "Remittance",
-    description: "Efficient international money transfer service for cross-border remittances.",
-    icon: newspaper,
+    description:
+      "Efficient international money transfer service for cross-border remittances.",
+    icon: remittance,
   },
 ];

@@ -384,19 +384,19 @@
 //         </div>
 //       </div>
 
-//       <div className="History-drop flex mt-[5rem] ml-[5rem]">
-//         <Box w={"90%"}>
-//           <Accordion
-//             allowToggle
-//             width={"100%"}
-//             minW={"lg"}
-//             bg={"white"}
-//             rounded={"lg"}
-//           >
-//             <History />
-//           </Accordion>
-//         </Box>
-//       </div>
+// <div className="History-drop flex mt-[5rem] ml-[5rem]">
+//   <Box w={"90%"}>
+//     <Accordion
+//       allowToggle
+//       width={"100%"}
+//       minW={"lg"}
+//       bg={"white"}
+//       rounded={"lg"}
+//     >
+//       <History />
+//     </Accordion>
+//   </Box>
+// </div>
 
 //       <div className="Network-drop flex mt-[2rem] ml-[5rem]">
 //         <Box w={"90% "}>
