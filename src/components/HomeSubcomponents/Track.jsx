@@ -35,7 +35,7 @@ const Track = () => {
             <Button
               backgroundColor={"#ED1B24"}
               color={"white"}
-              type="submit"
+
               p={{ base: "1", sm: "2" }}
               fontSize={{ base: "xl", sm: "3xl" }}
               fontWeight={{ base: "400", sm: "600" }}
@@ -102,7 +102,7 @@ const Track = () => {
             Locate{"\u00A0"}Us
           </Heading>
         </Link>
-        <Link to={"/post-code"}>
+        <Link to={"/postcode"}>
           <Heading
             p={{ base: "1", sm: "2" }}
             fontSize={{ base: "xl", sm: "3xl" }}

@@ -6,7 +6,7 @@ import {
   LocateUsData,
   Punjab,
   Sindh,
-  Khayber,
+  Khyber,
   Balochistan,
   Federal,
   Gilgit,
@@ -250,10 +250,10 @@ const Contacts = () => {
           transform="skewX(-10deg)"
           mt={"1rem"}
         >
-          Khayber Post Offices
+          Khyber Pakhtunkhwa Post Offices
         </Heading>
         <Flex flexWrap={"wrap"} justifyContent={"center"}>
-          {Khayber.map((Contact) => (
+          {Khyber.map((Contact) => (
             <Card
               name={Contact.name}
               location={Contact.location}
