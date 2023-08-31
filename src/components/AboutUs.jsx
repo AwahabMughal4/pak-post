@@ -483,7 +483,7 @@ const AboutUs = () => {
             </Text>
           </h1>
           <h1>
-            <p className="About-us-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-allign">
+            <p className="About-us-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-justify">
               Pakistan Post has a broad and varied role to play beyond provision
               of communication link for individuals and businesses. To keep pace
               with the changing communications market, Pakistan Post is
@@ -497,8 +497,8 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="images-container flex m-auto mt-[5rem] flex-col md:flex-row mb-[5rem]">
-        <div className="round-image1 flex-row align-center justify-center ml-[17rem]">
+      <div className="images-container flex m-auto mx-[5rem] flex-col md:flex-row ">
+        <div className="round-image1 flex-row align-center justify-center ">
           <img
             src={image2}
             alt="Rounded Image1"
@@ -557,7 +557,7 @@ const AboutUs = () => {
           </Text>
         </div>
         <h1>
-          <p className="History-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-allign">
+          <p className="History-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-justify">
             Pakistan Post office is a state enterprise dedicated to providing
             wide range of postal products and public services. It is the premier
             national postal communication service holding together a vast
@@ -613,7 +613,7 @@ const AboutUs = () => {
           </Text>
         </div>
         <h1>
-          <p className="History-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-allign">
+          <p className="History-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-justify">
             Pakistan Post is providing postal services in every nook and corner
             of the country through a network of around 13,000 post offices.
             Pakistan Post is providing delivery services to about 20 million
@@ -649,7 +649,7 @@ const AboutUs = () => {
           </Text>
         </div>
         <h1>
-          <p className="structure-text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-allign">
+          <p className="structure-text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-justify">
             The administrative control of Pakistan Post Office Department at the
             policy planning level is vested in a high powered Management Board
             headed by a Chairperson who is also the Director General of the
@@ -684,7 +684,7 @@ const AboutUs = () => {
           </Text>
         </div>
         <h1>
-          <p className="roles-text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-allign">
+          <p className="roles-text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-justify">
             The post office in Pakistan has a broad and varied role. It provides
             and important communication link to individuals, communities and
             businesses for

@@ -24,6 +24,7 @@ import LocateUs from "./components/LocatePostOffices";
 import Privacy from "./components/Privacy";
 import Manuals from "./components/Queries&Info";
 import CalculatePostage from "./components/CalculatePostage";
+import Developers from "./components/Extras/Developers";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Route path="/privacy" element={<Privacy/>}/>
         <Route path="/manuals" element={<Manuals/>}/>
         <Route path="/postage" element={<CalculatePostage/>}/>
+        <Route path="/devs" element={<Developers/>}/>
       </Routes>
       <Footer/>
     </Router>
