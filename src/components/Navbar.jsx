@@ -237,6 +237,10 @@ const NAV_ITEMS = [
   },
   {
     id: "2",
+    label: "About\u00A0Us",
+    href: "/about",
+  },
+  {
     label: "Mail\u00A0Services",
     children: [
       {
@@ -267,18 +271,12 @@ const NAV_ITEMS = [
     href: "/news",
   },
   {
-    id: "7",
-    label: "About\u00A0Us",
-    href: "/about",
-  },
-  {
-    id: "8",
+
     label: "Contact\u00A0Us",
     href: "/contact",
   },
-  {
-    id: "9",
-    label: "Quick\u00A0Tools",
-    href: "/tools",
-  },
+  // {
+  //   label: "Quick\u00A0Tools",
+  //   href: "/tools",
+  // },
 ];
