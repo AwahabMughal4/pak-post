@@ -29,7 +29,6 @@ import Manuals from "./components/Queries&Info";
 import { Tracking } from "./components/Tracking";
 import CalculatePostage from "./components/CalculatePostage";
 
-
 function App() {
   return (
     <Router>
@@ -48,16 +47,13 @@ function App() {
         <Route path="/complaints" element={<Complaints/>}/>
         <Route path="/customersupport" element={<Complaint/>}/>
         <Route path="/Rest Houses" element={<RestHouses/>}/>
-
         <Route path="/tracking" element={<TrackingId/>}/>
         <Route path="/postcode" element={<PostalCodeTable/>}/>
-
         <Route path="/locateus" element={<LocateUs/>}/>
         <Route path="/privacy" element={<Privacy/>}/>
         <Route path="/manuals" element={<Manuals/>}/>
         <Route path="/tracking" element={<Tracking/>}/>
         <Route path="/postage" element={<CalculatePostage/>}/>
-
       </Routes>
       <Footer/>
     </Router>
