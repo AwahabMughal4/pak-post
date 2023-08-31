@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   FormControl,
@@ -10,9 +10,26 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Track = () => {
+  const [articleId, setArticleId] = useState("");
+  const navigate = useNavigate();
+
+  const handleTrackClick = async () => {
+    try {
+      navigate(`/tracking/${encodeURIComponent(articleId)}`);
+    } catch (error) {
+      console.error("Error:", error);
+      // Handle error here
+    }
+    //RGL104183114
+    //UMS64043764
+    //UMS64043765
+    //UMS64043766
+    //UMS64043767
+  };
+
   return (
     <VStack my={"1.3rem"} p={"1rem"}>
       <Stack w={"100%"}>
@@ -29,13 +46,16 @@ const Track = () => {
               focusBorderColor="#ED1B24"
               transform="skewX(-10deg)"
               borderRadius={"none"}
-              placeholder="Enter your tracking id"
+
+              placeholder="Article ID"
+              value={articleId}
+              onChange={(e) => setArticleId(e.target.value)}
+
               h={{ base: "35px", sm: "50px" }}
             />
             <Button
               backgroundColor={"#ED1B24"}
               color={"white"}
-
               p={{ base: "1", sm: "2" }}
               fontSize={{ base: "xl", sm: "3xl" }}
               fontWeight={{ base: "400", sm: "600" }}
@@ -43,6 +63,7 @@ const Track = () => {
               w={"100px"}
               transform="skewX(-10deg)"
               borderRadius={"none"}
+              onClick={handleTrackClick}
               css={{
                 "&:hover": {
                   backgroundColor: "#ca242d",
