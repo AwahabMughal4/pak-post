@@ -46,9 +46,11 @@ const Track = () => {
               focusBorderColor="#ED1B24"
               transform="skewX(-10deg)"
               borderRadius={"none"}
+
               placeholder="Article ID"
               value={articleId}
               onChange={(e) => setArticleId(e.target.value)}
+
               h={{ base: "35px", sm: "50px" }}
             />
             <Button
@@ -102,7 +104,7 @@ const Track = () => {
             Calculate{"\u00A0"}Postage
           </Heading>
         </Link>
-        <Link to={"/locate"}>
+        <Link to={"/locateus"}>
           <Heading
             p={{ base: "1", sm: "2" }}
             fontSize={{ base: "xl", sm: "3xl" }}
@@ -121,7 +123,7 @@ const Track = () => {
             Locate{"\u00A0"}Us
           </Heading>
         </Link>
-        <Link to={"/post-code"}>
+        <Link to={"/postcode"}>
           <Heading
             p={{ base: "1", sm: "2" }}
             fontSize={{ base: "xl", sm: "3xl" }}
