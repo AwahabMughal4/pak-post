@@ -23,9 +23,8 @@ const Footer = () => (
           width="300"
           height="240"
           title="Map"
-          allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           className="relative bottom-0 right-2"
         ></iframe>
       </div>
