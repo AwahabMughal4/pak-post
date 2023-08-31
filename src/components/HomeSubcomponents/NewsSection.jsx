@@ -41,7 +41,7 @@ const NewsSection = () => {
         </Heading>
       </Center>
 
-      <div className="flex flex-row justify-center h-[75vh] bg-gray-200 p-5 my-10 ">
+      <div className="flex flex-col justify-center h-[75vh] bg-gray-200 p-5 my-10 md:flex-row">
         <div className="news w-[50%] h-[100%]  bg-white mx-20 px-3 ">
           <h1 className="text-3xl  text-[color:var(--primary-color)] border-b-2 border-[color:var(--primary-color)] py-1 mb-6 inline-block">
             News

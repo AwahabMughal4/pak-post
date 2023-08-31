@@ -5,7 +5,7 @@ export const LocateUsData = [
   { name: "Punjab Post Offices", id: "punjab" },
   { name: "Sindh Post Offices", id: "sindh" },
   { name: "Balochistan Post Offices", id: "balochistan" },
-  { name: "Khayber Pakhtun Khawa Post Offices", id: "kpk" },
+  { name: "Khyber Pakhtunkhwa Post Offices", id: "kpk" },
 ];
 ////Fedral////
 export const Federal = [
@@ -434,7 +434,7 @@ export const Sindh = [
   },
 ];
 ////KPK////
-export const Khayber = [
+export const Khyber = [
   {
     name: "Abbotabad",
     location: "Abbotabad GPO & Its Night Post Office",

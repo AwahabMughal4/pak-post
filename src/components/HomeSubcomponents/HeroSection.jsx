@@ -22,7 +22,7 @@ const HeroSection = () => {
         <img
           src={Hero_Section_Pics[currentImage].image}
           alt="Hero Section"
-          className={`h-[350px] w-full transition-opacity duration-500`}
+          className={`md:h-[350px] h-[200px] w-full transition-opacity duration-500 `}
         />
       </div>
     </div>
