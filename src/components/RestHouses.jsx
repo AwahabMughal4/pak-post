@@ -1,15 +1,351 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PopupCard from './PopupCard'; // Import the PopupCard component
 
 function PostalRestHouse() {
+  const [showPopup, setShowPopup] = useState(false);
+  const [currentPopupData, setCurrentPopupData] = useState(null);
+
+  // Example data for rest houses
+  const restHouseData = [
+    {
+        name: 'Kashmir Road, Karachi',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'A' },
+          { roomNo: '3', category: 'A' },
+          { roomNo: '4', category: 'B' },
+  
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Gulshan e Iqbal, Karachi',
+        rooms: [
+          { roomNo: '1', category: 'B' },
+          { roomNo: '2', category: 'A' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Mall Road, Multan',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'A' },
+          { roomNo: '3', category: 'A' },
+          { roomNo: '4', category: 'A' },
+          { roomNo: '5', category: 'A' },
+          { roomNo: '6', category: 'A' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Jhelum',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'A' },
+          { roomNo: '3', category: 'B' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Attock',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'B' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Mianwali',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'B' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Saddar Rawalpindi',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'A' },
+          { roomNo: '3', category: 'A' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Murree GPO',
+        rooms: [
+          { roomNo: '1', category: 'B' },
+          { roomNo: '2', category: 'B' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Peshawar, Jheel Road',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'A' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'NathiaGali',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'A' },
+          { roomNo: '3', category: 'A' },
+          { roomNo: '4', category: 'A' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Saidu Sharif',
+        rooms: [
+          { roomNo: '1', category: 'C' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Chitral',
+        rooms: [
+          { roomNo: '1', category: 'B' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Abottabad',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'A' },
+          { roomNo: '3', category: 'B' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Ayubia',
+        rooms: [
+          { roomNo: '1', category: 'B' },
+          { roomNo: '2', category: 'B' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Kohat',
+        rooms: [
+          { roomNo: '1', category: 'B' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'Bannu',
+        rooms: [
+          { roomNo: '1', category: 'C' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+        name: 'D.I.Khan GPO',
+        rooms: [
+          { roomNo: '1', category: 'A' },
+          { roomNo: '2', category: 'A' },
+          // ... Add other rooms for this rest house ...
+        ],
+      },
+      {
+      name: 'Hyderabad Circle Office',
+      rooms: [
+        { roomNo: '1', category: 'A' },
+        { roomNo: '2', category: 'A' },
+        { roomNo: '3', category: 'A' },
+        // ... Add other rooms for this rest house ...
+      ],
+    },
+    {
+      name: 'Mirpur Khas',
+      rooms: [
+        { roomNo: '1', category: 'A' },
+        // ... Add other rooms for this rest house ...
+      ],
+    },
+    {
+      name: 'Sukkur Regional Office',
+      rooms: [
+        { roomNo: '1', category: 'A' },
+        { roomNo: '2', category: 'A' },
+        // ... Add other rooms for this rest house ...
+      ],
+    },
+    {
+    name: 'Quetta GPO',
+    rooms: [
+      { roomNo: '1', category: 'A' },
+      { roomNo: '2', category: 'A' },
+      { roomNo: '3', category: 'A' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Ziarat',
+    rooms: [
+      { roomNo: '1', category: 'C' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Sorab',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      { roomNo: '2', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Amri',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      { roomNo: '2', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Taftan',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      { roomNo: '2', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Kalat',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      { roomNo: '2', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Muzaffarabad',
+    rooms: [
+      { roomNo: '1', category: 'A' },
+      { roomNo: '2', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Mirpur',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Kotli',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Gilgit',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Sust',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Skardu',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Layyah',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      { roomNo: '2', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Shadman Lahore',
+    rooms: [
+      { roomNo: '1', category: 'A' },
+      { roomNo: '2', category: 'A' },
+      { roomNo: '3', category: 'A' },
+      { roomNo: '4', category: 'A' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },  
+  {
+    name: 'Lahore Cantt',
+    rooms: [
+      { roomNo: '1', category: 'A' },
+      { roomNo: '2', category: 'A' },
+      { roomNo: '3', category: 'A' },
+      { roomNo: '4', category: 'A' },
+      { roomNo: '5', category: 'A' },
+      { roomNo: '6', category: 'A' },
+      // ... Add other rooms for this rest house ...
+    ],
+  },
+  {
+    name: 'Sialkot GPO',
+    rooms: [
+      { roomNo: '1', category: 'A' },
+      { roomNo: '2', category: 'A' },
+      { roomNo: '3', category: 'A' },
+      // ... Add other rooms for this rest house ...
+    ],
+  }, 
+  {
+    name: 'Gujrat GPO',
+    rooms: [
+      { roomNo: '1', category: 'A' },
+      { roomNo: '2', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  }, 
+  {
+    name: 'Faisalabad GPO',
+    rooms: [
+      { roomNo: '1', category: 'A' },
+      { roomNo: '2', category: 'A' },
+      { roomNo: '3', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  }, 
+  {
+    name: 'Sargodha GPO',
+    rooms: [
+      { roomNo: '1', category: 'B' },
+      // ... Add other rooms for this rest house ...
+    ],
+  }, 
+  ];
+
+  const togglePopup = (data) => {
+    setCurrentPopupData(data);
+    setShowPopup(!showPopup);
+  };
+
+
     return (
         <div className="text-center mx-4 my-8">
             <h1 className="text-2xl font-bold mb-4">POSTAL REST HOUSE FACILITY AVAILABLE FOR THE GENERAL PUBLIC</h1>
 
             <table className="w-[70%] mx-auto border-collapse border border-gray-400">
                 <thead>
-                    <tr className="bg-gray-200">
-                        <th className="py-2 px-4 border">Category</th>
-                        <th className="py-2 px-4 border">Rent per day</th>
+                    <tr className="bg-red-600">
+                        <th className="py-2 px-4 border text-white">Category</th>
+                        <th className="py-2 px-4 border text-white">Rent per day</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -58,409 +394,39 @@ function PostalRestHouse() {
 
 
 
+            <div className="bg-red-600 mt-8 w-[70%] m-auto text-white p-4 mb-8 rounded-lg text-center">
+        <h2 className="text-2xl font-bold mb-2">Category wise list of Rest Houses of Pakistan Post for renting out to general public</h2>
+       
+      </div>
+       
+        <div className="grid grid-cols-3 gap-6 w-[70%] m-auto">
+  {restHouseData.map((restHouse, index) => (
+    <button
+      key={index}
+      className="bg-white border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-100 text-black font-semibold py-2 px-4 "
+      onClick={() => togglePopup(restHouse)}
+    >
+      <div className="text-red-600 text-1xl font-sarif font-bold">{restHouse.name}</div>
+      Total Rooms: {restHouse.rooms.length}
+    </button>
+  ))}
+</div>
 
-            <p className="w-[70%] m-[auto] mt-9 mb-8 text-left font-bold">Category wise list of Rest Houses of Pakistan Post for renting out to general public</p>
 
-            <table className="w-full border-collapse border border-gray-400">
-                <thead>
-                    <tr>
-                        <th className="py-2 px-4 border text-center">Name of Rest House and City</th>
-                        <th className="py-2 px-4 border text-center">Room No</th>
-                        <th className="py-2 px-4 border text-center">Category</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="4">Kashmir Road, Karachi</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">4</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Gulshan-e-Iqbal, Karachi</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowspan="6">Mall road , Multan</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">4</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">5</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">6</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="3">Jhelum</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Attock</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Mianwali</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="3">Saddar Rawalpindi</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Murree GPO</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Peshawar, Jheel Road</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="4">NathiaGali</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">4</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Saidu Sharif</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">C</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Chitral</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="3">Abbottabad</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Ayubia</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Kohat</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Bannu</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">C</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">D.I.Khan GPO</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="3">Hyderabad Circle Office</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Mirpur Khas</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Sukkur Regional Office</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="3">Quetta GPO</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Ziarat</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">C</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Sorab</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Amri</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Taftan</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Kalat</td>
-                        <td sclassName="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Muzaffarabad</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Mirpur</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Kotli</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Gilgit</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Sust</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Skardu</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Layyah</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="4">Shadman Lahore</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">4</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="6">Lahore Cantt</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">4</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">5</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">6</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="3">Sialkot GPO</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="2">Gujrat GPO</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="3">Faisalabad GPO</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">2</td>
-                        <td className="py-2 px-4 border">A</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border">3</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                    <tr>
-                        <td className="py-2 px-4 border" rowSpan="1">Sargodha GPO</td>
-                        <td className="py-2 px-4 border">1</td>
-                        <td className="py-2 px-4 border">B</td>
-                    </tr>
-                </tbody>
-            </table>
+      {/* Render the PopupCard component when showPopup is true */}
+      {showPopup && (
+        <PopupCard
+          onClose={() => setShowPopup(false)}
+          popupData={currentPopupData}
+        />
+        )}
+
         </div>
-    );
-}
+        
+        );
+};
+
+   
+
 
 export default PostalRestHouse;

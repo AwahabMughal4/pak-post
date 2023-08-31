@@ -33,7 +33,7 @@ const Table = () => {
         <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
           <div className="overflow-hidden border border-zinc-200">
             <table className="min-w-full text-center text-sm font-white">
-              <tbody className="border-b bg-red-600 font-sans font-semibold text-white shadow-xl">
+              <tbody className="border-b bg-red-600  font-sans font-semibold text-white shadow-xl">
                 {/* 1 */}
                 <tr>
                   <th scope="col" className=" px-6 py-2 font-semibold ">
