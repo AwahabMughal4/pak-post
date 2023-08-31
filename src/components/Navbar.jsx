@@ -170,7 +170,7 @@ const MobileNav = () => {
       display={{ lg: "none" }}
     >
       {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label} {...navItem} />
+        <MobileNavItem key={navItem.id} {...navItem} />
       ))}
     </Stack>
   );
@@ -219,10 +219,8 @@ const MobileNavItem = ({ label, children, href }) => {
         >
           {children &&
             children.map((child) => (
-              <Link to={child.href}>
-                <Box key={child.label} py={2}>
-                  {child.label}
-                </Box>
+              <Link to={child.href} key={child.id}>
+                <Box py={2}>{child.label}</Box>
               </Link>
             ))}
         </Stack>
@@ -233,10 +231,12 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
+    id: "1",
     label: "Home",
     href: "/",
   },
   {
+    id: "2",
     label: "About\u00A0Us",
     href: "/about",
   },
@@ -244,28 +244,34 @@ const NAV_ITEMS = [
     label: "Mail\u00A0Services",
     children: [
       {
+        id: "10",
         label: "Domestic\u00A0Mail",
         href: "/domesticservices",
       },
       {
+        id: "11",
         label: "International\u00A0Mail",
         href: "/internationalservices",
       },
     ],
   },
   {
+    id: "3",
     label: "Express\u00A0Services",
     href: "/expressservices",
   },
   {
+    id: "4",
     label: "Stamps",
     href: "/stamps",
   },
   {
+    id: "5",
     label: "News/Tenders",
     href: "/news",
   },
   {
+
     label: "Contact\u00A0Us",
     href: "/contact",
   },
