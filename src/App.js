@@ -24,7 +24,7 @@ import LocateUs from "./components/LocatePostOffices";
 import Privacy from "./components/Privacy";
 import Manuals from "./components/Queries&Info";
 import { Tracking } from "./components/Tracking";
-import { CalculatePostage } from "./components/CalculatePostage";
+import CalculatePostage from "./components/CalculatePostage";
 
 
 function App() {
