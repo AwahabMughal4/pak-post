@@ -18,12 +18,16 @@ const Track = () => {
 
   const handleTrackClick = async () => {
     try {
-      const trackingUrl = `/tracking/${"articleId"}`;
-      navigate(trackingUrl);
+      navigate(`/tracking/${encodeURIComponent(articleId)}`);
     } catch (error) {
       console.error("Error:", error);
       // Handle error here
     }
+    //RGL104183114
+    //UMS64043764
+    //UMS64043765
+    //UMS64043766
+    //UMS64043767
   };
 
   return (
@@ -47,27 +51,25 @@ const Track = () => {
               onChange={(e) => setArticleId(e.target.value)}
               h={{ base: "35px", sm: "50px" }}
             />
-            <Link to={"/tracking"}>
-              <Button
-                backgroundColor={"#ED1B24"}
-                color={"white"}
-                p={{ base: "1", sm: "2" }}
-                fontSize={{ base: "xl", sm: "3xl" }}
-                fontWeight={{ base: "400", sm: "600" }}
-                h={{ base: "35px", sm: "50px" }}
-                w={"100px"}
-                transform="skewX(-10deg)"
-                borderRadius={"none"}
-                onClick={handleTrackClick}
-                css={{
-                  "&:hover": {
-                    backgroundColor: "#ca242d",
-                  },
-                }}
-              >
-                Track
-              </Button>
-            </Link>
+            <Button
+              backgroundColor={"#ED1B24"}
+              color={"white"}
+              p={{ base: "1", sm: "2" }}
+              fontSize={{ base: "xl", sm: "3xl" }}
+              fontWeight={{ base: "400", sm: "600" }}
+              h={{ base: "35px", sm: "50px" }}
+              w={"100px"}
+              transform="skewX(-10deg)"
+              borderRadius={"none"}
+              onClick={handleTrackClick}
+              css={{
+                "&:hover": {
+                  backgroundColor: "#ca242d",
+                },
+              }}
+            >
+              Track
+            </Button>
           </HStack>
           <FormLabel mt={"10px"} mb={"20px"} fontWeight={"bold"}>
             Search or Track Packages
