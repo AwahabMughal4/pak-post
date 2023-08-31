@@ -35,6 +35,7 @@ const Track = () => {
             <Button
               backgroundColor={"#ED1B24"}
               color={"white"}
+
               p={{ base: "1", sm: "2" }}
               fontSize={{ base: "xl", sm: "3xl" }}
               fontWeight={{ base: "400", sm: "600" }}
@@ -82,7 +83,7 @@ const Track = () => {
             Calculate{"\u00A0"}Postage
           </Heading>
         </Link>
-        <Link to={"/locate"}>
+        <Link to={"/locateus"}>
           <Heading
             p={{ base: "1", sm: "2" }}
             fontSize={{ base: "xl", sm: "3xl" }}
