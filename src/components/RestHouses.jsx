@@ -354,6 +354,14 @@ function PostalRestHouse() {
             <td className="py-2 px-4 border">Category-A</td>
             <td className="py-2 px-4 border">Rs.4,000</td>
           </tr>
+          <tr>
+            <td className="py-2 px-4 border">Category-B</td>
+            <td className="py-2 px-4 border">Rs.3,000</td>
+          </tr>
+          <tr>
+            <td className="py-2 px-4 border">Category-C</td>
+            <td className="py-2 px-4 border">Rs.2,000</td>
+          </tr>
         </tbody>
       </table>
 
