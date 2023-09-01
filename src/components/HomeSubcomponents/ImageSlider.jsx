@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { SliderData } from "../../DataObjects/StampsSlider";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Center, Heading } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -48,7 +49,11 @@ const ImageSlider = ({ slides }) => {
                     <div className="text-container">
                       <p className="image-heading">{slide.heading}</p>
                       <p className="image-description">{slide.description}</p>
-                      <button className="read-more-button">Read More</button>
+                      <Link to={"/stamps"}>
+                        <button className="read-more-button skew-x-[-10deg]">
+                          Read More
+                        </button>
+                      </Link>
                     </div>
                     <div className="arrows">
                       <IoIosArrowForward

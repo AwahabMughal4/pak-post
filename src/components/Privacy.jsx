@@ -36,7 +36,7 @@ const Privacy = () => {
             </Text>
           </h1>
           <h1>
-            <p className="Privacy-Text text-lg mt-[5rem] ml-[3rem] mr-[3rem] flex justify-center text-allign">
+            <p className="Privacy-Text text-lg mt-[5rem] ml-[3rem] mr-[3rem] flex justify-center text-justify">
               Any person accessing this site agrees to the following:
               <br></br>
               <br></br>
@@ -109,7 +109,7 @@ const Privacy = () => {
             </Text>
           </h1>
           <h1>
-            <p className="Note-Text text-lg mt-[5rem] ml-[3rem] mr-[3rem] flex justify-center text-allign font-bold">
+            <p className="Note-Text text-lg mt-[5rem] ml-[3rem] mr-[3rem] flex justify-center text-justify font-bold">
               Pakistan Post Office (PPO), Pakistan Post Foundation (PPF),
               General Post Office (GPO), Post Office (PO), Express Post Center
               (EPC), Express Post Services (EPS), Express Mail Services (EMS),
@@ -140,7 +140,7 @@ const Privacy = () => {
             </Text>
           </h1>
           <h1>
-            <p className="Disclamer-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-allign">
+            <p className="Disclamer-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-justify">
               The contents provided in this website are only for information
               purpose. Pakistan Post Office Department accepts no responsibility
               for errors and omissions caused as a result of their transmission

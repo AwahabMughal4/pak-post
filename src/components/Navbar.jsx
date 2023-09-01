@@ -114,8 +114,9 @@ const DesktopNav = () => {
             {navItem.children && (
               <PopoverContent
                 borderRadius={"none"}
-                bgColor={"#ed1b24"}
                 p={4}
+                boxShadow="dark-lg"
+                rounded="md"
                 w={"fit-content"}
                 mt={"0.5rem"}
               >
@@ -271,7 +272,6 @@ const NAV_ITEMS = [
     href: "/news",
   },
   {
-
     label: "Contact\u00A0Us",
     href: "/contact",
   },

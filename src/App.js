@@ -1,48 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import './styles/App.css';
@@ -64,17 +19,12 @@ import Careers from "./components/Careers";
 import Complaints from "./components/Complaints";
 import Complaint from "./components/Complaint";
 import RestHouses from "./components/RestHouses";
-
-import { TrackingId } from "./components/TrackingId";
-import PostalCodeTable from "./components/PostalCodeTable";
-
 import LocateUs from "./components/LocatePostOffices";
 import Privacy from "./components/Privacy";
 import Manuals from "./components/Queries&Info";
-import { Tracking } from "./components/Tracking";
 import CalculatePostage from "./components/CalculatePostage";
-import { CalculatePostage } from "./components/CalculatePostage";
-
+import Developers from "./components/Extras/Developers";
+import PostCodes from "./components/PostCodes";
 
 function App() {
   return (
@@ -93,17 +43,13 @@ function App() {
         <Route path="/careers" element={<Careers/>}/>
         <Route path="/complaints" element={<Complaints/>}/>
         <Route path="/customersupport" element={<Complaint/>}/>
-        <Route path="/Rest Houses" element={<RestHouses/>}/>
-
-        <Route path="/tracking" element={<TrackingId/>}/>
-        <Route path="/postcode" element={<PostalCodeTable/>}/>
-
+        <Route path="/resthouses" element={<RestHouses/>}/>
         <Route path="/locateus" element={<LocateUs/>}/>
         <Route path="/privacy" element={<Privacy/>}/>
         <Route path="/manuals" element={<Manuals/>}/>
-        <Route path="/tracking" element={<Tracking/>}/>
         <Route path="/postage" element={<CalculatePostage/>}/>
-
+        <Route path="/devs" element={<Developers/>}/>
+        <Route path="/postcode" element={<PostCodes/>}/>
       </Routes>
       <Footer/>
     </Router>

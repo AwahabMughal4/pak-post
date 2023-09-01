@@ -32,7 +32,7 @@ export default function TopButton() {
         <Box
           onClick={scrollToTop}
           position="fixed"
-          bottom="20px"
+          bottom={"20px"}
           right={["16px", "20px"]}
           zIndex={3}
         >
