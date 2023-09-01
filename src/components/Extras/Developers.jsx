@@ -9,6 +9,8 @@ import {
   Center,
 } from "@chakra-ui/react";
 import Taha from "../../assets/Developers/Taha.jpg";
+import Male from "../../assets/Developers/Male.png";
+import Female from "../../assets/Developers/Female.png";
 
 const teamMembers = [
   {
@@ -16,56 +18,56 @@ const teamMembers = [
     role: "Director IT",
     qualification: "MBA",
     institute: "Pakistan Post",
-    picture: "path-to-director-picture.jpg",
+    picture: Male,
   },
   {
     name: "Roshan Aara",
     role: "Manager",
     qualification: "MSc",
     institute: "Pakistan Post",
-    picture: "path-to-manager-picture.jpg",
+    picture: Female,
   },
   {
-    name: "Sohni Sawera",
+    name: "Sohny Savira",
     role: "Team Lead",
     qualification: "MSc",
     institute: "Pakistan Post",
-    picture: "path-to-team-lead-picture.jpg",
+    picture: Female,
   },
   {
     name: "Abdul Wahab",
     role: "Backend Developer",
     qualification: "BSCS 7th Semester",
     institute: "Allama Iqbal Open University",
-    picture: "path-to-backend-dev-picture.jpg",
+    picture: Male,
   },
   {
     name: "Eisha Farooq",
     role: "Frontend React Developer",
     qualification: "BSSE 6th Semester",
     institute: "National University of Modern Languages, Islamabad",
-    picture: "path-to-frontend-dev-picture.jpg",
+    picture: Female,
   },
   {
     name: "Hamda Noor",
     role: "Frontend React Developer",
     qualification: "BSCS 6th Semester",
     institute: "Comsats University, Islamabad",
-    picture: "path-to-frontend-dev-picture.jpg",
+    picture: Female,
   },
   {
     name: "Maham Noor",
     role: "Frontend React Developer",
     qualification: "BSSE 6th Semester",
     institute: "National University of Modern Languages, Islamabad",
-    picture: "path-to-frontend-dev-picture.jpg",
+    picture: Female,
   },
   {
     name: "Muhammad Arsal",
     role: "Full Stack Developer",
     qualification: "BSCS 6th Semester",
     institute: "Comsats University, Islamabad",
-    picture: "path-to-fullstack-dev-picture.jpg",
+    picture: Male,
   },
   {
     name: "Muhammad Taha",
@@ -79,14 +81,14 @@ const teamMembers = [
     role: "Full Stack Developer",
     qualification: "BSCS 6th Semester",
     institute: "Comsats University, Islamabad",
-    picture: "path-to-fullstack-dev-picture.jpg",
+    picture: Male,
   },
   {
     name: "Sara Khan",
     role: "Frontend React Developer",
     qualification: "BSCS 6th Semester",
     institute: "Comsats University, Islamabad",
-    picture: "path-to-frontend-dev-picture.jpg",
+    picture: Female,
   },
 ];
 

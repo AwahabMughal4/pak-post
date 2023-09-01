@@ -11,6 +11,7 @@ import {
   Divider,
   HStack,
   VStack,
+  Center,
 } from "@chakra-ui/react";
 
 const TrackingData = () => {
@@ -35,15 +36,15 @@ const TrackingData = () => {
   console.log(data);
   return (
     <div>
-      <Heading textColor={"#ed1b24"} textAlign={"center"} m={"1rem"}>
+      <Heading textColor={"#ed1b24"} textAlign={"center"} m={"2rem"}>
         Tracking
       </Heading>
       {data ? (
         <Card
           w={"80%"}
           boxShadow="dark-lg"
-          p="6"
-          my={"2rem"}
+          p={"2rem"}
+          my={"3rem"}
           mx={"auto"}
           rounded="md"
           bg="white"
@@ -213,13 +214,16 @@ const TrackingData = () => {
           </Box>
         </Card>
       ) : (
-        <Spinner
-          thickness="4px"
-          speed="0.65s"
-          emptyColor="white"
-          color="#ed1b24"
-          size="xl"
-        />
+        <Center>
+          <Spinner
+            thickness="4px"
+            speed="0.65s"
+            emptyColor="white"
+            color="#ed1b24"
+            size="xl"
+            m={"3rem"}
+          />
+        </Center>
       )}
     </div>
   );

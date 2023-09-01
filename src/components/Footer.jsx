@@ -25,9 +25,9 @@ const Map = () => {
       width="300"
       height="200"
       title="Map"
-      allowfullscreen=""
+      allowFullScreen=""
       loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
+      referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
   );
 };
@@ -60,7 +60,9 @@ export default function Footer() {
                 color={useColorModeValue("gray.700", "white")}
               />
             </Box>
-            <Text fontSize={"sm"}>©2016 to 2023 Pakistan Post Office</Text>
+            <Text fontSize={"sm"}>
+              ©2016 to 2023 Pakistan Post Office<Link to={"/devs"}>.</Link>
+            </Text>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Pages</ListHeader>

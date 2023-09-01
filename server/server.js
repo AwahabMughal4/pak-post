@@ -1,16 +1,48 @@
 const express = require('express');
 const cors = require('cors');
 const xml2js = require('xml2js');
+const mysql = require("mysql");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const db = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "PakistanPostDB",
+});
+
 app.use(cors());
 app.use(express.json());
 
+app.get("/NDPostOffices", (req, res) => {
+  const query = "SELECT * FROM NDPostOffices";
+
+  db.query(query, (err, results) => {
+    if (err) {
+      res.status(3000).json({ error: "Database error" });
+    } else {
+      res.json(results);
+    }
+  });
+});
+
+app.get("/DPostOffices", (req, res) => {
+  const query = "SELECT * FROM DPostOffices";
+
+  db.query(query, (err, results) => {
+    if (err) {
+      res.status(3000).json({ error: "Database error" });
+    } else {
+      res.json(results);
+    }
+  });
+});
+
 app.post('/track', async (req, res) => {
     const articleId = req.body.articleId; // Get articleId from request body
-    const resType = 'Android'; // Replace with actual value
+    const resType = 'android'; // Replace with actual value
     
     try {
       const response = await fetch(
