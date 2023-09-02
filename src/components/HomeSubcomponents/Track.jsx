@@ -44,7 +44,6 @@ const Track = () => {
               <Input
                 type="text"
                 textColor={"#ED1B24"}
-                fontWeight={"bold"}
                 fontSize={"20px"}
                 borderColor={"black.200"}
                 focusBorderColor="#ED1B24"

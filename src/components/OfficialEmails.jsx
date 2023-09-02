@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   Center,
-  Heading,
   Image,
   Table,
   TableContainer,
@@ -96,7 +95,11 @@ const OfficialEmails = () => {
 
           <Text>
             Click{" "}
-            <a href={"https://mail.pakpost.gov.pk/"} target="_blank">
+            <a
+              href={"https://mail.pakpost.gov.pk/"}
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button variant={"link"} colorScheme={"red"} size={"lg"}>
                 Official Email Link
               </Button>
@@ -123,7 +126,7 @@ const OfficialEmails = () => {
           <Text>
             If you encounter a page displaying the message "Your connection is
             not private" and cannot access your email, please click on{" "}
-            <a href={Webmail} target="_blank">
+            <a href={Webmail} target="_blank" rel="noreferrer">
               <Button variant={"link"} colorScheme={"red"} size={"lg"}>
                 Webmail Settings
               </Button>
@@ -149,7 +152,7 @@ const OfficialEmails = () => {
 
           <Text>
             You can find your outlook POP3 settings on a click{" "}
-            <a href={Outlook} target="_blank">
+            <a href={Outlook} target="_blank" rel="noreferrer">
               <Button variant={"link"} colorScheme={"red"} size={"lg"}>
                 Outlook Settings POP3
               </Button>
