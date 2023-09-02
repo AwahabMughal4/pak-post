@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import teamImage from "../../assets/ServicesSectionImages/mailServices.png";
+import { Link } from "react-router-dom";
 
 const ServicesLeft = () => {
   const [isLargerThan62] = useMediaQuery("(min-width: 62em)");
@@ -71,23 +72,25 @@ const ServicesLeft = () => {
           suit your requirements.
         </Text>
 
-        <Button
-          width="200px"
-          size="lg"
-          backgroundColor={"#ED1B24"}
-          color={"white"}
-          marginTop={"1rem"}
-          display={"flex"}
-          transform="skewX(-10deg)"
-          borderRadius={"none"}
-          css={{
-            "&:hover": {
-              backgroundColor: "#ca242d",
-            },
-          }}
-        >
-          Read more
-        </Button>
+        <Link to={"/domesticservices"}>
+          <Button
+            width="200px"
+            size="lg"
+            backgroundColor={"#ED1B24"}
+            color={"white"}
+            marginTop={"1rem"}
+            display={"flex"}
+            transform="skewX(-10deg)"
+            borderRadius={"none"}
+            css={{
+              "&:hover": {
+                backgroundColor: "#ca242d",
+              },
+            }}
+          >
+            Read more
+          </Button>
+        </Link>
       </Flex>
     </Flex>
   );

@@ -18,7 +18,7 @@ const Header = () => {
           <div className="flex flex-row  text-black pt-1 items-end ">
             <div className="flex flex-row space-x-1 items-center cursor-pointer hover:scale-105 transform transition-all px-2">
               <HeadsetMicIcon />
-              <Link to={"/complaints"}>
+              <Link to={"/support"}>
                 <h1 className="text-[13px]">Support</h1>
               </Link>
             </div>
@@ -26,7 +26,7 @@ const Header = () => {
           <div className="flex flex-row pr-4 text-black pt-1 items-end ">
             <div className="flex flex-row space-x-1 items-center cursor-pointer hover:scale-105 transform transition-all px-2">
               <LocationOnIcon />
-              <Link to={"/locateus"}>
+              <Link to={"/locate"}>
                 {" "}
                 <h1 className="text-[13px]">Locate </h1>
               </Link>

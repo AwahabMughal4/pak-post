@@ -104,7 +104,7 @@ const DesktopNav = () => {
                   p={{ lg: "1", xl: "2" }}
                   fontSize={{ lg: "md", xl: "lg" }}
                   fontWeight={{ lg: "400", xl: "500" }}
-                  className="hover:transform hover:-skew-x-[-10] -skew-x-[-10] text-white hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]"
+                  className="text-white bg-[color:var(--primary-color)] transition-transform transform hover:scale-105 hover:bg-[color:var(--secondary-color)]"
                 >
                   {navItem.label}
                 </Box>
@@ -171,7 +171,7 @@ const MobileNav = () => {
       display={{ lg: "none" }}
     >
       {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.id} {...navItem} />
+        <MobileNavItem key={navItem.label} {...navItem} />
       ))}
     </Stack>
   );
@@ -238,19 +238,19 @@ const NAV_ITEMS = [
   },
   {
     id: "2",
-    label: "About\u00A0Us",
+    label: "About",
     href: "/about",
   },
   {
     label: "Mail\u00A0Services",
     children: [
       {
-        id: "10",
+        id: "7",
         label: "Domestic\u00A0Mail",
         href: "/domesticservices",
       },
       {
-        id: "11",
+        id: "8",
         label: "International\u00A0Mail",
         href: "/internationalservices",
       },
@@ -272,11 +272,8 @@ const NAV_ITEMS = [
     href: "/news",
   },
   {
+    id: "6",
     label: "Contact\u00A0Us",
     href: "/contact",
   },
-  // {
-  //   label: "Quick\u00A0Tools",
-  //   href: "/tools",
-  // },
 ];

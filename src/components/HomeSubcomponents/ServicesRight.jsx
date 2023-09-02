@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import teamImage from "../../assets/ServicesSectionImages/expressServices.png";
+import { Link } from "react-router-dom";
 
 const ServicesRight = () => {
   const [isLargerThan62] = useMediaQuery("(min-width: 62em)");
@@ -58,23 +59,25 @@ const ServicesRight = () => {
           of post office excellence.
         </Text>
 
-        <Button
-          width="200px"
-          size="lg"
-          backgroundColor={"#ED1B24"}
-          color={"white"}
-          marginTop={"1rem"}
-          display={"flex"}
-          transform="skewX(-10deg)"
-          borderRadius={"none"}
-          css={{
-            "&:hover": {
-              backgroundColor: "#ca242d",
-            },
-          }}
-        >
-          Read more
-        </Button>
+        <Link to={"/expressservices"}>
+          <Button
+            width="200px"
+            size="lg"
+            backgroundColor={"#ED1B24"}
+            color={"white"}
+            marginTop={"1rem"}
+            display={"flex"}
+            transform="skewX(-10deg)"
+            borderRadius={"none"}
+            css={{
+              "&:hover": {
+                backgroundColor: "#ca242d",
+              },
+            }}
+          >
+            Read more
+          </Button>
+        </Link>
       </Flex>
 
       <Spacer />
