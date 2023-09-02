@@ -43,7 +43,6 @@ const Track = () => {
             <HStack>
               <Input
                 type="text"
-                textColor={"#ED1B24"}
                 fontSize={"20px"}
                 borderColor={"black.200"}
                 focusBorderColor="#ED1B24"
