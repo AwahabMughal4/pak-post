@@ -325,8 +325,8 @@ export const Punjab = [
     link: " https://goo.gl/maps/3yt1sPUmnmxPJtiq9 ",
   },
   {
-    name: "Texila",
-    location: "Texila Post Office",
+    name: "Taxila",
+    location: "Taxila Post Office",
     link: " https://goo.gl/maps/3iDU8s4pX8fwzrfE9 ",
   },
   {
