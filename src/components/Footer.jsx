@@ -79,7 +79,7 @@ export default function Footer() {
                 Careers
               </Box>
             </Link>
-            <Link to={"/"}>
+            <Link to={"/emails"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>
                 Official Emails
               </Box>

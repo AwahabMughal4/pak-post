@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './styles/App.css';
 import './styles/StampsSlider.css';
 
+import ScrollToTop from "./components/Extras/ScrollToTop"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -25,10 +26,12 @@ import Manuals from "./components/Queries&Info";
 import CalculatePostage from "./components/CalculatePostage";
 import Developers from "./components/Extras/Developers";
 import PostCodes from "./components/PostCodes";
+import OfficialEmails from "./components/OfficialEmails";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Header/>
       <Routes>
         <Route path="/" exact element={<Home/>}/>
@@ -50,6 +53,7 @@ function App() {
         <Route path="/postage" element={<CalculatePostage/>}/>
         <Route path="/devs" element={<Developers/>}/>
         <Route path="/postcode" element={<PostCodes/>}/>
+        <Route path="/emails" element={<OfficialEmails/>}/>
       </Routes>
       <Footer/>
     </Router>
