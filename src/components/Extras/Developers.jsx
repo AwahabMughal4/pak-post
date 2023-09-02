@@ -9,6 +9,9 @@ import {
   Center,
 } from "@chakra-ui/react";
 import Taha from "../../assets/Developers/Taha.jpg";
+import Rohail from "../../assets/Developers/Rohail.jpg";
+import Arsal from "../../assets/Developers/Arsal.jpg";
+import Wahab from "../../assets/Developers/Wahab.jpg";
 import Male from "../../assets/Developers/Male.png";
 import Female from "../../assets/Developers/Female.png";
 
@@ -39,7 +42,7 @@ const teamMembers = [
     role: "Backend Developer",
     qualification: "BSCS 7th Semester",
     institute: "Allama Iqbal Open University",
-    picture: Male,
+    picture: Wahab,
   },
   {
     name: "Eisha Farooq",
@@ -67,7 +70,7 @@ const teamMembers = [
     role: "Full Stack Developer",
     qualification: "BSCS 6th Semester",
     institute: "Comsats University, Islamabad",
-    picture: Male,
+    picture: Arsal,
   },
   {
     name: "Muhammad Taha",
@@ -81,7 +84,7 @@ const teamMembers = [
     role: "Full Stack Developer",
     qualification: "BSCS 6th Semester",
     institute: "Comsats University, Islamabad",
-    picture: Male,
+    picture: Rohail,
   },
   {
     name: "Sara Khan",

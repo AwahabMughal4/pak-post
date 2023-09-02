@@ -10,6 +10,7 @@ import {
   Text,
   Button,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 const BasicCard = (props) => {
   return (
     <Card my={"1rem"}>
@@ -59,25 +60,25 @@ const NewsSection = () => {
             })}
           </Box>
 
-          <Button
-            as="a"
-            href={"/news"}
-            width="200px"
-            size="lg"
-            backgroundColor={"#ED1B24"}
-            color={"white"}
-            m={"2rem"}
-            display={"flex"}
-            transform="skewX(-10deg)"
-            borderRadius={"none"}
-            css={{
-              "&:hover": {
-                backgroundColor: "#ca242d",
-              },
-            }}
-          >
-            Read more
-          </Button>
+          <Link to={"news"}>
+            <Button
+              width="200px"
+              size="lg"
+              backgroundColor={"#ED1B24"}
+              color={"white"}
+              m={"2rem"}
+              display={"flex"}
+              transform="skewX(-10deg)"
+              borderRadius={"none"}
+              css={{
+                "&:hover": {
+                  backgroundColor: "#ca242d",
+                },
+              }}
+            >
+              Read more
+            </Button>
+          </Link>
         </Card>
         <Card mx={"2rem"} my={{ base: "2rem", sm: "0" }} shadow={"xl"}>
           <Heading m={"1rem"} textColor={"#ED1B24"}>
@@ -96,25 +97,25 @@ const NewsSection = () => {
             })}
           </Box>
 
-          <Button
-            as="a"
-            href={"/news"}
-            width="200px"
-            size="lg"
-            backgroundColor={"#ED1B24"}
-            color={"white"}
-            m={"2rem"}
-            display={"flex"}
-            transform="skewX(-10deg)"
-            borderRadius={"none"}
-            css={{
-              "&:hover": {
-                backgroundColor: "#ca242d",
-              },
-            }}
-          >
-            Read more
-          </Button>
+          <Link to={"news"}>
+            <Button
+              width="200px"
+              size="lg"
+              backgroundColor={"#ED1B24"}
+              color={"white"}
+              m={"2rem"}
+              display={"flex"}
+              transform="skewX(-10deg)"
+              borderRadius={"none"}
+              css={{
+                "&:hover": {
+                  backgroundColor: "#ca242d",
+                },
+              }}
+            >
+              Read more
+            </Button>
+          </Link>
         </Card>
       </Flex>
     </div>

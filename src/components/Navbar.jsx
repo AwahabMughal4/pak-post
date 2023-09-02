@@ -238,7 +238,7 @@ const NAV_ITEMS = [
   },
   {
     id: "2",
-    label: "About\u00A0Us",
+    label: "About",
     href: "/about",
   },
   {

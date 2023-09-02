@@ -1,12 +1,24 @@
+import { Text } from "@chakra-ui/react";
 import React from "react";
 
-const Complaints = () => {
+const Support = () => {
   return (
     <div className="mx-auto px-9 ">
       <div>
-        <h1 className="font-bold text-red-600 py-2 px-3 ">
-          Complaints & Suggesions
-        </h1>
+        <Text
+          fontSize={"2xl"}
+          fontWeight="bold"
+          color={"white"}
+          bgColor={"#ed1b24"}
+          p={"3"}
+          transform="skewX(-10deg)"
+          borderRadius={"none"}
+          display={"inline-block"}
+          textAlign={"center"}
+          m={"4"}
+        >
+          Support
+        </Text>
         <p className="text-base px-3">
           The complaints and suggestions can be forwarded directly to complaint
           Cell Directorate General Pakistan Post G-8/4, Islamabad through mail,
@@ -23,7 +35,7 @@ const Complaints = () => {
   );
 };
 
-export default Complaints;
+export default Support;
 
 const Table = () => {
   return (
