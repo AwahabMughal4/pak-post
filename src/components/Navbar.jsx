@@ -104,7 +104,7 @@ const DesktopNav = () => {
                   p={{ lg: "1", xl: "2" }}
                   fontSize={{ lg: "md", xl: "lg" }}
                   fontWeight={{ lg: "400", xl: "500" }}
-                  className="hover:transform hover:-skew-x-[-10] -skew-x-[-10] text-white hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]"
+                  className="text-white bg-[color:var(--primary-color)] transition-transform transform hover:scale-105 hover:bg-[color:var(--secondary-color)]"
                 >
                   {navItem.label}
                 </Box>
