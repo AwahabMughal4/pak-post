@@ -171,7 +171,7 @@ const MobileNav = () => {
       display={{ lg: "none" }}
     >
       {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.id} {...navItem} />
+        <MobileNavItem key={navItem.label} {...navItem} />
       ))}
     </Stack>
   );
@@ -245,12 +245,12 @@ const NAV_ITEMS = [
     label: "Mail\u00A0Services",
     children: [
       {
-        id: "10",
+        id: "7",
         label: "Domestic\u00A0Mail",
         href: "/domesticservices",
       },
       {
-        id: "11",
+        id: "8",
         label: "International\u00A0Mail",
         href: "/internationalservices",
       },
@@ -272,11 +272,8 @@ const NAV_ITEMS = [
     href: "/news",
   },
   {
+    id: "6",
     label: "Contact\u00A0Us",
     href: "/contact",
   },
-  // {
-  //   label: "Quick\u00A0Tools",
-  //   href: "/tools",
-  // },
 ];

@@ -12,6 +12,8 @@ import {
   Center,
   Text,
   Button,
+  Spinner,
+  Flex,
 } from "@chakra-ui/react";
 import Axios from "axios";
 
@@ -77,7 +79,7 @@ function PostCodes() {
 export default PostCodes;
 
 function NDPostOffices() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState([]);
   useEffect(() => {
@@ -143,7 +145,6 @@ function NDPostOffices() {
         h={"100vh"}
         overflowY={"scroll"}
         shadow={"dark-lg"}
-        borderRadius={"10px"}
         css={{
           "&::-webkit-scrollbar": {
             width: "0em", // Set a small width (can be any value)
@@ -153,52 +154,73 @@ function NDPostOffices() {
           },
         }}
       >
-        <Table>
-          <Thead
-            bgColor={"#ed1b24"}
-            position={"sticky"}
-            top={"0"}
-            zIndex={"3"}
-            borderRadius={"10px"}
-            h={"3rem"}
-          >
-            <Tr>
-              <Th textColor={"white"} fontSize={"md"}>
-                S.No.
-              </Th>
-              <Th textColor={"white"} fontSize={"md"}>
-                Non Delivery Post Office
-              </Th>
-              <Th textColor={"white"} fontSize={"md"} isNumeric>
-                Post Code
-              </Th>
-              <Th textColor={"white"} fontSize={"md"}>
-                Account Office
-              </Th>
-              <Th textColor={"white"} fontSize={"md"}>
-                Province
-              </Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {filteredData.map((item) => (
-              <Tr key={item.id}>
-                <Td isNumeric>{item.id}</Td>
-                <Td>{item.non_delivery_post_office}</Td>
-                <Td isNumeric>{item.post_code}</Td>
-                <Td>{item.account_office}</Td>
-                <Td>{item.province}</Td>
+        {data ? (
+          <Table>
+            <Thead
+              bgColor={"#ed1b24"}
+              position={"sticky"}
+              top={"0"}
+              zIndex={"3"}
+              h={"3rem"}
+            >
+              <Tr>
+                <Th textColor={"white"} fontSize={"md"}>
+                  S.No.
+                </Th>
+                <Th textColor={"white"} fontSize={"md"}>
+                  Non Delivery Post Office
+                </Th>
+                <Th textColor={"white"} fontSize={"md"} isNumeric>
+                  Post Code
+                </Th>
+                <Th textColor={"white"} fontSize={"md"}>
+                  Account Office
+                </Th>
+                <Th textColor={"white"} fontSize={"md"}>
+                  Province
+                </Th>
               </Tr>
-            ))}
-          </Tbody>
-        </Table>
+            </Thead>
+
+            <Tbody>
+              {filteredData.map((item) => (
+                <Tr key={item.id}>
+                  <Td isNumeric>{item.id}</Td>
+                  <Td>{item.non_delivery_post_office}</Td>
+                  <Td isNumeric>{item.post_code}</Td>
+                  <Td>{item.account_office}</Td>
+                  <Td>{item.province}</Td>
+                </Tr>
+              ))}
+            </Tbody>
+          </Table>
+        ) : (
+          <Flex
+            alignItems={"center"}
+            justifyContent={"center"}
+            flexDirection={"column"}
+            m={"auto"}
+          >
+            <Spinner
+              thickness="4px"
+              speed="0.65s"
+              emptyColor="white"
+              color="#ed1b24"
+              size="xl"
+              m={"3rem"}
+            />
+            <Text fontSize={"20px"} textColor={"#ed1b24"}>
+              Fetching data from database...
+            </Text>
+          </Flex>
+        )}
       </TableContainer>
     </Box>
   );
 }
 
 function DPostOffices() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState([]);
   useEffect(() => {
@@ -263,7 +285,6 @@ function DPostOffices() {
         h={"100vh"}
         overflowY={"scroll"}
         shadow={"dark-lg"}
-        borderRadius={"10px"}
         css={{
           "&::-webkit-scrollbar": {
             width: "0em", // Set a small width (can be any value)
@@ -273,49 +294,70 @@ function DPostOffices() {
           },
         }}
       >
-        <Table>
-          <Thead
-            bgColor={"#ed1b24"}
-            position={"sticky"}
-            top={"0"}
-            zIndex={"3"}
-            borderRadius={"10px"}
-            h={"3rem"}
-          >
-            <Tr>
-              <Th textColor={"white"} fontSize={"sm"}>
-                S.No.
-              </Th>
-              <Th textColor={"white"} fontSize={"sm"}>
-                Delivery Post Office
-              </Th>
-              <Th textColor={"white"} fontSize={"sm"}>
-                Post Code
-              </Th>
-              <Th textColor={"white"} fontSize={"sm"}>
-                Account Office
-              </Th>
-              <Th textColor={"white"} fontSize={"sm"}>
-                Province
-              </Th>
-              <Th textColor={"white"} fontSize={"sm"}>
-                Attached Branch
-              </Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {filteredData.map((item) => (
-              <Tr key={item.id}>
-                <Td isNumeric>{item.id}</Td>
-                <Td>{item.delivery_post_office}</Td>
-                <Td isNumeric>{item.post_code}</Td>
-                <Td>{item.account_office}</Td>
-                <Td>{item.province}</Td>
-                <Td isNumeric>{item.code_attached_branch}</Td>
+        {data ? (
+          <Table>
+            <Thead
+              bgColor={"#ed1b24"}
+              position={"sticky"}
+              top={"0"}
+              zIndex={"3"}
+              h={"3rem"}
+            >
+              <Tr>
+                <Th textColor={"white"} fontSize={"sm"}>
+                  S.No.
+                </Th>
+                <Th textColor={"white"} fontSize={"sm"}>
+                  Delivery Post Office
+                </Th>
+                <Th textColor={"white"} fontSize={"sm"}>
+                  Post Code
+                </Th>
+                <Th textColor={"white"} fontSize={"sm"}>
+                  Account Office
+                </Th>
+                <Th textColor={"white"} fontSize={"sm"}>
+                  Province
+                </Th>
+                <Th textColor={"white"} fontSize={"sm"}>
+                  Attached Branch
+                </Th>
               </Tr>
-            ))}
-          </Tbody>
-        </Table>
+            </Thead>
+
+            <Tbody>
+              {filteredData.map((item) => (
+                <Tr key={item.id}>
+                  <Td isNumeric>{item.id}</Td>
+                  <Td>{item.delivery_post_office}</Td>
+                  <Td isNumeric>{item.post_code}</Td>
+                  <Td>{item.account_office}</Td>
+                  <Td>{item.province}</Td>
+                  <Td isNumeric>{item.code_attached_branch}</Td>
+                </Tr>
+              ))}
+            </Tbody>
+          </Table>
+        ) : (
+          <Flex
+            alignItems={"center"}
+            justifyContent={"center"}
+            flexDirection={"column"}
+            m={"auto"}
+          >
+            <Spinner
+              thickness="4px"
+              speed="0.65s"
+              emptyColor="white"
+              color="#ed1b24"
+              size="xl"
+              m={"3rem"}
+            />
+            <Text fontSize={"20px"} textColor={"#ed1b24"}>
+              Fetching data from database...
+            </Text>
+          </Flex>
+        )}
       </TableContainer>
     </Box>
   );
