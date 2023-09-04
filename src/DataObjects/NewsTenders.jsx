@@ -110,6 +110,22 @@ export const TendersData = [
     title6: "",
     url6: "",
   },
+  {
+    id: 8,
+    title:
+      "Tender Notice for Purchase of Other/ Misc Items Under The Directorate General Pakistan Post G-8/4, Islamabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "20-10-2012",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
 ];
 
 export const NewsData = [
@@ -117,6 +133,7 @@ export const NewsData = [
     id: 1,
     title:
       "Public Notice for Recruitment on ASPOS/ AS (MST) in Direct Quota Under The Pakistan Post Office Department",
+    date: "2021-01-01",
     url: "https://ep.gov.pk/files/2023-02-03-Public-Notice-For-Recruitment-of-ASPOS-MST-Examination-Schedule.pdf",
   },
   {
