@@ -18,7 +18,7 @@ const Header = () => {
           <div className="flex flex-row  text-black pt-1 items-end ">
             <div className="flex flex-row space-x-1 items-center cursor-pointer hover:scale-105 transform transition-all px-2">
               <HeadsetMicIcon />
-              <Link to={"/support"}>
+              <Link to={"/complaints"}>
                 <h1 className="text-[13px]">Support</h1>
               </Link>
             </div>
