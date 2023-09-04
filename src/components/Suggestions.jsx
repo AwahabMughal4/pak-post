@@ -1,7 +1,7 @@
 import { Text } from "@chakra-ui/react";
 import React from "react";
 
-const Support = () => {
+const Suggestions = () => {
   return (
     <div className="mx-auto px-9 ">
       <div>
@@ -17,7 +17,7 @@ const Support = () => {
           textAlign={"center"}
           m={"4"}
         >
-          Support
+          Complaints & Suggestions
         </Text>
         <p className="text-base px-3">
           The complaints and suggestions can be forwarded directly to complaint
@@ -35,7 +35,7 @@ const Support = () => {
   );
 };
 
-export default Support;
+export default Suggestions;
 
 const Table = () => {
   return (

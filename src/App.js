@@ -6,7 +6,7 @@ import './styles/StampsSlider.css';
 import ScrollToTop from "./components/Extras/ScrollToTop"
 import Header from "./components/Header";
 
-import Support from "./components/Support";
+import Complaint from "./components/Complaint";
 import LocateUs from "./components/LocatePostOffices";
 
 import Home from "./components/Home";
@@ -18,6 +18,7 @@ import AboutUs from "./components/AboutUs";
 import DomesticMail from "./components/DomesticMail";
 import InternationalMail from "./components/InternationalMail";
 import ExpressServices from "./components/ExpressServices";
+import Track from "./components/Track";
 import NewsTenders from "./components/NewsTenders";
 import ContactUs from "./components/ContactUs";
 
@@ -27,7 +28,7 @@ import FAQs from "./components/FAQs";
 import Privacy from "./components/Privacy";
 import RestHouses from "./components/RestHouses";
 import Manuals from "./components/Queries&Info";
-import Complaint from "./components/Complaint";
+import Suggestions from "./components/Suggestions";
 
 import Footer from "./components/Footer";
 import Developers from "./components/Extras/Developers";
@@ -38,7 +39,7 @@ function App() {
       <ScrollToTop/>
       <Header/>
       <Routes>
-        <Route path="/support" element={<Support/>}/>
+        <Route path="/complaints" element={<Complaint/>}/>
         <Route path="/locate" element={<LocateUs/>}/>
 
         <Route path="/" exact element={<Home/>}/>
@@ -50,6 +51,7 @@ function App() {
         <Route path="/domesticservices" element={<DomesticMail/>}/>
         <Route path="/internationalservices" element={<InternationalMail/>}/>
         <Route path="/expressservices" element={<ExpressServices/>}/>
+        <Route path="/track" element={<Track/>}/>
         <Route path="/news" element={<NewsTenders/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         
@@ -59,7 +61,7 @@ function App() {
         <Route path="/privacy" element={<Privacy/>}/>
         <Route path="/resthouses" element={<RestHouses/>}/>
         <Route path="/manuals" element={<Manuals/>}/>
-        <Route path="/customersupport" element={<Complaint/>}/>
+        <Route path="/suggestions" element={<Suggestions/>}/>
         
         <Route path="/devs" element={<Developers/>}/>
       </Routes>

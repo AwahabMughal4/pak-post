@@ -70,9 +70,7 @@ export default function Footer() {
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>Home</Box>
             </Link>
             <Link to={"/about"}>
-              <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>
-                About us
-              </Box>
+              <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>About</Box>
             </Link>
             <Link to={"/careers"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>
@@ -81,7 +79,7 @@ export default function Footer() {
             </Link>
             <Link to={"/emails"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>
-                Official Emails
+                Email Notice Board
               </Box>
             </Link>
           </Stack>
@@ -102,7 +100,7 @@ export default function Footer() {
             </Link>
             <Link to={"/manuals"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>
-                Queries & Info
+                Manuals
               </Box>
             </Link>
           </Stack>
@@ -124,9 +122,9 @@ export default function Footer() {
               customercare@pakpost.gov.pk
             </Box>
 
-            <Link to={"/customersupport"}>
+            <Link to={"/suggestions"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>
-                Customer Support
+                Complaints & Suggestions
               </Box>
             </Link>
 
