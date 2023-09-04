@@ -33,7 +33,7 @@ const ExpressServices = () => {
         </Heading>
       </Center>
       <div className="p-3">
-        <div className="flex flex-wrap">
+        <div className="flex  flex-col md:flex-row  flex-wrap">
           {ExpressService.map((item) => {
             return (
               <ServiceCard

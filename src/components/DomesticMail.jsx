@@ -12,19 +12,20 @@ const DomesticMail = () => {
   return (
     <div>
       <Flex
-        w={"full"}
-        h={"70vh"}
+        w={"100%"}
+        h={{ base: "30vh",sm:"40vh",md: "50vh" ,lg:"60vh"}} // Use double curly braces for objects
         backgroundImage={Heroimage}
         backgroundSize={"cover"}
         backgroundPosition={"center center"}
       >
         <VStack
-          w={"full"}
+          w={"100%"}
           justify={"center"}
-          px={useBreakpointValue({ base: 4, md: 8 })}
+          px={useBreakpointValue({ base: 4, md: 8 ,lg:8 })}
           bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
         ></VStack>
       </Flex>
+
       <Center>
         <Heading
           m={"auto"}
@@ -36,7 +37,7 @@ const DomesticMail = () => {
         </Heading>
       </Center>
       <div className="p-3">
-        <div className="flex flex-wrap">
+        <div className="flex  flex-col md:flex-row  flex-wrap">
           {TraditionalServices.map((item) => {
             return (
               <ServiceCard
@@ -60,7 +61,7 @@ const DomesticMail = () => {
         </Heading>
       </Center>
       <div className="p-3">
-        <div className="flex flex-wrap">
+        <div className="flex  flex-col md:flex-row  flex-wrap">
           {MiscellaneousServices.map((item) => {
             return (
               <ServiceCard

@@ -257,7 +257,7 @@ export const Questions = [
       "A depositor may have his account transferred, free of charge to any post office that is a saving bank provided that the account shall have been in existence for at least three months from the date on which it was opened.",
   },
 ];
-
+// Domestic services starting
 export const TraditionalServices = [
   {
     id: 1,
@@ -297,6 +297,14 @@ export const TraditionalServices = [
     icon: parcel,
     pdfPath: newspaperpdf,
   },
+  {
+    id: 6,
+    title: "Envellops ",
+    description:
+      "Pak Post facilitates delivery of news papers all over Pakistan at exceptionally low rates.",
+    icon: parcel,
+    pdfPath: newspaperpdf,
+  }
 ];
 export const MiscellaneousServices = [
   {
@@ -349,7 +357,7 @@ export const MiscellaneousServices = [
     icon: insurance,
   },
 ];
-
+// Domestic services Ending
 export const InternationalServices = [
   {
     id: 1,
