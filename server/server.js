@@ -6,24 +6,12 @@ const mysql = require("mysql");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const CodesDB = mysql.createConnection({
+const db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
   database: "PakistanPostDB",
 });
-// const LocationDB = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "",
-//   database: "LocationTable",
-// });
-// const RatesDB = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "",
-//   database: "RateTablesScript",
-// });
 
 app.use(cors());
 app.use(express.json());
@@ -31,7 +19,7 @@ app.use(express.json());
 app.get("/NDPostOffices", (req, res) => {
   const query = "SELECT * FROM NDPostOffices";
 
-  CodesDB.query(query, (err, results) => {
+  db.query(query, (err, results) => {
     if (err) {
       res.status(3000).json({ error: "Database error" });
     } else {
@@ -54,7 +42,7 @@ app.get("/DPostOffices", (req, res) => {
 
 app.post('/track', async (req, res) => {
     const articleId = req.body.articleId; // Get articleId from request body
-    const resType = 'web'; // Replace with actual value
+    const resType = 'android'; // Replace with actual value
     
     try {
       const response = await fetch(
