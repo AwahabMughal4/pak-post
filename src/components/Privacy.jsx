@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "../assets/AboutUs/timthumb.jpg";
+import image1 from "../assets/AboutUs/PrivacyBanner.jpg";
 import { Text } from "@chakra-ui/react";
 const Privacy = () => {
   return (
@@ -8,11 +8,11 @@ const Privacy = () => {
         <img
           src={image1}
           alt="hero"
-          className="object-cover w-[100%] h-[45vh]"
+          className="object-cover w-[100%] h-[60vh]"
         />
       </div>
       <div className="head-text">
-        <p className="mt-[3rem] text-4xl italic text-center text-[#ed1b24] font-serif font-bold">
+        <p className="mt-[3rem] text-5xl italic text-center text-[#ed1b24] font-serif font-bold">
           "Privacy is not an option, and it should'nt be the price we accept for
           just getting on the Internet"
         </p>
