@@ -5,7 +5,7 @@ const FmsTariff = () => {
   return (
     <Box mx="auto">
          <h1 className='text-center text-4xl p-4'> Fax Mail Service Tariff</h1>
-      <Table w="full">
+      <Table w="100%">
         <Tbody>
           <Tr>
             <Td className="content" color="var(--primary-color)">

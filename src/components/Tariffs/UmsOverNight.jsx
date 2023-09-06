@@ -12,7 +12,7 @@ import {
 const UmsOverNight = () => {
     return (
         <Box mx="auto">
-            <Table w="full">
+            <Table w="100%">
                 <Tbody>
                     <Tr>
                         <h1 className='text-center text-4xl p-4'> UMS Overnight Tariff</h1>
@@ -23,7 +23,7 @@ const UmsOverNight = () => {
                 <b>
                     <Table
                         className="border border-collapse mx-auto"
-                        width="587px"
+                        width="100%"
                         cellSpacing="1"
                         cellPadding="8"
                     >

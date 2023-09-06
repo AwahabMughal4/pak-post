@@ -14,7 +14,7 @@ import {
 const FmoTariff = () => {
   return (
     <Box mx="auto">
-      <Table w="full">
+      <Table w="100%">
         <Tbody>
           <Tr>
             <h1 className='text-center text-4xl p-4'> Fax Money Order Tariff</h1>
@@ -27,7 +27,7 @@ const FmoTariff = () => {
             border="1px"
             borderColor="gray.200"
             mx="auto"
-            width="587px"
+            width="100%"
             cellSpacing="1"
             cellPadding="8"
           >

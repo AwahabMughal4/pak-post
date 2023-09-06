@@ -19,7 +19,7 @@ const EmoTariff = () => {
       <Container maxW="container.xl">
         <h1 className='text-center text-4xl p-4'>Electronic Money Order</h1>
         <Table
-          w="600px"
+          w="100%"
           border="1px"
           borderColor="gray.200"
           borderRadius="lg"

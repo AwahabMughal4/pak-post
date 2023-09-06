@@ -24,7 +24,7 @@ const CodTariff = () => {
         
 
         {/* Fax Mail Service */}
-        <Table w="full" mt={4}>
+        <Table w="100%" mt={4}>
           <Tbody>
             <Tr>
               <Td className="content" color={primaryColor}>
