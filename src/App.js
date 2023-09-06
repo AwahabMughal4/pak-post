@@ -19,6 +19,7 @@ import DomesticMail from "./components/DomesticMail";
 import InternationalMail from "./components/InternationalMail";
 import ExpressServices from "./components/ExpressServices";
 import Track from "./components/Track";
+import Stamps from "./components/Stamps";
 import NewsTenders from "./components/NewsTenders";
 import ContactUs from "./components/ContactUs";
 
@@ -52,6 +53,7 @@ function App() {
         <Route path="/internationalservices" element={<InternationalMail/>}/>
         <Route path="/expressservices" element={<ExpressServices/>}/>
         <Route path="/track" element={<Track/>}/>
+        <Route path="/stamps" element={<Stamps/>}/>
         <Route path="/news" element={<NewsTenders/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         
