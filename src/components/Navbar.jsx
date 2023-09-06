@@ -268,16 +268,21 @@ const NAV_ITEMS = [
   },
   {
     id: "5",
+    label: "Tariff",
+    href: "/tariff",
+  },
+  {
+    id: "6",
     label: "Stamps",
     href: "/stamps",
   },
   {
-    id: "6",
+    id: "7",
     label: "News/Tenders",
     href: "/news",
   },
   {
-    id: "7",
+    id: "8",
     label: "Contact\u00A0Us",
     href: "/contact",
   },
