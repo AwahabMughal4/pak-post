@@ -1,105 +1,142 @@
-import React from 'react'
+import React from 'react';
+import {
+    Box,
+    Table,
+    Tbody,
+    Tr,
+    Td,
+    Text,
+    TableCaption,
+} from '@chakra-ui/react';
 
 const UmoTariff = () => {
     return (
-        <div className="mx-auto">
-            <table className="w-995 border border-solid border-gray-200 bg-white" align="center" cellPadding="0" cellSpacing="0">
-                <tbody>
-                    <tr>
-                        <td colSpan="3" valign="top" className="main">
+        <Box mx="auto">
+            <Table
+                w="100%"
+                borderWidth="1px"
+                borderColor="gray.200"
+                bg="white"
+                align="center"
+                cellPadding="0"
+                cellSpacing="0"
+            >
+                <Tbody>
+                    <Tr>
+                        <Td colSpan="3" valign="top" className="main">
                             <div id="main" className="justify">
-                                <table width="100%">
-                                    <tr>
-                                        <td className="title">UMO Tariff</td>
-                                        <td className="title" align="right">
-                                            <a href="../tariffs.asp">Back</a>
-                                        </td>
-                                    </tr>
-                                </table>
+                                <Table width="100%">
+                                    <Tr>
+                                        <h1 className='text-center text-4xl p-4'> UMO Tariff</h1>
+                                    </Tr>
+                                </Table>
                                 <div className="justify">
-                                    <b>
-                                        <table
-                                            className="border border-collapse mx-auto"
-                                            width="587"
-                                            cellSpacing="1"
-                                            cellPadding="8"
-                                        >
-                                            <tbody>
-                                                <tr>
-                                                    <td
-                                                        height="65"
-                                                        colSpan="3"
-                                                        className="title"
-                                                    >
-                                                        <strong>Urgent Money Order Service (UMO) Fee/Commission (Local &amp; City-To-City)</strong>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="150"></td>
-                                                    <td width="252"></td>
-                                                    <td width="133"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td className="Head" align="center">Category</td>
-                                                    <td className="Head" align="center">Value</td>
-                                                    <td className="Head" align="center">Fee/Commission Chargeable</td>
-                                                </tr>
-                                                <tr style={{ fontWeight: 'bold' }} className="content" align="center">
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr className="content" align="center">
-                                                    <td className="row">UMO (Local)</td>
-                                                    <td className="row">Upto Rs. 10,000/-</td>
-                                                    <td className="row"><b>Rs. 135/-</b></td>
-                                                </tr>
-                                                <tr className="content" align="center">
-                                                    <td className="altrow">UMO (City to City)</td>
-                                                    <td className="altrow">Upto Rs. 10,000/-</td>
-                                                    <td className="altrow"><b>Rs. 175/-</b></td>
-                                                </tr>
-                                                <tr className="content" align="center">
-                                                    <td className="row">UMO (Local)</td>
-                                                    <td className="row">Upto Rs. 10,001/- to Rs. 20,000/-</td>
-                                                    <td className="row"><b>Rs. 160/-</b></td>
-                                                </tr>
-                                                <tr className="content" align="center">
-                                                    <td className="altrow">UMO (City to City)</td>
-                                                    <td className="altrow">Upto Rs. 10,001/- to Rs. 20,000/-</td>
-                                                    <td className="altrow"><b>Rs. 200/-</b></td>
-                                                </tr>
-                                                <tr className="content" align="center">
-                                                    <td className="row">UMO (Local)</td>
-                                                    <td className="row">Upto Rs. 20,000/- to Rs. 50,000/-</td>
-                                                    <td className="row"><b>Rs. 185/-</b></td>
-                                                </tr>
-                                                <tr className="content" align="center">
-                                                    <td className="altrow">UMO (City to City)</td>
-                                                    <td className="altrow">Upto Rs. 20,000/- to Rs. 50,000/-</td>
-                                                    <td className="altrow"><b>Rs. 225/-</b></td>
-                                                </tr>
-                                                <tr className="content" align="center">
-                                                    <td className="row">UMO (Local)</td>
-                                                    <td className="row">Upto Rs. 50,000/- to Rs. 100,000/-</td>
-                                                    <td className="row"><b>Rs. 210/-</b></td>
-                                                </tr>
-                                                <tr className="content" align="center">
-                                                    <td className="altrow">UMO (City to City)</td>
-                                                    <td className="altrow">Upto Rs. 50,000/- to Rs. 100,000/-</td>
-                                                    <td className="altrow"><b>Rs. 250/-</b></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </b>
+                                    <Table
+                                        className="border border-collapse mx-auto"
+                                        width="587px"
+                                        cellSpacing="1"
+                                        cellPadding="8"
+                                    >
+                                        <TableCaption>
+                                            <Tr>
+                                                <Td
+                                                    height="65"
+                                                    colSpan="3"
+                                                    className="title"
+                                                    fontSize="xl"
+                                                >
+                                                    <strong>
+                                                        Urgent Money Order Service (UMO) Fee/Commission (Local &amp; City-To-City)
+                                                    </strong>
+                                                </Td>
+                                            </Tr>
+                                            <Tr>
+                                                <Td width="150"></Td>
+                                                <Td width="252"></Td>
+                                                <Td width="133"></Td>
+                                            </Tr>
+                                            <Tr>
+                                                <Td className="Head" align="center">
+                                                    Category
+                                                </Td>
+                                                <Td className="Head" align="center">
+                                                    Value
+                                                </Td>
+                                                <Td className="Head" align="center">
+                                                    Fee/Commission Chargeable
+                                                </Td>
+                                            </Tr>
+                                        </TableCaption>
+                                        <Tr style={{ fontWeight: 'bold' }} className="content" align="center">
+                                            <Td></Td>
+                                            <Td></Td>
+                                            <Td></Td>
+                                        </Tr>
+                                        <Tr className="content" align="center">
+                                            <Td className="row">UMO (Local)</Td>
+                                            <Td className="row">Upto Rs. 10,000/-</Td>
+                                            <Td className="row">
+                                                <strong>Rs. 135/-</strong>
+                                            </Td>
+                                        </Tr>
+                                        <Tr className="content" align="center">
+                                            <Td className="altrow">UMO (City to City)</Td>
+                                            <Td className="altrow">Upto Rs. 10,000/-</Td>
+                                            <Td className="altrow">
+                                                <strong>Rs. 175/-</strong>
+                                            </Td>
+                                        </Tr>
+                                        <Tr className="content" align="center">
+                                            <Td className="row">UMO (Local)</Td>
+                                            <Td className="row">Upto Rs. 10,001/- to Rs. 20,000/-</Td>
+                                            <Td className="row">
+                                                <strong>Rs. 160/-</strong>
+                                            </Td>
+                                        </Tr>
+                                        <Tr className="content" align="center">
+                                            <Td className="altrow">UMO (City to City)</Td>
+                                            <Td className="altrow">Upto Rs. 10,001/- to Rs. 20,000/-</Td>
+                                            <Td className="altrow">
+                                                <strong>Rs. 200/-</strong>
+                                            </Td>
+                                        </Tr>
+                                        <Tr className="content" align="center">
+                                            <Td className="row">UMO (Local)</Td>
+                                            <Td className="row">Upto Rs. 20,000/- to Rs. 50,000/-</Td>
+                                            <Td className="row">
+                                                <strong>Rs. 185/-</strong>
+                                            </Td>
+                                        </Tr>
+                                        <Tr className="content" align="center">
+                                            <Td className="altrow">UMO (City to City)</Td>
+                                            <Td className="altrow">Upto Rs. 20,000/- to Rs. 50,000/-</Td>
+                                            <Td className="altrow">
+                                                <strong>Rs. 225/-</strong>
+                                            </Td>
+                                        </Tr>
+                                        <Tr className="content" align="center">
+                                            <Td className="row">UMO (Local)</Td>
+                                            <Td className="row">Upto Rs. 50,000/- to Rs. 100,000/-</Td>
+                                            <Td className="row">
+                                                <strong>Rs. 210/-</strong>
+                                            </Td>
+                                        </Tr>
+                                        <Tr className="content" align="center">
+                                            <Td className="altrow">UMO (City to City)</Td>
+                                            <Td className="altrow">Upto Rs. 50,000/- to Rs. 100,000/-</Td>
+                                            <Td className="altrow">
+                                                <strong>Rs. 250/-</strong>
+                                            </Td>
+                                        </Tr>
+                                    </Table>
                                 </div>
                             </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    )
-}
+                        </Td>
+                    </Tr>
+                </Tbody>
+            </Table>
+        </Box>
+    );
+};
 
-export default UmoTariff
+export default UmoTariff;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Box, Table, Thead, Tbody, Tr, Th, Td, Input, Button } from '@chakra-ui/react';
 
 class EmsTariff extends Component {
     constructor() {
@@ -19,1509 +20,525 @@ class EmsTariff extends Component {
 
     render() {
         return (
-            <div>
-                <table width="995" border="0" align="center" cellpadding="0" cellspacing="0" style={{ background: '#FFFFFF' }}>
-                    <tbody>
-                        <tr>
-                            <td width="777" valign="top" id="top">
-                                <tr class="content">
-                                    <td colspan="6" class="title">Client Types: Regular & Corporate</td>
-                                </tr>
-                                <tr>
-                                    <td class="Head" align="center">Country Name</td>
-
-                                    <td class="Head" align="center">For a weight upto 1000 grams</td>
-
-                                    <td align="center" class="Head">For every addl. 1000 grams </td>
-                                </tr>
-
-
-
-                                <tr class='row'>
-                                    <td>
-                                        AFGHANISTAN
-                                    </td>
-                                    <td>
-                                        5810
-                                    </td>
-                                    <td>
-                                        1580
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        ALBANIA
-                                    </td>
-                                    <td>
-                                        7610
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Algeria
-                                    </td>
-                                    <td>
-                                        5840
-                                    </td>
-                                    <td>
-                                        1610
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Argentina
-                                    </td>
-                                    <td>
-                                        7980
-                                    </td>
-                                    <td>
-                                        4700
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Australia
-                                    </td>
-                                    <td>
-                                        6120
-                                    </td>
-                                    <td>
-                                        3200
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Austria
-                                    </td>
-                                    <td>
-                                        5510
-                                    </td>
-                                    <td>
-                                        1380
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        AZERBAIJAN
-                                    </td>
-                                    <td>
-                                        5440
-                                    </td>
-                                    <td>
-                                        1220
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Bahrain
-                                    </td>
-                                    <td>
-                                        4790
-                                    </td>
-                                    <td>
-                                        560
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Bangladesh
-                                    </td>
-                                    <td>
-                                        2970
-                                    </td>
-                                    <td>
-                                        640
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Belarus
-                                    </td>
-                                    <td>
-                                        7990
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Belgium
-                                    </td>
-                                    <td>
-                                        5240
-                                    </td>
-                                    <td>
-                                        1390
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Bhutan
-                                    </td>
-                                    <td>
-                                        7490
-                                    </td>
-                                    <td>
-                                        5150
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Bolivia
-                                    </td>
-                                    <td>
-                                        9020
-                                    </td>
-                                    <td>
-                                        5550
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        BOSNIA AND HERZEGOVINA
-                                    </td>
-                                    <td>
-                                        7230
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Botswana
-                                    </td>
-                                    <td>
-                                        7990
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Brazil
-                                    </td>
-                                    <td>
-                                        7880
-                                    </td>
-                                    <td>
-                                        3270
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        BULGARIA
-                                    </td>
-                                    <td>
-                                        4680
-                                    </td>
-                                    <td>
-                                        1210
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        CANADA
-                                    </td>
-                                    <td>
-                                        6210
-                                    </td>
-                                    <td>
-                                        3360
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Cayman Island (Mer)
-                                    </td>
-                                    <td>
-                                        9400
-                                    </td>
-                                    <td>
-                                        8960
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Cayman Island
-                                    </td>
-                                    <td>
-                                        9020
-                                    </td>
-                                    <td>
-                                        8580
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Chile
-                                    </td>
-                                    <td>
-                                        8490
-                                    </td>
-                                    <td>
-                                        4450
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        China
-                                    </td>
-                                    <td>
-                                        3500
-                                    </td>
-                                    <td>
-                                        1870
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Costa Rica
-                                    </td>
-                                    <td>
-                                        7230
-                                    </td>
-                                    <td>
-                                        3850
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        CROATIA (Mer)
-                                    </td>
-                                    <td>
-                                        4380
-                                    </td>
-                                    <td>
-                                        3940
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        CROATIA
-                                    </td>
-                                    <td>
-                                        3620
-                                    </td>
-                                    <td>
-                                        3190
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Cuba
-                                    </td>
-                                    <td>
-                                        7230
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Cyprus
-                                    </td>
-                                    <td>
-                                        4980
-                                    </td>
-                                    <td>
-                                        1130
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        CZECH REPUBLIC
-                                    </td>
-                                    <td>
-                                        5700
-                                    </td>
-                                    <td>
-                                        2610
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Denmark
-                                    </td>
-                                    <td>
-                                        17190
-                                    </td>
-                                    <td>
-                                        10790
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Egypt
-                                    </td>
-                                    <td>
-                                        4380
-                                    </td>
-                                    <td>
-                                        910
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Eritrea
-                                    </td>
-                                    <td>
-                                        7990
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Ethiopia
-                                    </td>
-                                    <td>
-                                        6160
-                                    </td>
-                                    <td>
-                                        1560
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Finland
-                                    </td>
-                                    <td>
-                                        6040
-                                    </td>
-                                    <td>
-                                        1330
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        France
-                                    </td>
-                                    <td>
-                                        5500
-                                    </td>
-                                    <td>
-                                        1850
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Germany
-                                    </td>
-                                    <td>
-                                        7330
-                                    </td>
-                                    <td>
-                                        1350
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Ghana
-                                    </td>
-                                    <td>
-                                        7190
-                                    </td>
-                                    <td>
-                                        2010
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Greece
-                                    </td>
-                                    <td>
-                                        5410
-                                    </td>
-                                    <td>
-                                        1190
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Guatemala
-                                    </td>
-                                    <td>
-                                        6090
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Guinea Bissau
-                                    </td>
-                                    <td>
-                                        2820
-                                    </td>
-                                    <td>
-                                        545
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Hong Kong (Mer)
-                                    </td>
-                                    <td>
-                                        6880
-                                    </td>
-                                    <td>
-                                        6440
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Hong Kong
-                                    </td>
-                                    <td>
-                                        5550
-                                    </td>
-                                    <td>
-                                        5110
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Hungary
-                                    </td>
-                                    <td>
-                                        5540
-                                    </td>
-                                    <td>
-                                        1310
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Iceland
-                                    </td>
-                                    <td>
-                                        10030
-                                    </td>
-                                    <td>
-                                        3230
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        India
-                                    </td>
-                                    <td>
-                                        4390
-                                    </td>
-                                    <td>
-                                        1000
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Indonesia
-                                    </td>
-                                    <td>
-                                        4790
-                                    </td>
-                                    <td>
-                                        4350
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Indonesia (Mer)
-                                    </td>
-                                    <td>
-                                        6680
-                                    </td>
-                                    <td>
-                                        6240
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Iran
-                                    </td>
-                                    <td>
-                                        6160
-                                    </td>
-                                    <td>
-                                        1930
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Iraq
-                                    </td>
-                                    <td>
-                                        4270
-                                    </td>
-                                    <td>
-                                        1560
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Ireland
-                                    </td>
-                                    <td>
-                                        6460
-                                    </td>
-                                    <td>
-                                        1500
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Italy
-                                    </td>
-                                    <td>
-                                        5800
-                                    </td>
-                                    <td>
-                                        1390
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Ivory coast
-                                    </td>
-                                    <td>
-                                        8640
-                                    </td>
-                                    <td>
-                                        5550
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Japan
-                                    </td>
-                                    <td>
-                                        7440
-                                    </td>
-                                    <td>
-                                        1620
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Jordan
-                                    </td>
-                                    <td>
-                                        5070
-                                    </td>
-                                    <td>
-                                        840
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Kenya
-                                    </td>
-                                    <td>
-                                        5290
-                                    </td>
-                                    <td>
-                                        1060
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Korea
-                                    </td>
-                                    <td>
-                                        6330
-                                    </td>
-                                    <td>
-                                        1340
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Kuwait
-                                    </td>
-                                    <td>
-                                        3800
-                                    </td>
-                                    <td>
-                                        710
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Kyrgyzstan
-                                    </td>
-                                    <td>
-                                        6920
-                                    </td>
-                                    <td>
-                                        2690
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Lao PDR
-                                    </td>
-                                    <td>
-                                        5570
-                                    </td>
-                                    <td>
-                                        5130
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Lao PDR (Mer)
-                                    </td>
-                                    <td>
-                                        7680
-                                    </td>
-                                    <td>
-                                        7240
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        LATVIA
-                                    </td>
-                                    <td>
-                                        5760
-                                    </td>
-                                    <td>
-                                        2670
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Luxembourg
-                                    </td>
-                                    <td>
-                                        4590
-                                    </td>
-                                    <td>
-                                        1500
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Macau (Mer)
-                                    </td>
-                                    <td>
-                                        6900
-                                    </td>
-                                    <td>
-                                        6460
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Macau
-                                    </td>
-                                    <td>
-                                        6140
-                                    </td>
-                                    <td>
-                                        5710
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Macedonia
-                                    </td>
-                                    <td>
-                                        7420
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Malaysia
-                                    </td>
-                                    <td>
-                                        5800
-                                    </td>
-                                    <td>
-                                        1010
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Maldives
-                                    </td>
-                                    <td>
-                                        4180
-                                    </td>
-                                    <td>
-                                        710
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Mali
-                                    </td>
-                                    <td>
-                                        6090
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        MALTA
-                                    </td>
-                                    <td>
-                                        6560
-                                    </td>
-                                    <td>
-                                        2670
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Mauritania
-                                    </td>
-                                    <td>
-                                        7990
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Mauritius
-                                    </td>
-                                    <td>
-                                        7230
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Morocco
-                                    </td>
-                                    <td>
-                                        6180
-                                    </td>
-                                    <td>
-                                        2140
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Nepal
-                                    </td>
-                                    <td>
-                                        3510
-                                    </td>
-                                    <td>
-                                        800
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Netherlands
-                                    </td>
-                                    <td>
-                                        6210
-                                    </td>
-                                    <td>
-                                        1390
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        New Zealand
-                                    </td>
-                                    <td>
-                                        6280
-                                    </td>
-                                    <td>
-                                        3700
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Niger
-                                    </td>
-                                    <td>
-                                        7610
-                                    </td>
-                                    <td>
-                                        4520
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Nigeria
-                                    </td>
-                                    <td>
-                                        5590
-                                    </td>
-                                    <td>
-                                        1930
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Norway
-                                    </td>
-                                    <td>
-                                        7830
-                                    </td>
-                                    <td>
-                                        1240
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Oman
-                                    </td>
-                                    <td>
-                                        5190
-                                    </td>
-                                    <td>
-                                        590
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Philippines
-                                    </td>
-                                    <td>
-                                        5210
-                                    </td>
-                                    <td>
-                                        1740
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Poland
-                                    </td>
-                                    <td>
-                                        4780
-                                    </td>
-                                    <td>
-                                        1310
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Portugal
-                                    </td>
-                                    <td>
-                                        6320
-                                    </td>
-                                    <td>
-                                        3230
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Qatar
-                                    </td>
-                                    <td>
-                                        5280
-                                    </td>
-                                    <td>
-                                        1430
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Romania
-                                    </td>
-                                    <td>
-                                        5810
-                                    </td>
-                                    <td>
-                                        1210
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Russia
-                                    </td>
-                                    <td>
-                                        4830
-                                    </td>
-                                    <td>
-                                        2760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Rwanda
-                                    </td>
-                                    <td>
-                                        5370
-                                    </td>
-                                    <td>
-                                        1520
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Saudi Arabia
-                                    </td>
-                                    <td>
-                                        5510
-                                    </td>
-                                    <td>
-                                        910
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Senegal
-                                    </td>
-                                    <td>
-                                        7230
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Sierraleone (Mer)
-                                    </td>
-                                    <td>
-                                        7610
-                                    </td>
-                                    <td>
-                                        7170
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Sierraleone
-                                    </td>
-                                    <td>
-                                        6470
-                                    </td>
-                                    <td>
-                                        6030
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Singapore
-                                    </td>
-                                    <td>
-                                        5170
-                                    </td>
-                                    <td>
-                                        4730
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Somalia (Mer)
-                                    </td>
-                                    <td>
-                                        3890
-                                    </td>
-                                    <td>
-                                        3450
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Somalia
-                                    </td>
-                                    <td>
-                                        3320
-                                    </td>
-                                    <td>
-                                        2880
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        South Africa
-                                    </td>
-                                    <td>
-                                        5780
-                                    </td>
-                                    <td>
-                                        2310
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Spain
-                                    </td>
-                                    <td>
-                                        5570
-                                    </td>
-                                    <td>
-                                        1540
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Srilanka
-                                    </td>
-                                    <td>
-                                        3780
-                                    </td>
-                                    <td>
-                                        690
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Srilanka
-                                    </td>
-                                    <td>
-                                        5010
-                                    </td>
-                                    <td>
-                                        1060
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Sudan
-                                    </td>
-                                    <td>
-                                        6160
-                                    </td>
-                                    <td>
-                                        1560
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Sweden
-                                    </td>
-                                    <td>
-                                        7810
-                                    </td>
-                                    <td>
-                                        1310
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Switzerland
-                                    </td>
-                                    <td>
-                                        6930
-                                    </td>
-                                    <td>
-                                        1370
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Syria
-                                    </td>
-                                    <td>
-                                        7610
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Tanzania
-                                    </td>
-                                    <td>
-                                        6160
-                                    </td>
-                                    <td>
-                                        1560
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Thailand
-                                    </td>
-                                    <td>
-                                        4960
-                                    </td>
-                                    <td>
-                                        1230
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Thailand
-                                    </td>
-                                    <td>
-                                        4230
-                                    </td>
-                                    <td>
-                                        950
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Togo
-                                    </td>
-                                    <td>
-                                        7990
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Tunisia
-                                    </td>
-                                    <td>
-                                        5350
-                                    </td>
-                                    <td>
-                                        1500
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Turkey
-                                    </td>
-                                    <td>
-                                        6370
-                                    </td>
-                                    <td>
-                                        1390
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        Uganda
-                                    </td>
-                                    <td>
-                                        5690
-                                    </td>
-                                    <td>
-                                        1460
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        UKRAINE
-                                    </td>
-                                    <td>
-                                        8740
-                                    </td>
-                                    <td>
-                                        3760
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        United Arab Emirates
-                                    </td>
-                                    <td>
-                                        4830
-                                    </td>
-                                    <td>
-                                        610
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        United Kingdom
-                                    </td>
-                                    <td>
-                                        7310
-                                    </td>
-                                    <td>
-                                        1410
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        United States
-                                    </td>
-                                    <td>
-                                        8440
-                                    </td>
-                                    <td>
-                                        3670
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Uzbekistan
-                                    </td>
-                                    <td>
-                                        6290
-                                    </td>
-                                    <td>
-                                        1680
-                                    </td>
-
-                                </tr>
-
-                                <tr class='row'>
-                                    <td>
-                                        VIET NAM
-                                    </td>
-                                    <td>
-                                        4150
-                                    </td>
-                                    <td>
-                                        3710
-                                    </td>
-
-                                </tr>
-
-                                <tr class='altrow'>
-                                    <td>
-                                        Zimbabwe
-                                    </td>
-                                    <td>
-                                        6420
-                                    </td>
-                                    <td>
-                                        2950
-                                    </td>
-                                </tr>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <Box p="4" height="450px" overflowY="auto">
+                 <h1 className='text-center text-4xl p-4'> Express Mail Service Tariff</h1>
+                <Table variant="striped"  mt="4" borderWidth="1px">
+                    <Thead bgColor="var(--primary-color)" color="white">
+                        <Tr>
+                            <Th><h1 className='text-white'>Country Name</h1></Th>
+                            <Th><h1 className='text-white'>For a weight upto 1000 grams</h1></Th>
+                            <Th><h1 className='text-white'>For every addl. 1000 grams</h1></Th>
+                        </Tr>
+                    </Thead>
+                    <Tbody>
+                        <Tr className='row'>
+                            <Td>AFGHANISTAN</Td>
+                            <Td>5810</Td>
+                            <Td>1580</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>ALBANIA</Td>
+                            <Td>7610</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Algeria</Td>
+                            <Td>5840</Td>
+                            <Td>1610</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Argentina</Td>
+                            <Td>7980</Td>
+                            <Td>4700</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Australia</Td>
+                            <Td>6120</Td>
+                            <Td>3200</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Austria</Td>
+                            <Td>5510</Td>
+                            <Td>1380</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>AZERBAIJAN</Td>
+                            <Td>5440</Td>
+                            <Td>1220</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Bahrain</Td>
+                            <Td>4790</Td>
+                            <Td>560</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Bangladesh</Td>
+                            <Td>2970</Td>
+                            <Td>640</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Belarus</Td>
+                            <Td>7990</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Belgium</Td>
+                            <Td>5240</Td>
+                            <Td>1390</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Bhutan</Td>
+                            <Td>7490</Td>
+                            <Td>5150</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Bolivia</Td>
+                            <Td>9020</Td>
+                            <Td>5550</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>BOSNIA AND HERZEGOVINA</Td>
+                            <Td>7230</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Botswana</Td>
+                            <Td>7990</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Brazil</Td>
+                            <Td>7880</Td>
+                            <Td>3270</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>BULGARIA</Td>
+                            <Td>4680</Td>
+                            <Td>1210</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>CANADA</Td>
+                            <Td>6210</Td>
+                            <Td>3360</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Cayman Island (Mer)</Td>
+                            <Td>9400</Td>
+                            <Td>8960</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Cayman Island</Td>
+                            <Td>9020</Td>
+                            <Td>8580</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Chile</Td>
+                            <Td>8490</Td>
+                            <Td>4450</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>China</Td>
+                            <Td>3500</Td>
+                            <Td>1870</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Costa Rica</Td>
+                            <Td>7230</Td>
+                            <Td>3850</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>CROATIA (Mer)</Td>
+                            <Td>4380</Td>
+                            <Td>3940</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>CROATIA</Td>
+                            <Td>3620</Td>
+                            <Td>3190</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Cuba</Td>
+                            <Td>7230</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Cyprus</Td>
+                            <Td>4980</Td>
+                            <Td>1130</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>CZECH REPUBLIC</Td>
+                            <Td>5700</Td>
+                            <Td>2610</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Denmark</Td>
+                            <Td>17190</Td>
+                            <Td>10790</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Egypt</Td>
+                            <Td>4380</Td>
+                            <Td>910</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Eritrea</Td>
+                            <Td>7990</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Ethiopia</Td>
+                            <Td>6160</Td>
+                            <Td>1560</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Finland</Td>
+                            <Td>6040</Td>
+                            <Td>1330</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>France</Td>
+                            <Td>5500</Td>
+                            <Td>1850</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Germany</Td>
+                            <Td>7330</Td>
+                            <Td>1350</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Ghana</Td>
+                            <Td>7190</Td>
+                            <Td>2010</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Greece</Td>
+                            <Td>5410</Td>
+                            <Td>1190</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Guatemala</Td>
+                            <Td>6090</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Guinea Bissau</Td>
+                            <Td>2820</Td>
+                            <Td>545</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Hong Kong (Mer)</Td>
+                            <Td>6880</Td>
+                            <Td>6440</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Hungary</Td>
+                            <Td>5540</Td>
+                            <Td>1310</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Iceland</Td>
+                            <Td>10030</Td>
+                            <Td>3230</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>India</Td>
+                            <Td>4390</Td>
+                            <Td>1000</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Indonesia</Td>
+                            <Td>4790</Td>
+                            <Td>4350</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Indonesia (Mer)</Td>
+                            <Td>6680</Td>
+                            <Td>6240</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Iran</Td>
+                            <Td>6160</Td>
+                            <Td>1930</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Iraq</Td>
+                            <Td>4270</Td>
+                            <Td>1560</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Ireland</Td>
+                            <Td>6460</Td>
+                            <Td>1500</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Italy</Td>
+                            <Td>5800</Td>
+                            <Td>1390</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Ivory coast</Td>
+                            <Td>8640</Td>
+                            <Td>5550</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Japan</Td>
+                            <Td>7440</Td>
+                            <Td>1620</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Jordan</Td>
+                            <Td>5070</Td>
+                            <Td>840</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Kenya</Td>
+                            <Td>5290</Td>
+                            <Td>1060</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Korea</Td>
+                            <Td>6330</Td>
+                            <Td>1340</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Kuwait</Td>
+                            <Td>3800</Td>
+                            <Td>710</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Kyrgyzstan</Td>
+                            <Td>6920</Td>
+                            <Td>2690</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Lao PDR</Td>
+                            <Td>5570</Td>
+                            <Td>5130</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Lao PDR (Mer)</Td>
+                            <Td>7680</Td>
+                            <Td>7240</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>LATVIA</Td>
+                            <Td>5760</Td>
+                            <Td>2670</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Luxembourg</Td>
+                            <Td>4590</Td>
+                            <Td>1500</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Macau (Mer)</Td>
+                            <Td>6900</Td>
+                            <Td>6460</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Macedonia</Td>
+                            <Td>7420</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Malaysia</Td>
+                            <Td>5800</Td>
+                            <Td>1010</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Maldives</Td>
+                            <Td>4180</Td>
+                            <Td>710</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Mali</Td>
+                            <Td>6090</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>MALTA</Td>
+                            <Td>6560</Td>
+                            <Td>2670</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Mauritania</Td>
+                            <Td>7990</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Mauritius</Td>
+                            <Td>7230</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Morocco</Td>
+                            <Td>6180</Td>
+                            <Td>2140</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Nepal</Td>
+                            <Td>3510</Td>
+                            <Td>800</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Netherlands</Td>
+                            <Td>6210</Td>
+                            <Td>1390</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>New Zealand</Td>
+                            <Td>6280</Td>
+                            <Td>3700</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Niger</Td>
+                            <Td>7610</Td>
+                            <Td>4520</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Nigeria</Td>
+                            <Td>5590</Td>
+                            <Td>1930</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Norway</Td>
+                            <Td>7830</Td>
+                            <Td>1240</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Oman</Td>
+                            <Td>5190</Td>
+                            <Td>590</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Philippines</Td>
+                            <Td>5210</Td>
+                            <Td>1740</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Poland</Td>
+                            <Td>4780</Td>
+                            <Td>1310</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Portugal</Td>
+                            <Td>6320</Td>
+                            <Td>3230</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Qatar</Td>
+                            <Td>5280</Td>
+                            <Td>1430</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Romania</Td>
+                            <Td>5810</Td>
+                            <Td>1210</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Russia</Td>
+                            <Td>4830</Td>
+                            <Td>2760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Rwanda</Td>
+                            <Td>5370</Td>
+                            <Td>1520</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Saudi Arabia</Td>
+                            <Td>5510</Td>
+                            <Td>910</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Senegal</Td>
+                            <Td>7230</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Switzerland</Td>
+                            <Td>6930</Td>
+                            <Td>1370</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Syria</Td>
+                            <Td>7610</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Tanzania</Td>
+                            <Td>6160</Td>
+                            <Td>1560</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Thailand</Td>
+                            <Td>4960</Td>
+                            <Td>1230</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Thailand (Mer)</Td>
+                            <Td>4230</Td>
+                            <Td>950</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Togo</Td>
+                            <Td>7990</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Tunisia</Td>
+                            <Td>5350</Td>
+                            <Td>1500</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Turkey</Td>
+                            <Td>6370</Td>
+                            <Td>1390</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>Uganda</Td>
+                            <Td>5690</Td>
+                            <Td>1460</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>UKRAINE</Td>
+                            <Td>8740</Td>
+                            <Td>3760</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>United Arab Emirates</Td>
+                            <Td>4830</Td>
+                            <Td>610</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>United Kingdom</Td>
+                            <Td>7310</Td>
+                            <Td>1410</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>United States</Td>
+                            <Td>8440</Td>
+                            <Td>3670</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Uzbekistan</Td>
+                            <Td>6290</Td>
+                            <Td>1680</Td>
+                        </Tr>
+                        <Tr className='row'>
+                            <Td>VIET NAM</Td>
+                            <Td>4150</Td>
+                            <Td>3710</Td>
+                        </Tr>
+                        <Tr className='altrow'>
+                            <Td>Zimbabwe</Td>
+                            <Td>6420</Td>
+                            <Td>2950</Td>
+                        </Tr>
+                    </Tbody>
+                </Table>
+            </Box>
         );
     }
 }

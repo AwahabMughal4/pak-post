@@ -1,105 +1,124 @@
-import React from 'react'
+import React from 'react';
+import {
+  Box,
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  Text,
+  TableCaption,
+} from '@chakra-ui/react';
 
 const UmsTariff = () => {
-    return (
-        <div className="flex flex-col justify-center">
-            <div>
-                <table className="border-collapse border border-gray-200 w-96">
-                    <tr className="bg-gray-200">
-                        <td colSpan="4" className="p-2 font-bold">Client Type: Regular</td>
-                    </tr>
-                    <tr className="text-center">
-                        <td colSpan="2" className="p-2">Weight (grams)</td>
-                        <td className="p-2">Tariff</td>
-                    </tr>
-                    <tr className="font-bold text-center">
-                        <td className="p-2">From</td>
-                        <td className="p-2">To</td>
-                        <td className="p-2">(Rs)</td>
-                    </tr>
-                    <tr className="text-center">
-                        <td className="p-2">1</td>
-                        <td className="p-2">250</td>
-                        <td className="p-2">150</td>
-                    </tr>
-                    <tr className="bg-gray-100 text-center">
-                        <td className="p-2">251</td>
-                        <td className="p-2">500</td>
-                        <td className="p-2">230</td>
-                    </tr>
-                    <tr className="text-center">
-                        <td colSpan="3" className="p-2">
-                            <b>Note:</b> Additional 75 Rs. will be charged for every additional 500 gm. Tariff is inclusive of GST
-                        </td>
-                    </tr>
-                </table></div>
-            <div className="flex ">
-                <table className="w-96 border border-gray-200">
-                    <tr className="bg-gray-200">
-                        <td colSpan="3" className="p-2 font-bold">
-                            Client Type: Regular Local
-                        </td>
-                    </tr>
-                    <tr className="text-center">
-                        <td colSpan="2" className="p-2">
-                            Weight (grams)
-                        </td>
-                        <td className="p-2">Tariff</td>
-                    </tr>
-                    <tr className="font-bold text-center">
-                        <td className="p-2">From</td>
-                        <td className="p-2">To</td>
-                        <td className="p-2">(Rs)</td>
-                    </tr>
-                    <tr className="text-center">
-                        <td className="p-2 row">1</td>
-                        <td className="p-2 row">250</td>
-                        <td className="p-2 row">90</td>
-                    </tr>
-                    <tr className="bg-gray-100 text-center">
-                        <td className="p-2 altrow">251</td>
-                        <td className="p-2 altrow">500</td>
-                        <td className="p-2 altrow">110</td>
-                    </tr>
-                    <tr className="text-center">
-                        <td colSpan="3" className="p-2">
-                            <b>Note:</b> Additional 45 Rs. will be charged for every additional 500 gm. Tariff is inclusive of GST.
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <table className="w-3/4 border-collapse border" align="center">
-                    <thead>
-                        <tr className="bg-gray-200">
-                            <th colSpan="4" className="py-2 px-4 text-center">
-                                Client Type: Corporate
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colSpan="4" className="py-2 px-4">
-                                <p className="font-semibold">Note: Corporate and Bulk Customers may contact local Postal Officers, Deputy Postmasters General or Postmasters General for discounted tariff</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div className="text-center">
-                <div className="text-xl font-bold mb-4">GST</div>
-                <div className="text-left">
-                    <b>Islamabad:</b> 16%<br />
-                    <b>Pakhtunkhwa:</b> 15%<br />
-                    <b>Punjab:</b> 16%<br />
-                    <b>Sindh:</b> 13%<br />
-                    <b>Balochistan:</b> 15%<br />
-                </div>
-            </div>
-
-
+  return (
+    <Box mx="auto">
+      <div>
+      <h1 className='text-center text-4xl p-4'> Urgent Mail Service Tariff</h1>
+        <Table variant="simple" size="sm" borderColor="gray.200">
+          <TableCaption>
+            <Text fontWeight="bold" color="var(--primary-color)">
+              Client Type: Regular
+            </Text>
+          </TableCaption>
+          <Thead>
+            <Tr>
+              <Th colSpan="2">Weight (grams)</Th>
+              <Th>Tariff (Rs)</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            <Tr>
+              <Td>1</Td>
+              <Td>250</Td>
+              <Td>150</Td>
+            </Tr>
+            <Tr className="bg-gray-100">
+              <Td>251</Td>
+              <Td>500</Td>
+              <Td>230</Td>
+            </Tr>
+          </Tbody>
+        </Table>
+        <Text color="var(--primary-color)" fontSize="sm" mt="2">
+          <b>Note:</b> Additional 75 Rs. will be charged for every additional 500 gm. Tariff is inclusive of GST.
+        </Text>
+      </div>
+      <div>
+        <Table variant="simple" size="sm" borderColor="gray.200" mt="4">
+          <TableCaption>
+            <Text fontWeight="bold" color="var(--primary-color)">
+              Client Type: Regular Local
+            </Text>
+          </TableCaption>
+          <Thead>
+            <Tr>
+              <Th colSpan="2">Weight (grams)</Th>
+              <Th>Tariff (Rs)</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            <Tr>
+              <Td>1</Td>
+              <Td>250</Td>
+              <Td>90</Td>
+            </Tr>
+            <Tr className="bg-gray-100">
+              <Td>251</Td>
+              <Td>500</Td>
+              <Td>110</Td>
+            </Tr>
+          </Tbody>
+        </Table>
+        <Text color="var(--primary-color)" fontSize="sm" mt="2">
+          <b>Note:</b> Additional 45 Rs. will be charged for every additional 500 gm. Tariff is inclusive of GST.
+        </Text>
+      </div>
+      <div>
+        <Table variant="simple" size="sm" borderColor="gray.200" mt="4">
+          <Thead>
+            <Tr>
+              <Th colSpan="4" py="2" px="4" textAlign="center" bgColor="gray.200">
+                Client Type: Corporate
+              </Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            <Tr>
+              <Td colSpan="4" py="2" px="4">
+                <Text fontWeight="semibold">
+                  Note: Corporate and Bulk Customers may contact local Postal Officers, Deputy Postmasters General, or Postmasters General for discounted tariff
+                </Text>
+              </Td>
+            </Tr>
+          </Tbody>
+        </Table>
+      </div>
+      <div mt="4">
+        <Text fontSize="xl" fontWeight="bold" mb="2" color="var(--primary-color)">
+          GST
+        </Text>
+        <div>
+          <Text>
+            <b>Islamabad:</b> 16%
+          </Text>
+          <Text>
+            <b>Pakhtunkhwa:</b> 15%
+          </Text>
+          <Text>
+            <b>Punjab:</b> 16%
+          </Text>
+          <Text>
+            <b>Sindh:</b> 13%
+          </Text>
+          <Text>
+            <b>Balochistan:</b> 15%
+          </Text>
         </div>
-    )
-}
+      </div>
+    </Box>
+  );
+};
 
-export default UmsTariff
+export default UmsTariff;
