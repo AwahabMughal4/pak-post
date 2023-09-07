@@ -1,5 +1,5 @@
 import * as React from "react";
-import { News, Tenders } from "../../DataObjects/data";
+import { NewsData, TendersData } from "../../DataObjects/NewsTenders";
 import { Box, Center, Flex, Heading } from "@chakra-ui/react";
 
 import {
@@ -21,7 +21,9 @@ const BasicCard = (props) => {
         <Text>{props.date}</Text>
       </CardBody>
       <CardFooter>
-        <Button>View here</Button>
+        <Button as={"a"} href={props.url}>
+          View here
+        </Button>
       </CardFooter>
     </Card>
   );
@@ -43,7 +45,12 @@ const NewsSection = () => {
       </Center>
 
       <Flex wrap={{ base: "wrap", sm: "nowrap" }}>
-        <Card mx={"2rem"} my={{ base: "2rem", sm: "0" }} shadow={"xl"}>
+        <Card
+          mx={"2rem"}
+          my={{ base: "2rem", sm: "0" }}
+          shadow={"xl"}
+          w={{ base: "90%", sm: "48%" }}
+        >
           <Heading m={"1rem"} textColor={"#ED1B24"}>
             News
           </Heading>
@@ -53,9 +60,14 @@ const NewsSection = () => {
             h={["75vh", "50vh"]}
             overflowY={"scroll"}
           >
-            {News.map((news) => {
+            {NewsData.map((news) => {
               return (
-                <BasicCard key={news.id} date={news.date} title={news.title} />
+                <BasicCard
+                  key={news.id}
+                  date={news.date}
+                  title={news.title}
+                  src={news.url}
+                />
               );
             })}
           </Box>
@@ -80,7 +92,12 @@ const NewsSection = () => {
             </Button>
           </Link>
         </Card>
-        <Card mx={"2rem"} my={{ base: "2rem", sm: "0" }} shadow={"xl"}>
+        <Card
+          mx={"1.5rem"}
+          my={{ base: "2rem", sm: "0" }}
+          shadow={"xl"}
+          w={{ base: "90%", sm: "48%" }}
+        >
           <Heading m={"1rem"} textColor={"#ED1B24"}>
             Tenders
           </Heading>
@@ -90,9 +107,14 @@ const NewsSection = () => {
             h={["75vh", "50vh"]}
             overflowY={"scroll"}
           >
-            {Tenders.map((news) => {
+            {TendersData.map((news) => {
               return (
-                <BasicCard key={news.id} title={news.title} date={news.date} />
+                <BasicCard
+                  key={news.id}
+                  title={news.title}
+                  date={news.title2}
+                  src={news.url}
+                />
               );
             })}
           </Box>

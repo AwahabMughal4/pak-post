@@ -128,7 +128,7 @@ const Card = ({ designation, name, email, phone }) => {
 const Contacts = () => {
   return (
     <div>
-      <div id="dg">
+      <div id="dg" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -158,7 +158,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="ccc">
+      <div id="ccc" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -180,7 +180,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="gbc">
+      <div id="gbc" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -202,7 +202,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="ajkc">
+      <div id="ajkc" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -224,7 +224,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="gpun">
+      <div id="gpun" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -246,7 +246,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="npun">
+      <div id="npun" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -268,7 +268,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="cpun">
+      <div id="cpun" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -290,7 +290,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="spun">
+      <div id="spun" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -312,7 +312,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="gsb">
+      <div id="gsb" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -334,7 +334,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="karc">
+      <div id="karc" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -356,7 +356,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="nsin">
+      <div id="nsin" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -378,7 +378,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="balc">
+      <div id="balc" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -400,7 +400,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="kpkc">
+      <div id="kpkc" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}

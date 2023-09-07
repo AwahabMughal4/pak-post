@@ -7,6 +7,8 @@ import {
   Text,
   Heading,
   IconButton,
+  Card,
+  Image,
 } from "@chakra-ui/react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {
@@ -48,7 +50,7 @@ export default function Stamps() {
         size="lg"
         aria-label="Toggle Sidebar"
         position="fixed"
-        top="7rem"
+        top="6.5rem"
         left="1rem"
         zIndex="9999"
         bgColor="rgba(0, 0, 0, 0)"
@@ -85,12 +87,14 @@ const SidebarContent = ({ isOpen, onClose, ...rest }) => {
         md: isOpen ? "block" : "none",
       }}
       bg={useColorModeValue("white", "zinc.500")}
-      position={"absolute "}
-      zIndex={"3"}
+      position="fixed"
+      top="6.5rem"
+      left="0.5rem"
+      zIndex="3"
       borderRight="1px"
       borderBottom="1px"
       borderColor={useColorModeValue("gray.200", "gray.700")}
-      w={{ base: "60%", md: "18%" }}
+      w={{ base: "70%", md: "25%" }}
       h={{ base: "65rem", md: "auto" }}
       shadow={{ base: "dark-lg", md: "none" }}
       {...rest}
@@ -108,11 +112,13 @@ const SidebarContent = ({ isOpen, onClose, ...rest }) => {
           Stamps
         </Text>
       </Flex>
-      {AllButtons.map((link) => (
-        <NavItem key={link.year} id={link.id} toggleSidebar={onClose}>
-          {link.year}
-        </NavItem>
-      ))}
+      <Flex flexWrap={{ base: "wrap", md: "wrap" }}>
+        {AllButtons.map((link) => (
+          <NavItem key={link.year} id={link.id} toggleSidebar={onClose}>
+            {link.year}
+          </NavItem>
+        ))}
+      </Flex>
     </Box>
   );
 };
@@ -126,54 +132,59 @@ const NavItem = ({ children, toggleSidebar, id, ...rest }) => {
     <Box
       as="a"
       href={`#${id}`}
-      style={{ textDecoration: "none" }}
-      _focus={{ boxShadow: "none" }}
-      display={"flex "}
-      justifyContent={"center"}
-      alignItems={"center"}
       onClick={handleNavItemClick}
-      // bg={'gray.100'}
+      w={{ base: "calc(50% - 10px)", sm: "40%", lg: "calc(50% - 10px)" }} // 50% width for two buttons with 10px margin between them
+      mx={"5px"} // Margin between buttons
+      mb={"5px"} // Margin at the bottom of each row
+      align="center"
+      px={{ base: "7", sm: "2", lg: "7" }}
+      py={{ base: "2", sm: "1", lg: "2" }}
+      borderRadius="lg"
+      role="group"
+      cursor="pointer"
+      _hover={{
+        bg: "#ed1b24",
+        color: "red",
+        textColor: "white",
+      }}
+      {...rest}
     >
-      <Flex
-        align="center"
-        px={"7"}
-        py={"2"}
-        mx="4"
-        borderRadius="lg"
-        role="group"
-        cursor="pointer"
-        _hover={{
-          bg: "#ed1b24",
-          color: "red",
-          textColor: "white",
-        }}
-        {...rest}
-      >
-        {children}
-      </Flex>
+      {children}
     </Box>
   );
 };
 
 function ProductCard({ heading, paragraph, image, pdfStamps }) {
   return (
-    <div className="p-1 m-4 border border-gray-300 shadow-lg bg-zinc-200 ">
-      <div className="flex-wrap items-center justify-center px-5 py-4 border border-gray-300 shadow-lg bg-stone-200 h-[350px] ">
-        <img src={image} alt="img1" className="w-[160px] h-[140px] rounded" />
-
-        <div className="w-[180px] h-24   flex-wrap flex ">
-          <h2 className="px-1 mt-1  font-sans text-sm font-semibold ">
-            {heading}
-          </h2>
-          <h2 className="px-1 py-1 font-sans text-xs ">{paragraph}</h2>
-        </div>
-        <div className=" flex justify-end items-end">
-          <a href={pdfStamps} className="text-red-600  font-semibold  text-sm">
-            Read...
-          </a>
-        </div>
-      </div>
-    </div>
+    <Card
+      w={{ base: "100%", md: "46%", lg: "23%" }}
+      m={"0.5rem"}
+      p={"0.5rem"}
+      h={{ base: "70vh", md: "60vh", lg: "50vh" }}
+      shadow={"lg"}
+    >
+      <Flex
+        alignItems={"center"}
+        justifyContent={"center"}
+        flexDirection={"column"}
+      >
+        <Image src={image} w={"150px"} h={"150px"} />
+        <Text fontWeight={"bold"}>{heading}</Text>
+        <Text textAlign={"center"}>{paragraph}</Text>
+      </Flex>
+      <Box
+        as="a"
+        href={pdfStamps}
+        cursor="pointer"
+        textColor={"red"}
+        margin={"auto 1rem 1rem auto"}
+        _hover={{
+          textDecoration: "underline",
+        }}
+      >
+        Read More
+      </Box>
+    </Card>
   );
 }
 
