@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Box,
   Table,
@@ -9,13 +9,16 @@ import {
   Td,
   Text,
   TableCaption,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
 const UmsTariff = () => {
   return (
-    <Box mx="auto">
-      <div>
-      <h1 className='text-center text-4xl p-4'> Urgent Mail Service Tariff</h1>
+    <Box w={{ base: "100%", md: "90%" }} mx={"auto"} my={"2rem"}>
+      <h1 className="text-center text-4xl p-4 text-[red] font-bold">
+        {" "}
+        Urgent Mail Service Tariff
+      </h1>
+      <Box w={{ base: "90%", md: "50%" }} mx={"auto"} my={"2rem"}>
         <Table variant="simple" size="sm" borderColor="gray.200">
           <TableCaption>
             <Text fontWeight="bold" color="var(--primary-color)">
@@ -42,10 +45,11 @@ const UmsTariff = () => {
           </Tbody>
         </Table>
         <Text color="var(--primary-color)" fontSize="sm" mt="2">
-          <b>Note:</b> Additional 75 Rs. will be charged for every additional 500 gm. Tariff is inclusive of GST.
+          <b>Note:</b> Additional 75 Rs. will be charged for every additional
+          500 gm. Tariff is inclusive of GST.
         </Text>
-      </div>
-      <div>
+      </Box>
+      <Box w={{ base: "90%", md: "50%" }} mx={"auto"} my={"2rem"}>
         <Table variant="simple" size="sm" borderColor="gray.200" mt="4">
           <TableCaption>
             <Text fontWeight="bold" color="var(--primary-color)">
@@ -72,14 +76,21 @@ const UmsTariff = () => {
           </Tbody>
         </Table>
         <Text color="var(--primary-color)" fontSize="sm" mt="2">
-          <b>Note:</b> Additional 45 Rs. will be charged for every additional 500 gm. Tariff is inclusive of GST.
+          <b>Note:</b> Additional 45 Rs. will be charged for every additional
+          500 gm. Tariff is inclusive of GST.
         </Text>
-      </div>
-      <div>
+      </Box>
+      <Box w={{ base: "90%", md: "50%" }} mx={"auto"} my={"2rem"}>
         <Table variant="simple" size="sm" borderColor="gray.200" mt="4">
           <Thead>
             <Tr>
-              <Th colSpan="4" py="2" px="4" textAlign="center" bgColor="gray.200">
+              <Th
+                colSpan="4"
+                py="2"
+                px="4"
+                textAlign="center"
+                bgColor="gray.200"
+              >
                 Client Type: Corporate
               </Th>
             </Tr>
@@ -88,15 +99,22 @@ const UmsTariff = () => {
             <Tr>
               <Td colSpan="4" py="2" px="4">
                 <Text fontWeight="semibold">
-                  Note: Corporate and Bulk Customers may contact local Postal Officers, Deputy Postmasters General, or Postmasters General for discounted tariff
+                  Note: Corporate and Bulk Customers may contact local Postal
+                  Officers, Deputy Postmasters General, or Postmasters General
+                  for discounted tariff
                 </Text>
               </Td>
             </Tr>
           </Tbody>
         </Table>
-      </div>
-      <div mt="4">
-        <Text fontSize="xl" fontWeight="bold" mb="2" color="var(--primary-color)">
+      </Box>
+      <Box w={{ base: "90%", md: "50%" }} mx={"auto"} my={"2rem"}>
+        <Text
+          fontSize="xl"
+          fontWeight="bold"
+          mb="2"
+          color="var(--primary-color)"
+        >
           GST
         </Text>
         <div>
@@ -116,7 +134,7 @@ const UmsTariff = () => {
             <b>Balochistan:</b> 15%
           </Text>
         </div>
-      </div>
+      </Box>
     </Box>
   );
 };
