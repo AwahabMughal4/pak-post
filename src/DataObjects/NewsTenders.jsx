@@ -126,6 +126,374 @@ export const TendersData = [
     title6: "",
     url6: "",
   },
+  {
+    id: 9,
+    title:
+      "Tender Notice for Purchase of Stationery Items Under The Directorate General Pakistan Post G-8/4, Islamabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "20-09-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 10,
+    title:
+      "Pre-Qualification Notice For Annual Repair, Petty Repair, Construction, Reconstruction / Repair and Maintenance of Buildings, Water Supply and Electricity Work etc. For Financial Year 2023-24 Under The Postmaster General FC & GB Circle Islamabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "04-9-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 11,
+    title:
+      "Tender Notice for Purchase Android Mobile Phones Under The Directorate General Pakistan Post G-8/4, Islamabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "04-9-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 12,
+    title:
+      "Pre-Qualification Notice for Annual Repair, Petty Repair, Electric, Sanitary, Construction, Re-Construction, works at Departmental Buildings situated at different locations for Financial Year 2023-24 Under The Postmaster General, Northern Punjab Circle, Rawalpindi (Urdu)",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "28-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 13,
+    title:
+      "Tender Notice for Security Services Under The Postmaster General Northern Sindh Circle Hyderabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "21-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 14,
+    title:
+      "Pre-Qualification Notice Construction, Reconstruction / Repair and Maintenance of Buildings, Water Supply and Electricity Work etc. For Financial Year 2023-24 Under The Postmaster General Northern Sindh Circle Hyderabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "21-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 15,
+    title:
+      "Tender Notice for Purchase of Stationery Items for Northern Punjab Circle Rawalpindi and its Units for the Year 2023-24 Under The Postmaster General Northern Punjab Circle Rawalpindi",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "16-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 16,
+    title:
+      "Tender Notice for Purchase of Stationary Items For DMOs of MST Division Peshawar Under The Postmaster General, Khyber Pakhtunkhwa, Peshawar",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "10-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 17,
+    title:
+      "Tender Notice of (13) Contractual SMES for Transmission of Mail Under The Postmaster General, Central Punjab Circle Lahore",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "10-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 18,
+    title:
+      "Pre-Qualification of Civil Works Contractors for the Year 2023-24 Under The Postmaster General, Metropolitan Circle, Karachi",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "16-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 19,
+    title:
+      "Pre-Qualification Notice for Construction, Reconstruction/ Repair and Maintenance of Buildings, Water Supply and Electricity Work Etc. For Financial Year 2023-24 Relating to PMG, KP Circle Peshawar Under The Postmaster General, Khyber Pakhtunkhwa, Peshawar (Urdu)",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "07-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 20,
+    title:
+      "Tender Notice for Mail Transmission of Six Mail Lines Under The Postmaster General, Khyber Pakhtunkhwa, Peshawar",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "08-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 21,
+    title:
+      "Tender Notice for Pre-Qualification of Firms/ / Venders / Workshops for Repair / Maintenance of Vehicles Under The Directorate General Pakistan Post G-8/4, Islamabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "10-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 22,
+    title:
+      "Tender Notice For Supply of Office Stationery For the Year 2023-24 Under The Postmaster General, Metropolitan Circle, Karachi",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "02-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 23,
+    title:
+      "Tender Notice Regarding Outsourcing of Security Guards Services Under The Postmaster General, Metropolitan Circle, Karachi (Urdu)",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "08-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 24,
+    title:
+      "Pre-Qualification Notice For Civil Works of Departmental Building which fall under the jurisdiction of the Postmaster General, Southern Punjab Circle Multan for the Financial Year 2023-24 Under The Postmaster General Southern Punjab Circle Multan",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "28-07-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 25,
+    title:
+      "Tender Notice for Supply of Stationery Items Under The Postmaster General, Central Punjab Circle Lahore",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "03-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 26,
+    title:
+      "Tender Notice For Purchase of Stationary for the Office of Postmaster General, Southern Punjab Circle, Multan Under The Postmaster General Southern Punjab Circle Multan",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "07-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 27,
+    title:
+      "Tender Notice for Complete Repair and Maintenance of Existing Cooling Towers or Replacement/ Installation and Commissioning of Fiber Glass Cooling Towers ( Bottle Type) and Repair of 2 Nos, of Chiller Manufactured by TRNAE Absorption, 85 Tons Each Installed in Directorate General, Pakistan Post Office, Islamabad Under The Directorate General Pakistan Post G-8/4, Islamabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "04-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 28,
+    title:
+      "Pre-Qualification Notice for Repair, Maintenance, Construction and Re-Construction Work in Dte-General PPO Islamabad Under The Directorate General, Pakistan Post Office G-8/4, Islamabad (Urdu)",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "02-08-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 29,
+    title:
+      "Tender Notice for Supply of Stationery/ Special Uniform/ Polythene Bags and Other Stock Items For the Year 2023-24 Under The Postmaster General Federal Capital & Gilgit Baltistan Circle Islamabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "17-07-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 30,
+    title:
+      "Tender Notice for Supply of Stationery Items Under The Postmaster General Northern Sindh Circle Hyderabad",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "11-07-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
+  {
+    id: 31,
+    title:
+      "Tender Notice for Transportation/ Conveyance of Mail Through Contractual State Mail Express (SME) Under The Postmaster General Northern Punjab Circle Rawalpindi",
+    url: "https://ep.gov.pk/2021-09-06.pdf",
+    title2: "06-07-2023",
+    url2: "",
+    title3: "",
+    url3: "",
+    title4: "",
+    url4: "",
+    title5: "",
+    url5: "",
+    title6: "",
+    url6: "",
+  },
 ];
 
 export const NewsData = [
@@ -145,6 +513,223 @@ export const NewsData = [
     id: 3,
     title:
       "51st International Letter-Writing Competition For Young People (2022)",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 4,
+    title:
+      "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri on 17-Aug-2023 ( Thursday ) from 11.00 A.M. to 1.00 P.M",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 5,
+    title:
+      "Extension of UMS, UMO & EMS Service Dugal Post Office under DSPS Sialkot Division",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 6,
+    title:
+      "Pakistan Post moves 7 steps upwards in World Postal Ranking by UPU. International Ranking of Postal Sector is based on four pillars i.e. Reliability, Reach, Relevance and Resilience. In 2022, Pakistan Post has achieved 55th position out of 162 countries in the Postal Ranking Index issued by Universal Postal Union.",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 7,
+    title:
+      "Extension of Fax Money Order Service At Kotli Sattian Post Office (HSG) Under DSPS Murree Kahuta Division Rawalpindi",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 8,
+    title:
+      "Public Notice for Recruitment on ASPOS/ AS (MST) in Direct Quota Under The Pakistan Post Office Department",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 9,
+    title:
+      "Validated EMS Export Standards For Pakistan",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 10,
+    title:
+      "Extension of UMO/ UMS-COD Service District Muzaffarabad & Rawalakot",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 11,
+    title:
+      "Procurement Plan for Year 2022-2023 Under the Dte-General, Pakistna Post Islamabad",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 12,
+    title:
+      "Announcement of Evaluation Report (PPRA Rule 35)",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 13,
+    title:
+      "UMS/ UMO/ UMS-COD Service started at District Muzaffarabad",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 14,
+    title:
+      "Gazette of Pakistan S.R.O.S Dated 21-04-2022",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 15,
+    title:
+      "EMS-PLUS Service, Tender Documents and Agreements under the Director General, Pakistan Post Islamabad",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 16,
+    title:
+      "51st International Letter Writing Competition For Young People (2022)",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 17,
+    title:
+      "Gazette of Pakistan S.R.O.S Dated 31-01-2022",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 18,
+    title:
+      "EP Services UMS/ UMO/ UMS-COD started at Mankera PO Bhakkar",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 19,
+    title:
+      "List of Prohibited Items According To Pakistan Post Guide",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 20,
+    title:
+      "Annual Procurement Plan of Pakistan Post For The Financial Year 2021-22",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 21,
+    title:
+      "UMS/ UMO/ UMS-COD Service started at Qutab Pur Lodhran",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 22,
+    title:
+      "Annual Procurement Plan of Pakistan Post For The Financial Year 2021-22",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 23,
+    title:
+      "UMS/ UMO/ UMS-COD Service started at Industrial Estate Multan",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 24,
+    title:
+      "Contract Awards Proforma - I and II ",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 25,
+    title:
+      "Provision of Insurance on Express Post Articles ( UMS and UMS-COD )",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 26,
+    title:
+      " UMS/ UMO/ UMS-COD Service started at Wan Bhachran Post Office",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+
+  {
+    id: 27,
+    title:
+      "E-Kachehri: Holding Online E-Kachery / online Khuli Kacheri by Postmaster General Islamabad",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 28,
+    title:
+      "UMS/ UMO/ UMS-COD Service started at Khairpur Nathan Shah Post Office",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 29,
+    title:
+      "Baseline Contract Awarded to M/S 360 Technologies (Pvt) Ltd. regarding EMTTS, IPS, MDUS and CMS to Director General, Pakistan Post Islamabad",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 30,
+    title:
+      "E-Commerce Facilitation Centres",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 31,
+    title:
+      "UMS/ UMO/ UMS-COD Service started at Khanewal Post Office",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 32,
+    title:
+      "UMS/ UMO/ UMS-COD Service started at Jandanwala Post Office",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 33,
+    title:
+      "Announcement of IsDB Scholarship Programmes for the Academic Year 2021-22",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 34,
+    title:
+      "Delays in the Delivery of P. O. Mail Abroad Due to COVID-19",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 35,
+    title:
+      "Posting/ Uploading Contract Award of Value Above Rupees Fifty Million ( 50-Million ) On PPRA Website",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 36,
+    title:
+      " Restricting Participation of Institutional Investors in National Savings Schemes",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 37,
+    title:
+      " Printing And Supply Of 500,000 Security Featured Withdrawal Slips For Savings Bank (Ordinary) And Special Account Under The Directorate General Pakistan Post Office Islamabad",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 38,
+    title:
+      " Announcement of ISDB Scholarship Programmes for the Academic Year 2020-21",
+    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+  },
+  {
+    id: 39,
+    title:
+      "  49th International Letter Writing Competition For Young People 2020",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
 ];
