@@ -46,5 +46,5 @@ export const CareersData = [
     url5: "",
     title6: "",
     url6: "",
-  },
+  }
 ];
