@@ -19,6 +19,7 @@ import DomesticMail from "./components/DomesticMail";
 import InternationalMail from "./components/InternationalMail";
 import ExpressServices from "./components/ExpressServices";
 import Track from "./components/Track";
+import Stamps from "./components/Stamps";
 import NewsTenders from "./components/NewsTenders";
 import ContactUs from "./components/ContactUs";
 
@@ -32,6 +33,16 @@ import Suggestions from "./components/Suggestions";
 
 import Footer from "./components/Footer";
 import Developers from "./components/Extras/Developers";
+import EmsTariff from "./components/Tariffs/EmsTariff";
+import Tariff from "./components/Tariff";
+import UmsTariff from "./components/Tariffs/UmsTariff";
+import FmsTariff from "./components/Tariffs/FmsTariff";
+import CodTariff from "./components/Tariffs/CodTariff";
+import SameDayDelivery from "./components/Tariffs/SameDayDelivery";
+import UmsOverNight from "./components/Tariffs/UmsOverNight";
+import FmoTariff from "./components/Tariffs/FmoTariff";
+import UmoTariff from "./components/Tariffs/UmoTariff";
+import EmoTariff from "./components/Tariffs/EmoTariff";
 
 function App() {
   return (
@@ -52,6 +63,7 @@ function App() {
         <Route path="/internationalservices" element={<InternationalMail/>}/>
         <Route path="/expressservices" element={<ExpressServices/>}/>
         <Route path="/track" element={<Track/>}/>
+        <Route path="/stamps" element={<Stamps/>}/>
         <Route path="/news" element={<NewsTenders/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         
@@ -64,6 +76,18 @@ function App() {
         <Route path="/suggestions" element={<Suggestions/>}/>
         
         <Route path="/devs" element={<Developers/>}/>
+
+        <Route path="/tariff" element={<Tariff/>}/>
+        <Route path="/ems" element={<EmsTariff />} />
+        <Route path="/ums" element={<UmsTariff/>}/>
+        <Route path="/fms" element={<FmsTariff/>}/>
+        <Route path="/cod" element={<CodTariff/>}/>
+        <Route path="/sdd" element={<SameDayDelivery/>}/>
+        <Route path="/umson" element={<UmsOverNight/>}/>
+        <Route path="/fmo" element={<FmoTariff/>}/>
+        <Route path="/umo" element={<UmoTariff/>}/>
+        <Route path="/emo" element={<EmoTariff/>}/>
+
       </Routes>
       <Footer/>
     </Router>

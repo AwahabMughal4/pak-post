@@ -164,9 +164,9 @@ function NDPostOffices() {
               h={"3rem"}
             >
               <Tr>
-                <Th textColor={"white"} fontSize={"md"}>
+                {/* <Th textColor={"white"} fontSize={"md"}>
                   S.No.
-                </Th>
+                </Th> */}
                 <Th textColor={"white"} fontSize={"md"}>
                   Non Delivery Post Office
                 </Th>
@@ -185,7 +185,7 @@ function NDPostOffices() {
             <Tbody>
               {filteredData.map((item) => (
                 <Tr key={item.id}>
-                  <Td isNumeric>{item.id}</Td>
+                  {/* <Td isNumeric>{item.id}</Td> */}
                   <Td>{item.non_delivery_post_office}</Td>
                   <Td isNumeric>{item.post_code}</Td>
                   <Td>{item.account_office}</Td>
@@ -304,9 +304,9 @@ function DPostOffices() {
               h={"3rem"}
             >
               <Tr>
-                <Th textColor={"white"} fontSize={"sm"}>
+                {/* <Th textColor={"white"} fontSize={"sm"}>
                   S.No.
-                </Th>
+                </Th> */}
                 <Th textColor={"white"} fontSize={"sm"}>
                   Delivery Post Office
                 </Th>
@@ -328,7 +328,7 @@ function DPostOffices() {
             <Tbody>
               {filteredData.map((item) => (
                 <Tr key={item.id}>
-                  <Td isNumeric>{item.id}</Td>
+                  {/* <Td isNumeric>{item.id}</Td> */}
                   <Td>{item.delivery_post_office}</Td>
                   <Td isNumeric>{item.post_code}</Td>
                   <Td>{item.account_office}</Td>
