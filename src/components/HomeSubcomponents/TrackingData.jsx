@@ -48,7 +48,7 @@ const TrackingData = () => {
     fetchData();
 
     return () => clearTimeout(timeout);
-  }, [articleId, dataReceived]); // Run this effect whenever articleId changes
+  }, [articleId, dataReceived, isLoading]); // Run this effect whenever articleId changes
 
   console.log(data);
   return (
