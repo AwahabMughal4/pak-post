@@ -42,6 +42,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
       pos="sticky"
       top={0}
       h="full"
+      className="pt-[6.5rem] mt-[-6.5rem] pb-[2rem]"
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
@@ -115,7 +116,7 @@ const Card = ({ name, location, link }) => {
 const Contacts = () => {
   return (
     <div>
-      <div id="fed">
+      <div id="fed" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -136,7 +137,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="kashmir">
+      <div id="kashmir" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -157,7 +158,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="gilgit">
+      <div id="gilgit" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -178,7 +179,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="punjab">
+      <div id="punjab" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -199,7 +200,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="sindh">
+      <div id="sindh" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -220,7 +221,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="balochistan">
+      <div id="balochistan" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}
@@ -241,7 +242,7 @@ const Contacts = () => {
           ))}
         </Flex>
       </div>
-      <div id="kpk">
+      <div id="kpk" className="pt-[8rem] mt-[-8rem]">
         <Heading
           p={"1rem"}
           textAlign={"center"}

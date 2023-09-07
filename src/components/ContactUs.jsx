@@ -54,7 +54,9 @@ const SidebarContent = ({ onClose, ...rest }) => {
       w={"20%"}
       pos="sticky"
       top={0}
-      h="full"
+      h="100vh"
+      overflowY={"scroll"}
+      className="pt-[6.5rem] mt-[-6.5rem] pb-[2rem]"
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">

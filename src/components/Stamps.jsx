@@ -7,8 +7,6 @@ import {
   Text,
   Heading,
   IconButton,
-  Card,
-  Image,
 } from "@chakra-ui/react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {
@@ -156,52 +154,52 @@ const NavItem = ({ children, toggleSidebar, id, ...rest }) => {
 
 function ProductCard({ heading, paragraph, image, pdfStamps }) {
   return (
-    <Card
-      w={{ base: "100%", md: "46%", lg: "23%" }}
-      m={"0.5rem"}
-      p={"0.5rem"}
-      h={{ base: "70vh", md: "60vh", lg: "50vh" }}
-      shadow={"lg"}
-    >
-      <Flex
-        alignItems={"center"}
-        justifyContent={"center"}
-        flexDirection={"column"}
-      >
-        <Image src={image} w={"150px"} h={"150px"} />
-        <Text fontWeight={"bold"}>{heading}</Text>
-        <Text textAlign={"center"}>{paragraph}</Text>
-      </Flex>
-      <Box
-        as="a"
-        href={pdfStamps}
-        cursor="pointer"
-        textColor={"red"}
-        margin={"auto 1rem 1rem auto"}
-        _hover={{
-          textDecoration: "underline",
-        }}
-      >
-        Read More
-      </Box>
-    </Card>
-    // <div className="p-1 m-4  shadow-lg bg-[#f5f5f5] ">
-    //   <div className="flex-wrap items-center justify-center px-5 py-4  shadow-lg bg-[#f1f5f9] h-[350px] ">
-    //     <img src={image} alt="img1" className="w-[170px] h-[150px] rounded" />
+    // <Card
+    //   w={{ base: "100%", md: "46%", lg: "23%" }}
+    //   m={"0.5rem"}
+    //   p={"0.5rem"}
+    //   h={{ base: "70vh", md: "60vh", lg: "50vh" }}
+    //   shadow={"lg"}
+    // >
+    //   <Flex
+    //     alignItems={"center"}
+    //     justifyContent={"center"}
+    //     flexDirection={"column"}
+    //   >
+    //     <Image src={image} w={"150px"} h={"150px"} />
+    //     <Text fontWeight={"bold"}>{heading}</Text>
+    //     <Text textAlign={"center"}>{paragraph}</Text>
+    //   </Flex>
+    //   <Box
+    //     as="a"
+    //     href={pdfStamps}
+    //     cursor="pointer"
+    //     textColor={"red"}
+    //     margin={"auto 1rem 1rem auto"}
+    //     _hover={{
+    //       textDecoration: "underline",
+    //     }}
+    //   >
+    //     Read More
+    //   </Box>
+    // </Card>
+    <div className="p-1 m-4  shadow-lg bg-[#f5f5f5] ">
+      <div className="flex-wrap items-center justify-center px-5 py-4  shadow-lg bg-[#f1f5f9] h-[350px] ">
+        <img src={image} alt="img1" className="w-[170px] h-[150px] rounded" />
 
-    //     <div className="w-[180px] h-24   flex-wrap flex ">
-    //       <h2 className="px-1 mt-1  font-sans text-sm font-semibold ">
-    //         {heading}
-    //       </h2>
-    //       <h2 className="px-1 py-1 font-sans text-xs ">{paragraph}</h2>
-    //     </div>
-    //     <div className=" flex justify-end items-end">
-    //       <a href={pdfStamps} className="text-red-600  font-semibold  text-sm">
-    //         Read More...
-    //       </a>
-    //     </div>
-    //   </div>
-    // </div>
+        <div className="w-[180px] h-24   flex-wrap flex ">
+          <h2 className="px-1 mt-1  font-sans text-sm font-semibold ">
+            {heading}
+          </h2>
+          <h2 className="px-1 py-1 font-sans text-xs ">{paragraph}</h2>
+        </div>
+        <div className=" flex justify-end items-end">
+          <a href={pdfStamps} className="text-red-600  font-semibold  text-sm">
+            Read More...
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
 
