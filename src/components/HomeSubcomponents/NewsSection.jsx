@@ -11,19 +11,20 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-const BasicCard = (props) => {
+const BasicCard = ({ title, date, url }) => {
+  console.log(url);
   return (
     <Card my={"1rem"}>
       <CardHeader>
-        <Heading size="md"> {props.title}</Heading>
+        <Heading size="md"> {title}</Heading>
       </CardHeader>
       <CardBody>
-        <Text>{props.date}</Text>
+        <Text>{date}</Text>
       </CardBody>
       <CardFooter>
-        <Button as={"a"} href={props.url}>
+        <Link to={url} target={"blank"}>
           View here
-        </Button>
+        </Link>
       </CardFooter>
     </Card>
   );
