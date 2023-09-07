@@ -1,3 +1,4 @@
+
 import img1 from "../assets/NewsTender/Tenders/2023-06-19-Tender-Notice-For-Transportation-conveyance-of-mail-State-Mail-sme-Under-The-PMG-NP-RWP.jpg";
 import img2 from "../assets/NewsTender/Tenders/2023-06-22-Tender-Notice-For-Supply-of-Stationery-Itemsl-Under-The-PMG-NS-Circle-Hyd.jpg";
 import img3 from "../assets/NewsTender/Tenders/2023-06-26-Tender-Notice-For-Supply-of-Stationery-Other-Itemsl-Under-The-PMG-FC-GB-IBD.jpg";
@@ -61,6 +62,8 @@ import PDF16 from "../assets/NewsTender/News/2023-02-03-Public-Notice-For-Recrui
 import PDF17 from "../assets/NewsTender/News/2023-06-08-ums-umo-ems-service-started-at-Dugal-Sialkot-PO-order-by-dg-islamabad.pdf"
 import image19 from "../assets/NewsTender/News/2023-08-08-DG-PPODG-E-Kachehr.jpeg"
 import image20 from "../assets/NewsTender/News/Capture3.PNG"
+
+
 
 
 
@@ -585,7 +588,7 @@ export const NewsData = [
     id: 4,
     title:
       "E-Kachehri: Honourable Chairman / Director General will hold E-Kachehri on 17-Aug-2023 ( Thursday ) from 11.00 A.M. to 1.00 P.M",
-    url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
+    url: image1,
   },
   {
     id: 5,
@@ -613,8 +616,7 @@ export const NewsData = [
   },
   {
     id: 9,
-    title:
-      "Validated EMS Export Standards For Pakistan",
+    title: "Validated EMS Export Standards For Pakistan",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
@@ -631,20 +633,17 @@ export const NewsData = [
   },
   {
     id: 12,
-    title:
-      "Announcement of Evaluation Report (PPRA Rule 35)",
+    title: "Announcement of Evaluation Report (PPRA Rule 35)",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
     id: 13,
-    title:
-      "UMS/ UMO/ UMS-COD Service started at District Muzaffarabad",
+    title: "UMS/ UMO/ UMS-COD Service started at District Muzaffarabad",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
     id: 14,
-    title:
-      "Gazette of Pakistan S.R.O.S Dated 21-04-2022",
+    title: "Gazette of Pakistan S.R.O.S Dated 21-04-2022",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
@@ -661,20 +660,17 @@ export const NewsData = [
   },
   {
     id: 17,
-    title:
-      "Gazette of Pakistan S.R.O.S Dated 31-01-2022",
+    title: "Gazette of Pakistan S.R.O.S Dated 31-01-2022",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
     id: 18,
-    title:
-      "EP Services UMS/ UMO/ UMS-COD started at Mankera PO Bhakkar",
+    title: "EP Services UMS/ UMO/ UMS-COD started at Mankera PO Bhakkar",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
     id: 19,
-    title:
-      "List of Prohibited Items According To Pakistan Post Guide",
+    title: "List of Prohibited Items According To Pakistan Post Guide",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
@@ -685,8 +681,7 @@ export const NewsData = [
   },
   {
     id: 21,
-    title:
-      "UMS/ UMO/ UMS-COD Service started at Qutab Pur Lodhran",
+    title: "UMS/ UMO/ UMS-COD Service started at Qutab Pur Lodhran",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
@@ -697,14 +692,12 @@ export const NewsData = [
   },
   {
     id: 23,
-    title:
-      "UMS/ UMO/ UMS-COD Service started at Industrial Estate Multan",
+    title: "UMS/ UMO/ UMS-COD Service started at Industrial Estate Multan",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
     id: 24,
-    title:
-      "Contract Awards Proforma - I and II ",
+    title: "Contract Awards Proforma - I and II ",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
@@ -715,8 +708,7 @@ export const NewsData = [
   },
   {
     id: 26,
-    title:
-      " UMS/ UMO/ UMS-COD Service started at Wan Bhachran Post Office",
+    title: " UMS/ UMO/ UMS-COD Service started at Wan Bhachran Post Office",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
 
@@ -740,20 +732,17 @@ export const NewsData = [
   },
   {
     id: 30,
-    title:
-      "E-Commerce Facilitation Centres",
+    title: "E-Commerce Facilitation Centres",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
     id: 31,
-    title:
-      "UMS/ UMO/ UMS-COD Service started at Khanewal Post Office",
+    title: "UMS/ UMO/ UMS-COD Service started at Khanewal Post Office",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
     id: 32,
-    title:
-      "UMS/ UMO/ UMS-COD Service started at Jandanwala Post Office",
+    title: "UMS/ UMO/ UMS-COD Service started at Jandanwala Post Office",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {
@@ -764,8 +753,7 @@ export const NewsData = [
   },
   {
     id: 34,
-    title:
-      "Delays in the Delivery of P. O. Mail Abroad Due to COVID-19",
+    title: "Delays in the Delivery of P. O. Mail Abroad Due to COVID-19",
     url: "https://ep.gov.pk/files/51st%20International%20Letter%20Writing%20Competition%20For%20Young%20People%20(2022).jpg",
   },
   {

@@ -42,7 +42,7 @@ app.get("/DPostOffices", (req, res) => {
 
 app.post('/track', async (req, res) => {
     const articleId = req.body.articleId; // Get articleId from request body
-    const resType = 'android'; // Replace with actual value
+    const resType = 'web'; // Replace with actual value
     
     try {
       const response = await fetch(
