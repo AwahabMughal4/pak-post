@@ -11,8 +11,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-const BasicCard = ({ title, date, url }) => {
-  console.log(url);
+const BasicCard = ({ title, date, src }) => {
   return (
     <Card my={"1rem"}>
       <CardHeader>
@@ -22,9 +21,9 @@ const BasicCard = ({ title, date, url }) => {
         <Text>{date}</Text>
       </CardBody>
       <CardFooter>
-        <Link to={url} target={"blank"}>
-          View here
-        </Link>
+        <a href={src} target="_blank" rel="noopener noreferrer">
+          <div className="">View here</div>
+        </a>
       </CardFooter>
     </Card>
   );

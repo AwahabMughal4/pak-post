@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { Button } from '@chakra-ui/react'
+import {
+  Box,
+  Text,
+} from "@chakra-ui/react";
 const CalculatePostage = () => {
   const [formData, setFormData] = useState({
     value: "0",
@@ -129,7 +132,7 @@ const CalculatePostage = () => {
 
     if (isclient0) {
       // Check if isUms is true for client type 0
-      if (articleWeight >= 0 && articleWeight <= 250) {
+      if (articleWeight > 0 && articleWeight <= 250) {
         postageResult = 55;
       } else if (articleWeight > 250 && articleWeight <= 500) {
         postageResult = 87;
@@ -140,7 +143,7 @@ const CalculatePostage = () => {
       }
     } else if (isclient1) {
       // Check if isCod is true for client type 1
-      if (articleWeight >= 0 && articleWeight <= 250) {
+      if (articleWeight >0 && articleWeight <= 250) {
         postageResult = 87;
       } else if (articleWeight > 250 && articleWeight <= 500) {
         postageResult = 122;
@@ -151,7 +154,7 @@ const CalculatePostage = () => {
       }
     } else if (isclient2) {
       // Check if isUms is true for client type 2
-      if (articleWeight >= 0 && articleWeight <= 250) {
+      if (articleWeight > 0 && articleWeight <= 250) {
         postageResult = 55;
       } else if (articleWeight > 250 && articleWeight <= 500) {
         postageResult = 87;
@@ -162,7 +165,7 @@ const CalculatePostage = () => {
       }
     } else if (isclient3) {
       // Check if isCod is true for client type 3
-      if (articleWeight >= 0 && articleWeight <= 250) {
+      if (articleWeight > 0 && articleWeight <= 250) {
         postageResult = 87;
       } else if (articleWeight > 250 && articleWeight <= 500) {
         postageResult = 122;
@@ -173,7 +176,7 @@ const CalculatePostage = () => {
       }
     } else if (isclient4) {
       // Check if isFmo is true for client type 4
-      if (articleWeight >= 0 && articleWeight <= 25000) {
+      if (articleWeight > 0 && articleWeight <= 25000) {
         postageResult = 150;
       } else if (articleWeight > 25000 && articleWeight <= 50000) {
         postageResult = 300;
@@ -224,7 +227,8 @@ const CalculatePostage = () => {
   return (
     <div>
       <div className="button flex flex-row space-x-5 justify-center items-center p-5">
-        <Button colorScheme=' red' size='xl'
+        <button
+          className={`p-3 bg-${isUms ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isUms ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
             setUms(true);
             setCod(false);
@@ -241,8 +245,8 @@ const CalculatePostage = () => {
           }}
         >
           UMS
-        </Button>
-        <Button
+        </button>
+        <button  className={`p-3 bg-${isCod ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isCod ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
             setUms(false);
             setCod(true);
@@ -259,8 +263,8 @@ const CalculatePostage = () => {
           }}
         >
           COD
-        </Button>
-        <Button
+        </button>
+        <button  className={`p-3 bg-${isFmo ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isFmo ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
             setUms(false);
             setCod(false);
@@ -277,8 +281,8 @@ const CalculatePostage = () => {
           }}
         >
           FMO
-        </Button>
-        <Button
+        </button>
+        <button  className={`p-3 bg-${isUmo ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isUmo ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
             setUms(false);
             setCod(false);
@@ -295,13 +299,13 @@ const CalculatePostage = () => {
           }}
         >
           UMO
-        </Button>
+        </button>
       </div>
       <form
         name="FrontPage_Form1"
         action=""
         onSubmit={handleSubmit}
-        className="max-w-md  m-auto bg-slate-50 hover:bg-slate-100 shadow-lg border border-slate-300 rounded-t-md"
+        className="max-w-md mb-4  m-auto bg-slate-50 hover:bg-slate-100 shadow-lg border border-slate-300 rounded-t-md"
       >
         <div className="flex flex-row items-center justify-center py-2 space-x-6 shadow-lg bg-[color:var(--primary-color)]  rounded-t-md">
 
@@ -309,12 +313,9 @@ const CalculatePostage = () => {
         </div>
         <div className="flex justify-center shadow-xs">
           <div className="px-2 py-2 mt-2 text-lg font-semibold shadow-sm">Calculate EMS Postage</div>
-          {/* <div className="flex ">
-            <a href="../calculatepostage.jsx" className="font-sm " >Back</a>
-          </div> */}
         </div>
-        <div>
-          <table className="m-auto mt-2">
+        <div className="flex flex-row">
+          <table className="m-auto mt-2 mb-3">
             <tbody className="p-2 ">
               <tr >
                 <td colSpan="2" className="font-semibold Head text-md">
@@ -322,7 +323,7 @@ const CalculatePostage = () => {
                 </td>
               </tr>
               <tr >
-                <td className="font-base">
+                <td className="font-base pr-4">
                   Article weight
                 </td>
                 <td>
@@ -333,7 +334,7 @@ const CalculatePostage = () => {
                     onChange={handleArticle}
                     size="20"
                     maxLength="5"
-                    className="w-full mt-4 border rounded border-slate-300"
+                    className="w-full mt-4 px-3 py-2 border rounded-none border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                   />
                   <span className="text-sm font-semibold text-blue-600 font-base">
                     (grams)
@@ -341,14 +342,12 @@ const CalculatePostage = () => {
                 </td>
               </tr>
               <tr>
-                <td className="px-1 font-normal"> Client Type
-                </td>
+                <td className="px-1 py-2 font-normal">Client Type</td>
                 <td>
                   <select
                     name="type"
-                    size="1"
                     onChange={handleClient}
-                    className="w-full mt-3 border border-gray-300 rounded"
+                    className="w-full mt-2 px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-red-600"
                   >
                     {isUms && (
                       <>
@@ -377,29 +376,90 @@ const CalculatePostage = () => {
                 </td>
               </tr>
               <tr >
-                <td colSpan="2" align="right">
-                  <input
-                    type="submit"
-                    name="Submit2"
-                    value="Submit"
-                    className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300"
-                  />
-                  <input
-                    type="reset"
-                    name="Reset"
-                    onClick={handleReset}
-                    value="Reset"
-                    className="px-3 py-1 mt-2 mb-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300"
-                  />
+                <td colSpan="2" align="right" >
+                  <button type="submit" className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300"> Submit</button>
+                  <button type="submit" className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300" onClick={handleReset}> Reset</button>
+
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-      </form>
+        {
+          isSubmit &&
+          <div className=" flex flex-col space-x-5 justify-center items-center p-5">
+            <Box w={{ base: "90%", md: "80%" }} mx={"auto"} my={"2rem"}>
+              {isUmo && (
+                <Text
+                  fontSize="xl"
+                  fontWeight="bold"
+                  mb="2"
+                  color="var(--primary-color)"
+                >
+                  Calculated Postage For UMO
+                </Text>)}
+              {isFmo && (
+                <Text
+                  fontSize="xl"
+                  fontWeight="bold"
+                  mb="2"
+                  color="var(--primary-color)"
+                >
+                  Calculated Postage For FMO
+                </Text>)}
+              {isUms && (
+                <Text
+                  fontSize="xl"
+                  fontWeight="bold"
+                  mb="2"
+                  color="var(--primary-color)"
+                >
+                  Calculated Postage For UMS
+                </Text>)}
+              {isCod && (
+                <Text
+                  fontSize="xl"
+                  fontWeight="bold"
+                  mb="2"
+                  color="var(--primary-color)"
+                >
+                  Calculated Postage For COD
+                </Text>)}
+              <Text>
+                <b>Tariff:{"    "}</b> {result}Rs/-
+              </Text>
+              <Text
+                fontSize="xl"
+                fontWeight="bold"
+                mb="2"
+                color="var(--primary-color)"
+              >
+                GST
+              </Text>
+              <div>
+                <Text>
+                  <b>Islamabad:</b> 16%
+                </Text>
+                <Text>
+                  <b>Pakhtunkhwa:</b> 15%
+                </Text>
+                <Text>
+                  <b>Punjab:</b> 16%
+                </Text>
+                <Text>
+                  <b>Sindh:</b> 13%
+                </Text>
+                <Text>
+                  <b>Balochistan:</b> 15%
+                </Text>
+              </div>
+            </Box>
+          </div>
+        }
+      </form >
 
-      {isSubmit && <div>{result}</div>}
-    </div>
+
+    </div >
   );
 };
 
