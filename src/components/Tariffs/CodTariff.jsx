@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Box,
   Container,
@@ -6,48 +6,73 @@ import {
   Table,
   Tbody,
   Td,
+  Text,
   Th,
   Thead,
   Tr,
-  useColorModeValue,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
 const CodTariff = () => {
-  const primaryColor = useColorModeValue('red.500', 'red.300');
-
   return (
     <Box mx="auto">
       <Container maxW="container.xl">
-        <Heading as="h1" fontSize={['2xl', '4xl']} fontWeight="bold" textAlign="center">
+        <Heading
+          as="h1"
+          fontSize={["2xl", "4xl"]}
+          fontWeight="bold"
+          textAlign="center"
+          textColor={"red"}
+          my={"1rem"}
+        >
           Cash On Delivery Tariff
         </Heading>
-        
-
-        {/* Fax Mail Service */}
-        <Table w="100%" mt={4}>
-          <Tbody>
-            <Tr>
-              <Td className="content" color={primaryColor}>
-                Fax Mail Service booking tariff shall be charged in cash for each page of letter or each page of document up to A-4 size without exception as detailed below:
-              </Td>
-            </Tr>
-          </Tbody>
-        </Table>
 
         <Box mt={4}>
-          <Table w={['full', '3/4']} mx="auto" cellSpacing="1" align="center">
-            <Tbody>
-              <Tr align="center">
-                <Td className="row">For entire country</Td>
-                <Td className="row">Rs. 35/-</Td>
+          <Table
+            w="full"
+            mt={6}
+            borderWidth="1px"
+            borderRadius="lg"
+            overflow="hidden"
+          >
+            <Thead>
+              <Tr>
+                <Th
+                  colSpan={3}
+                  className="title"
+                  color={"#ed1b24"}
+                  fontSize={["xl", "2xl"]}
+                >
+                  Client Type: Regular
+                </Th>
               </Tr>
               <Tr align="center">
-                <Td className="row">Between Rawalpindi and Islamabad and vice versa</Td>
-                <Td className="row">Rs. 20/-</Td>
+                <Th colSpan={2} className="Head">
+                  Weight (grams)
+                </Th>
+                <Th className="Head">Tariff</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              <Tr className="content" align="center" fontWeight="bold">
+                <Td>From</Td>
+                <Td>To</Td>
+                <Td>(Rs)</Td>
               </Tr>
               <Tr className="content" align="center">
-                <Td colSpan="3">
-                  <b>Note:</b> Additional Rs. 38 will be charged for every additional 500 gm.
+                <Td className="row">1</Td>
+                <Td className="row">250</Td>
+                <Td className="row">87</Td>
+              </Tr>
+              <Tr className="content" align="center">
+                <Td className="altrow">251</Td>
+                <Td className="altrow">500</Td>
+                <Td className="altrow">122</Td>
+              </Tr>
+              <Tr className="content" align="center">
+                <Td colSpan={3}>
+                  <b>Note:</b> Additional Rs. 18 will be charged for every
+                  additional 500 gm.
                 </Td>
               </Tr>
             </Tbody>
@@ -55,10 +80,21 @@ const CodTariff = () => {
         </Box>
 
         {/* Client Type: Regular Local */}
-        <Table w="full" mt={6} borderWidth="1px" borderRadius="lg" overflow="hidden">
+        <Table
+          w="full"
+          mt={6}
+          borderWidth="1px"
+          borderRadius="lg"
+          overflow="hidden"
+        >
           <Thead>
             <Tr>
-              <Th colSpan={3} className="title" color={primaryColor}>
+              <Th
+                colSpan={3}
+                className="title"
+                color={"#ed1b24"}
+                fontSize={["xl", "2xl"]}
+              >
                 Client Type: Regular Local
               </Th>
             </Tr>
@@ -87,29 +123,72 @@ const CodTariff = () => {
             </Tr>
             <Tr className="content" align="center">
               <Td colSpan={3}>
-                <b>Note:</b> Additional Rs. 18 will be charged for every additional 500 gm.
+                <b>Note:</b> Additional Rs. 18 will be charged for every
+                additional 500 gm.
               </Td>
             </Tr>
           </Tbody>
         </Table>
 
         {/* Client Type: Corporate Local */}
-        <Table w="full" mt={6} borderWidth="1px" borderRadius="lg" overflow="hidden">
+        <Table
+          w="full"
+          mt={6}
+          borderWidth="1px"
+          borderRadius="lg"
+          overflow="hidden"
+        >
           <Tbody>
             <Tr className="content">
-              <Td colSpan={4} className="title" color={primaryColor}>
-                Client Type: Corporate Local
-              </Td>
+              <Th
+                colSpan={4}
+                className="title"
+                color={"#ed1b24"}
+                fontSize={["xl", "2xl"]}
+              >
+                Client Type: Corporate
+              </Th>
             </Tr>
             <Tr className="content">
               <Td colSpan={4}>
-                <p style={{ color: primaryColor }}>Note:</p>
-                <strong>Corporate and Bulk Customers may contact local Postal Officers, Deputy Postmasters General, or Postmasters General for discounted tariff</strong>
+                <p style={{ color: "#ed1b24" }}>Note:</p>
+                <strong>
+                  Corporate and Bulk Customers may contact local Postal
+                  Officers, Deputy Postmasters General, or Postmasters General
+                  for discounted tariff
+                </strong>
               </Td>
             </Tr>
           </Tbody>
         </Table>
       </Container>
+      <Box w={{ base: "90%", md: "80%" }} mx={"auto"} my={"2rem"}>
+        <Text
+          fontSize="xl"
+          fontWeight="bold"
+          mb="2"
+          color="var(--primary-color)"
+        >
+          GST
+        </Text>
+        <div>
+          <Text>
+            <b>Islamabad:</b> 16%
+          </Text>
+          <Text>
+            <b>Pakhtunkhwa:</b> 15%
+          </Text>
+          <Text>
+            <b>Punjab:</b> 16%
+          </Text>
+          <Text>
+            <b>Sindh:</b> 13%
+          </Text>
+          <Text>
+            <b>Balochistan:</b> 15%
+          </Text>
+        </div>
+      </Box>
     </Box>
   );
 };

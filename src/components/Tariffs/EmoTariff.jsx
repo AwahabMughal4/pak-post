@@ -1,136 +1,115 @@
-import React from 'react';
+import React from "react";
 import {
   Box,
-  Container,
   Table,
   Thead,
   Tbody,
   Tr,
   Th,
   Td,
-  useColorModeValue,
-} from '@chakra-ui/react';
+  TableContainer,
+  Text,
+} from "@chakra-ui/react";
 
 const EmoTariff = () => {
-  const primaryColor = useColorModeValue('red.500', 'red.300');
-
   return (
     <Box mx="auto">
-      <Container maxW="container.xl">
-        <h1 className='text-center text-4xl p-4'>Electronic Money Order</h1>
-        <Table
-          w="100%"
-          border="1px"
-          borderColor="gray.200"
-          borderRadius="lg"
-          mx="auto"
-          textAlign="center"
-          cellSpacing="1"
-          cellPadding="8"
-        >
+      <h1 className="text-center text-4xl p-4 text-[red] font-bold">
+        Electronic Money Order
+      </h1>
+      <TableContainer
+        w={{ base: "90%", md: "80%" }}
+        border="1px"
+        borderColor="gray.200"
+        mx="auto"
+        my={"2rem"}
+      >
+        <Table>
           <Thead>
-            <Tr className='bg-[color:var(--primary-color)] '>
-              <Th colSpan="4" className="Head ">
-                <h1 className='text-white'>Slab</h1>
-                
+            <Tr className="bg-[color:var(--primary-color)]">
+              <Th textColor={"white"} fontSize={"md"}>
+                Slab
               </Th>
-              <Th colSpan="4" className="Head">
-                <h1 className='text-white'>Rate of Commission</h1>
+              <Th textColor={"white"} fontSize={"md"}>
+                Rate of Commission
               </Th>
             </Tr>
           </Thead>
           <Tbody>
             <Tr>
-              <Td colSpan="4" className="row">
-                Upto Rs. 1,000
-              </Td>
-              <Td colSpan="4" className="row">
-                Rs. 60
-              </Td>
+              <Td>Upto Rs. 1,000</Td>
+              <Td>Rs. 60</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="altrow">
-                From 1,001 and upto Rs. 25,00
-              </Td>
-              <Td colSpan="4" className="altrow">
-                Rs. 100
-              </Td>
+              <Td>From 1,001 and upto Rs. 25,00</Td>
+              <Td>Rs. 100</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="row">
-                From 25,01 and upto Rs. 5,000
-              </Td>
-              <Td colSpan="4" className="row">
-                Rs. 150
-              </Td>
+              <Td>From 25,01 and upto Rs. 5,000</Td>
+              <Td>Rs. 150</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="altrow">
-                From 5,001 and upto Rs.10,000
-              </Td>
-              <Td colSpan="4" className="altrow">
-                Rs. 250
-              </Td>
+              <Td>From 5,001 and upto Rs.10,000</Td>
+              <Td>Rs. 250</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="row">
-                From 10,001 and upto Rs. 15,000
-              </Td>
-              <Td colSpan="4" className="row">
-                Rs. 300
-              </Td>
+              <Td>From 10,001 and upto Rs. 15,000</Td>
+              <Td>Rs. 300</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="altrow">
-                From 15,001 and upto Rs. 20,000
-              </Td>
-              <Td colSpan="4" className="altrow">
-                Rs. 350
-              </Td>
+              <Td>From 15,001 and upto Rs. 20,000</Td>
+              <Td>Rs. 350</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="row">
-                From 20,001 and upto Rs. 30,000
-              </Td>
-              <Td colSpan="4" className="row">
-                Rs. 450
-              </Td>
+              <Td>From 20,001 and upto Rs. 30,000</Td>
+              <Td>Rs. 450</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="altrow">
-                From 30,001 and upto Rs. 40,000
-              </Td>
-              <Td colSpan="4" className="altrow">
-                Rs. 500
-              </Td>
+              <Td>From 30,001 and upto Rs. 40,000</Td>
+              <Td>Rs. 500</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="row">
-                From 40,001 and upto Rs. 50,000
-              </Td>
-              <Td colSpan="4" className="row">
-                Rs. 600
-              </Td>
+              <Td>From 40,001 and upto Rs. 50,000</Td>
+              <Td>Rs. 600</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="row">
-                From 50,001 and upto Rs. 75,000
-              </Td>
-              <Td colSpan="4" className="row">
-                Rs. 800
-              </Td>
+              <Td>From 50,001 and upto Rs. 75,000</Td>
+              <Td>Rs. 800</Td>
             </Tr>
             <Tr>
-              <Td colSpan="4" className="row">
-                From 75,001 and upto Rs. 100,000
-              </Td>
-              <Td colSpan="4" className="row">
-                Rs. 1000
-              </Td>
+              <Td>From 75,001 and upto Rs. 100,000</Td>
+              <Td>Rs. 1000</Td>
             </Tr>
           </Tbody>
         </Table>
-      </Container>
+      </TableContainer>
+      <Box w={{ base: "90%", md: "80%" }} mx={"auto"} my={"2rem"}>
+        <Text
+          fontSize="xl"
+          fontWeight="bold"
+          mb="2"
+          color="var(--primary-color)"
+        >
+          GST
+        </Text>
+        <div>
+          <Text>
+            <b>Islamabad:</b> 16%
+          </Text>
+          <Text>
+            <b>Pakhtunkhwa:</b> 15%
+          </Text>
+          <Text>
+            <b>Punjab:</b> 16%
+          </Text>
+          <Text>
+            <b>Sindh:</b> 13%
+          </Text>
+          <Text>
+            <b>Balochistan:</b> 15%
+          </Text>
+        </div>
+      </Box>
     </Box>
   );
 };

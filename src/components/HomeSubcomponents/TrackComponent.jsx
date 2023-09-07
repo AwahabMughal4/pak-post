@@ -46,6 +46,7 @@ const TrackComponent = () => {
               transform="skewX(-10deg)"
               borderRadius={"none"}
               placeholder="Article ID"
+              required
               value={articleId}
               onChange={(e) => setArticleId(e.target.value)}
               h={{ base: "35px", sm: "50px" }}

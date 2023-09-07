@@ -9,8 +9,6 @@ import {
   Flex,
   Text,
   Divider,
-  HStack,
-  VStack,
   Center,
 } from "@chakra-ui/react";
 
@@ -55,7 +53,7 @@ const TrackingData = () => {
             </Heading>
             <Flex wrap={"wrap"}>
               <Box
-                w={"40%"}
+                w={{ base: "100%", md: "40%" }}
                 mx={"auto"}
                 my={"0.5rem"}
                 boxShadow="base"
@@ -69,7 +67,7 @@ const TrackingData = () => {
                 {data.ArticleTrackingNo}
               </Box>
               <Box
-                w={"40%"}
+                w={{ base: "100%", md: "40%" }}
                 mx={"auto"}
                 my={"0.5rem"}
                 boxShadow="base"
@@ -83,7 +81,7 @@ const TrackingData = () => {
                 {data.BookingDate}
               </Box>
               <Box
-                w={"40%"}
+                w={{ base: "100%", md: "40%" }}
                 mx={"auto"}
                 my={"0.5rem"}
                 boxShadow="base"
@@ -97,7 +95,7 @@ const TrackingData = () => {
                 {data.BookingOffice}
               </Box>
               <Box
-                w={"40%"}
+                w={{ base: "100%", md: "40%" }}
                 mx={"auto"}
                 my={"0.5rem"}
                 boxShadow="base"
@@ -118,99 +116,78 @@ const TrackingData = () => {
               Dispatch Events
             </Heading>
 
-            <VStack>
-              {data.Event.map((event, index) => (
-                <Box
-                  key={index}
-                  w={"95%"}
-                  mx={"auto"}
-                  my={"0.5rem"}
-                  boxShadow="base"
-                  p="3"
-                  rounded="md"
-                  bg="white"
-                >
-                  <Text textColor={"#ed1b24"} fontWeight={"bold"}>
-                    {event.Date}
-                  </Text>
-                  {event.EventsDetails.map((detail, detailIndex) => (
-                    <Box
-                      key={detailIndex}
-                      w={"95%"}
-                      mx={"auto"}
-                      my={"0.5rem"}
-                      boxShadow="base"
-                      p="3"
-                      rounded="md"
-                      bg="white"
-                    >
-                      <HStack>
-                        <Box w={"15%"} h={"30%"}>
-                          {detail.Time.map((time, timeIndex) => (
-                            <Box
-                              key={timeIndex}
-                              mx={"auto"}
-                              my={"0.5rem"}
-                              boxShadow="base"
-                              p="2"
-                              rounded="md"
-                              bg="white"
+            {data.Event.map((event, index) => (
+              <Flex key={index} flexDirection={"column"} my={"1rem"}>
+                <Text textColor={"#ed1b24"} fontWeight={"bold"} pl={"0.5rem"}>
+                  {event.Date}
+                </Text>
+                {event.EventsDetails.map((detail, detailIndex) => (
+                  <Flex
+                    key={detailIndex}
+                    flexDirection={"column"}
+                    w={"90%"}
+                    mx={"auto"}
+                    my={"1rem"}
+                  >
+                    {detail.SubEvent.map((time, timeIndex) => (
+                      <Flex
+                        key={timeIndex}
+                        flexDirection={"column"}
+                        boxShadow="base"
+                        rounded="md"
+                        my={"0.5rem"}
+                        py={"0.5rem"}
+                      >
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: time.Time,
+                          }}
+                          style={{
+                            paddingLeft: "1rem",
+                            color: "#ed1b24",
+                            fontWeight: "500",
+                          }}
+                        />
+                        <Box>
+                          {time.SubEventsDetails.map((sub, subIndex) => (
+                            <Flex
+                              key={subIndex}
+                              w={"100%"}
+                              flexDirection={{ base: "column", md: "row" }}
+                              my={{ base: "1rem", md: "0" }}
                             >
-                              <div
-                                dangerouslySetInnerHTML={{
-                                  __html: time,
-                                }}
-                              />
-                            </Box>
+                              <Flex
+                                w={{ base: "100%", md: "30%" }}
+                                justifyContent={"center"}
+                                my={{ base: "0.5rem", md: "0" }}
+                              >
+                                <div
+                                  dangerouslySetInnerHTML={{
+                                    __html: sub.Location,
+                                  }}
+                                />
+                              </Flex>
+                              <Flex
+                                w={{ base: "100%", md: "70%" }}
+                                textAlign={{ base: "center", md: "none" }}
+                                justifyContent={{ base: "center", md: "left" }}
+                                my={{ base: "0.5rem", md: "0" }}
+                              >
+                                <div
+                                  dangerouslySetInnerHTML={{
+                                    __html: sub.Description,
+                                  }}
+                                />
+                              </Flex>
+                            </Flex>
                           ))}
                         </Box>
-
-                        <Box w={"20%"} h={"30%"}>
-                          {detail.Location.map((loc, locIndex) => (
-                            <Box
-                              key={locIndex}
-                              mx={"auto"}
-                              my={"0.5rem"}
-                              boxShadow="base"
-                              p="2"
-                              rounded="md"
-                              bg="white"
-                              h={"30%"}
-                            >
-                              <div
-                                dangerouslySetInnerHTML={{
-                                  __html: loc,
-                                }}
-                              />
-                            </Box>
-                          ))}
-                        </Box>
-                        <Box w={"65%"}>
-                          {detail.Description.map((desc, descIndex) => (
-                            <Box
-                              key={descIndex}
-                              mx={"auto"}
-                              my={"0.5rem"}
-                              boxShadow="base"
-                              p="2"
-                              rounded="md"
-                              bg="white"
-                              h={"30%"}
-                            >
-                              <div
-                                dangerouslySetInnerHTML={{
-                                  __html: desc,
-                                }}
-                              />
-                            </Box>
-                          ))}
-                        </Box>
-                      </HStack>
-                    </Box>
-                  ))}
-                </Box>
-              ))}
-            </VStack>
+                      </Flex>
+                    ))}
+                  </Flex>
+                ))}
+              </Flex>
+            ))}
           </Box>
         </Card>
       ) : (
