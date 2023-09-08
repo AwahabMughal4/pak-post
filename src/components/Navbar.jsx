@@ -1,5 +1,5 @@
 ("use client");
-
+import React, { useState } from "react";
 import {
   Box,
   Flex,
@@ -93,9 +93,14 @@ export default function WithSubnavigation() {
 }
 
 const DesktopNav = () => {
+  const [activeNavItem, setActiveNavItem] = useState(null);
+
+  const handleNavItemClick = (index) => {
+    setActiveNavItem(index);
+  };
   return (
     <Stack direction={"row"} spacing={{ lg: "1", xl: "4" }}>
-      {NAV_ITEMS.map((navItem) => (
+      {NAV_ITEMS.map((navItem, index) => (
         <Box key={navItem.label} w={"fit-content"}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
@@ -104,7 +109,11 @@ const DesktopNav = () => {
                   p={{ lg: "1", xl: "2" }}
                   fontSize={{ lg: "md", xl: "lg" }}
                   fontWeight={{ lg: "400", xl: "500" }}
-                  className="text-white bg-[color:var(--primary-color)] transition-transform transform hover:scale-105 hover:bg-[color:var(--secondary-color)]"
+                  className={`text-white ${activeNavItem === index
+                      ? 'bg-[color:var(--secondary-color)]'
+                      : 'bg-[color:var(--primary-color)]'
+                    } transition-transform transform hover:scale-105 hover:bg-[color:var(--secondary-color)]`}
+                  onClick={() => handleNavItemClick(index)}
                 >
                   {navItem.label}
                 </Box>
