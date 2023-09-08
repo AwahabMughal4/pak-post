@@ -225,11 +225,11 @@ const CalculatePostage = () => {
     <div>
       <div className="button flex flex-row space-x-5 justify-center items-center p-5">
         <button
-          className={`p-3 bg-${
+          className={` p-3 bg-${
             isUms ? "[color:var(--primary-color)] " : "slate-200"
           }  text-${
             isUms ? "white" : "black"
-          } hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
+          } hover:bg-[color:var(--primary-color)]  hover:text-white shadow-lg `}
           onClick={() => {
             setUms(true);
             setCod(false);

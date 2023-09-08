@@ -43,8 +43,8 @@ const ListHeader = ({ children }) => {
 export default function Footer() {
   return (
     <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
-      color={useColorModeValue("gray.700", "gray.200")}
+      bg={useColorModeValue("slate.50", "slate.900")}
+      color={useColorModeValue("slate.700", "gray.200")}
       borderTop={"2px solid #ed1b24"}
       zIndex={10}
     >
@@ -65,13 +65,16 @@ export default function Footer() {
               ©2016 to 2023 Pakistan Post Office<Link to={"/devs"}>.</Link>
             </Text>
           </Stack>
-          <Stack align={"flex-start"}>
+          <Stack align={"flex-start "} mx={{ base: "1rem" }}>
             <ListHeader>Pages</ListHeader>
             <Link to={"/"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>Home</Box>
             </Link>
             <Link to={"/about"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>About</Box>
+            </Link>
+            <Link to={"/stamps"}>
+              <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>Stamps</Box>
             </Link>
             <Link to={"/careers"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>
@@ -84,7 +87,7 @@ export default function Footer() {
               </Box>
             </Link>
           </Stack>
-          <Stack align={"flex-start"}>
+          <Stack align={"flex-start"} mx={{ base: "1rem" }}>
             <ListHeader>Support</ListHeader>
             <Link to={"/faqs"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>FAQs</Box>
@@ -104,8 +107,13 @@ export default function Footer() {
                 Manuals
               </Box>
             </Link>
+            <Link to={"/complaints"}>
+              <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>
+                Complaints
+              </Box>
+            </Link>
           </Stack>
-          <Stack>
+          <Stack mx={{ base: "1rem" }}>
             <ListHeader>Contact us</ListHeader>
             <Box
               as="a"
