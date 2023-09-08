@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 const CalculatePostage = () => {
   const [formData, setFormData] = useState({
     value: "0",
@@ -23,7 +20,7 @@ const CalculatePostage = () => {
   const [isclient2, setclient2] = useState(false);
   const [isclient3, setclient3] = useState(false);
   const [isclient4, setclient4] = useState(false);
-  const [isclient5, setclient5] = useState(false);
+  // const [isclient5, setclient5] = useState(false);
   const [isclient6, setclient6] = useState(false);
   const [isclient7, setclient7] = useState(false);
 
@@ -45,7 +42,7 @@ const CalculatePostage = () => {
         setclient2(false);
         setclient3(false);
         setclient4(false);
-        setclient5(false);
+        // setclient5(false);
         setclient6(false);
         setclient7(false);
         break;
@@ -55,7 +52,7 @@ const CalculatePostage = () => {
         setclient2(false);
         setclient3(false);
         setclient4(false);
-        setclient5(false);
+        // setclient5(false);
         setclient6(false);
         setclient7(false);
         break;
@@ -65,7 +62,7 @@ const CalculatePostage = () => {
         setclient2(true);
         setclient3(false);
         setclient4(false);
-        setclient5(false);
+        // setclient5(false);
         setclient6(false);
         setclient7(false);
         break;
@@ -75,7 +72,7 @@ const CalculatePostage = () => {
         setclient2(false);
         setclient3(true);
         setclient4(false);
-        setclient5(false);
+        // setclient5(false);
         setclient6(false);
         setclient7(false);
         break;
@@ -85,7 +82,7 @@ const CalculatePostage = () => {
         setclient2(false);
         setclient3(false);
         setclient4(true);
-        setclient5(false);
+        // setclient5(false);
         setclient6(false);
         setclient7(false);
         break;
@@ -95,7 +92,7 @@ const CalculatePostage = () => {
         setclient2(false);
         setclient3(false);
         setclient4(false);
-        setclient5(false);
+        // setclient5(false);
         setclient6(true);
         setclient7(false);
         break;
@@ -105,7 +102,7 @@ const CalculatePostage = () => {
         setclient2(false);
         setclient3(false);
         setclient4(false);
-        setclient5(false);
+        // setclient5(false);
         setclient6(false);
         setclient7(true);
         break;
@@ -117,7 +114,7 @@ const CalculatePostage = () => {
         setclient2(false);
         setclient3(false);
         setclient4(false);
-        setclient5(false);
+        // setclient5(false);
         setclient6(false);
         setclient7(false);
         break;
@@ -143,7 +140,7 @@ const CalculatePostage = () => {
       }
     } else if (isclient1) {
       // Check if isCod is true for client type 1
-      if (articleWeight >0 && articleWeight <= 250) {
+      if (articleWeight > 0 && articleWeight <= 250) {
         postageResult = 87;
       } else if (articleWeight > 250 && articleWeight <= 500) {
         postageResult = 122;
@@ -228,7 +225,11 @@ const CalculatePostage = () => {
     <div>
       <div className="button flex flex-row space-x-5 justify-center items-center p-5">
         <button
-          className={`p-3 bg-${isUms ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isUms ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
+          className={`p-3 bg-${
+            isUms ? "[color:var(--primary-color)] " : "slate-200"
+          }  text-${
+            isUms ? "white" : "black"
+          } hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
             setUms(true);
             setCod(false);
@@ -239,14 +240,19 @@ const CalculatePostage = () => {
             setclient2(false);
             setclient3(false);
             setclient4(false);
-            setclient5(false);
+            // setclient5(false);
             setclient6(false);
             setclient7(false);
           }}
         >
           UMS
         </button>
-        <button  className={`p-3 bg-${isCod ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isCod ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
+        <button
+          className={`p-3 bg-${
+            isCod ? "[color:var(--primary-color)] " : "slate-200"
+          }  text-${
+            isCod ? "white" : "black"
+          } hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
             setUms(false);
             setCod(true);
@@ -257,14 +263,19 @@ const CalculatePostage = () => {
             setclient2(true);
             setclient3(false);
             setclient4(false);
-            setclient5(false);
+            // setclient5(false);
             setclient6(false);
             setclient7(false);
           }}
         >
           COD
         </button>
-        <button  className={`p-3 bg-${isFmo ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isFmo ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
+        <button
+          className={`p-3 bg-${
+            isFmo ? "[color:var(--primary-color)] " : "slate-200"
+          }  text-${
+            isFmo ? "white" : "black"
+          } hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
             setUms(false);
             setCod(false);
@@ -275,14 +286,19 @@ const CalculatePostage = () => {
             setclient2(false);
             setclient3(false);
             setclient4(true);
-            setclient5(false);
+            // setclient5(false);
             setclient6(false);
             setclient7(false);
           }}
         >
           FMO
         </button>
-        <button  className={`p-3 bg-${isUmo ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isUmo ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
+        <button
+          className={`p-3 bg-${
+            isUmo ? "[color:var(--primary-color)] " : "slate-200"
+          }  text-${
+            isUmo ? "white" : "black"
+          } hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
             setUms(false);
             setCod(false);
@@ -293,7 +309,7 @@ const CalculatePostage = () => {
             setclient2(false);
             setclient3(false);
             setclient4(false);
-            setclient5(false);
+            // setclient5(false);
             setclient6(true);
             setclient7(false);
           }}
@@ -307,25 +323,22 @@ const CalculatePostage = () => {
         onSubmit={handleSubmit}
         className="max-w-md mb-4  m-auto bg-slate-50 hover:bg-slate-100 shadow-lg border border-slate-300 rounded-t-md"
       >
-        <div className="flex flex-row items-center justify-center py-2 space-x-6 shadow-lg bg-[color:var(--primary-color)]  rounded-t-md">
-
-
-        </div>
+        <div className="flex flex-row items-center justify-center py-2 space-x-6 shadow-lg bg-[color:var(--primary-color)]  rounded-t-md"></div>
         <div className="flex justify-center shadow-xs">
-          <div className="px-2 py-2 mt-2 text-lg font-semibold shadow-sm">Calculate EMS Postage</div>
+          <div className="px-2 py-2 mt-2 text-lg font-semibold shadow-sm">
+            Calculate EMS Postage
+          </div>
         </div>
         <div className="flex flex-row">
           <table className="m-auto mt-2 mb-3">
             <tbody className="p-2 ">
-              <tr >
+              <tr>
                 <td colSpan="2" className="font-semibold Head text-md">
                   Calculate Postage:
                 </td>
               </tr>
-              <tr >
-                <td className="font-base pr-4">
-                  Article weight
-                </td>
+              <tr>
+                <td className="font-base pr-4">Article weight</td>
                 <td>
                   <input
                     type="text"
@@ -352,41 +365,52 @@ const CalculatePostage = () => {
                     {isUms && (
                       <>
                         <option value="0"> Local Regular Client</option>
-                        <option value="1" >Regular Client</option>
+                        <option value="1">Regular Client</option>
                       </>
                     )}
                     {isCod && (
                       <>
-                        <option value="2" >Local Regular Client</option>
-                        <option value="3" >Regular Client</option>
+                        <option value="2">Local Regular Client</option>
+                        <option value="3">Regular Client</option>
                       </>
                     )}
                     {isFmo && (
                       <>
-                        <option value="4" >FMO Tariff</option>
+                        <option value="4">FMO Tariff</option>
                       </>
                     )}
                     {isUmo && (
                       <>
-                        <option value="6" >Regular Client (City)</option>
-                        <option value="7" >Regular Client (Local)</option>
+                        <option value="6">Regular Client (City)</option>
+                        <option value="7">Regular Client (Local)</option>
                       </>
                     )}
                   </select>
                 </td>
               </tr>
-              <tr >
-                <td colSpan="2" align="right" >
-                  <button type="submit" className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300"> Submit</button>
-                  <button type="submit" className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300" onClick={handleReset}> Reset</button>
-
+              <tr>
+                <td colSpan="2" align="right">
+                  <button
+                    type="submit"
+                    className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300"
+                  >
+                    {" "}
+                    Submit
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300"
+                    onClick={handleReset}
+                  >
+                    {" "}
+                    Reset
+                  </button>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        {
-          isSubmit &&
+        {isSubmit && (
           <div className=" flex flex-col space-x-5 justify-center items-center p-5">
             <Box w={{ base: "90%", md: "80%" }} mx={"auto"} my={"2rem"}>
               {isUmo && (
@@ -397,7 +421,8 @@ const CalculatePostage = () => {
                   color="var(--primary-color)"
                 >
                   Calculated Postage For UMO
-                </Text>)}
+                </Text>
+              )}
               {isFmo && (
                 <Text
                   fontSize="xl"
@@ -406,7 +431,8 @@ const CalculatePostage = () => {
                   color="var(--primary-color)"
                 >
                   Calculated Postage For FMO
-                </Text>)}
+                </Text>
+              )}
               {isUms && (
                 <Text
                   fontSize="xl"
@@ -415,7 +441,8 @@ const CalculatePostage = () => {
                   color="var(--primary-color)"
                 >
                   Calculated Postage For UMS
-                </Text>)}
+                </Text>
+              )}
               {isCod && (
                 <Text
                   fontSize="xl"
@@ -424,7 +451,8 @@ const CalculatePostage = () => {
                   color="var(--primary-color)"
                 >
                   Calculated Postage For COD
-                </Text>)}
+                </Text>
+              )}
               <Text>
                 <b>Tariff:{"    "}</b> {result}Rs/-
               </Text>
@@ -455,11 +483,9 @@ const CalculatePostage = () => {
               </div>
             </Box>
           </div>
-        }
-      </form >
-
-
-    </div >
+        )}
+      </form>
+    </div>
   );
 };
 
