@@ -19,6 +19,7 @@ import DomesticMail from "./components/DomesticMail";
 import InternationalMail from "./components/InternationalMail";
 import ExpressServices from "./components/ExpressServices";
 import Track from "./components/Track";
+import Tariff from "./components/Tariff";
 import Stamps from "./components/Stamps";
 import NewsTenders from "./components/NewsTenders";
 import ContactUs from "./components/ContactUs";
@@ -33,8 +34,8 @@ import Suggestions from "./components/Suggestions";
 
 import Footer from "./components/Footer";
 import Developers from "./components/Extras/Developers";
+
 import EmsTariff from "./components/Tariffs/EmsTariff";
-import Tariff from "./components/Tariff";
 import UmsTariff from "./components/Tariffs/UmsTariff";
 import FmsTariff from "./components/Tariffs/FmsTariff";
 import CodTariff from "./components/Tariffs/CodTariff";
@@ -63,6 +64,7 @@ function App() {
         <Route path="/internationalservices" element={<InternationalMail/>}/>
         <Route path="/expressservices" element={<ExpressServices/>}/>
         <Route path="/track" element={<Track/>}/>
+        <Route path="/tariff" element={<Tariff/>}/>
         <Route path="/stamps" element={<Stamps/>}/>
         <Route path="/news" element={<NewsTenders/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
@@ -77,7 +79,6 @@ function App() {
         
         <Route path="/devs" element={<Developers/>}/>
 
-        <Route path="/tariff" element={<Tariff/>}/>
         <Route path="/ems" element={<EmsTariff />} />
         <Route path="/ums" element={<UmsTariff/>}/>
         <Route path="/fms" element={<FmsTariff/>}/>
