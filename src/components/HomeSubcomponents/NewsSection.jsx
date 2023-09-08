@@ -2,29 +2,41 @@ import * as React from "react";
 import { NewsData, TendersData } from "../../DataObjects/NewsTenders";
 import { Box, Center, Flex, Heading } from "@chakra-ui/react";
 
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Text,
-  Button,
-} from "@chakra-ui/react";
+import { Card, Text, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-const BasicCard = ({ title, date, src }) => {
+
+const NewsCard = ({ title, date, src }) => {
   return (
-    <Card my={"1rem"}>
-      <CardHeader>
-        <Heading size="md"> {title}</Heading>
-      </CardHeader>
-      <CardBody>
-        <Text>{date}</Text>
-      </CardBody>
-      <CardFooter>
-        <a href={src} target="_blank" rel="noopener noreferrer">
-          <div className="">View here</div>
-        </a>
-      </CardFooter>
+    <Card my={"0.5rem"}>
+      <Heading size="sm" m={"0.5rem"}>
+        {" "}
+        {title}
+      </Heading>
+
+      <Text m={"0.5rem"}>{date}</Text>
+
+      <Button as={"a"} href={src} target={"blank"} m={"0.5rem"} w={"100px"}>
+        View here
+      </Button>
+    </Card>
+  );
+};
+
+const TendersCard = ({ title, title2, date, src, src2 }) => {
+  return (
+    <Card my={"0.5rem"}>
+      <Heading size="sm" m={"0.5rem"}>
+        {" "}
+        {title}
+      </Heading>
+      <a href={src2} target={"blank"}>
+        <Text m={"0.5rem"}>{title2}</Text>
+      </a>
+      <Text m={"0.5rem"}>{date}</Text>
+
+      <Button as={"a"} href={src} target={"blank"} m={"0.5rem"} w={"100px"}>
+        View here
+      </Button>
     </Card>
   );
 };
@@ -60,16 +72,18 @@ const NewsSection = () => {
             h={["75vh", "50vh"]}
             overflowY={"scroll"}
           >
-            {NewsData.map((news) => {
-              return (
-                <BasicCard
-                  key={news.id}
-                  date={news.date}
-                  title={news.title}
-                  src={news.url}
-                />
-              );
-            })}
+            {NewsData.slice()
+              .sort((a, b) => b.id - a.id)
+              .map((news) => {
+                return (
+                  <NewsCard
+                    key={news.id}
+                    date={news.date}
+                    title={news.title}
+                    src={news.url}
+                  />
+                );
+              })}
           </Box>
 
           <Link to={"news"}>
@@ -107,16 +121,20 @@ const NewsSection = () => {
             h={["75vh", "50vh"]}
             overflowY={"scroll"}
           >
-            {TendersData.map((news) => {
-              return (
-                <BasicCard
-                  key={news.id}
-                  title={news.title}
-                  date={news.title2}
-                  src={news.url}
-                />
-              );
-            })}
+            {TendersData.slice()
+              .sort((a, b) => b.id - a.id)
+              .map((tenders) => {
+                return (
+                  <TendersCard
+                    key={tenders.id}
+                    title={tenders.title}
+                    title2={tenders.title2}
+                    date={tenders.date}
+                    src={tenders.url}
+                    src2={tenders.url2}
+                  />
+                );
+              })}
           </Box>
 
           <Link to={"news"}>

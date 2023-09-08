@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Axios from "axios";
 import {
   Spinner,
@@ -10,11 +10,15 @@ import {
   Text,
   Divider,
   Center,
+  Button,
 } from "@chakra-ui/react";
 
 const TrackingData = () => {
   const { articleId } = useParams();
   const [data, setResponseData] = useState();
+  const [isLoading, setIsLoading] = useState(true);
+  const [showError, setShowError] = useState(false);
+  const [dataReceived, setDataReceived] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,20 +28,69 @@ const TrackingData = () => {
         });
 
         setResponseData(response.data);
+        setIsLoading(false);
+        setDataReceived(true);
       } catch (error) {
         console.error("Error:", error);
-        // Handle error here
+        setIsLoading(false);
+        setShowError(true);
       }
     };
+
+    const timeout = setTimeout(() => {
+      if (isLoading) {
+        setIsLoading(false);
+        if (!dataReceived) {
+          setShowError(true);
+        }
+      }
+    }, 10000);
     fetchData();
-  }, [articleId]); // Run this effect whenever articleId changes
+
+    return () => clearTimeout(timeout);
+  }, [articleId, dataReceived, isLoading]); // Run this effect whenever articleId changes
+
   console.log(data);
   return (
     <div>
       <Heading textColor={"#ed1b24"} textAlign={"center"} m={"2rem"}>
         Tracking
       </Heading>
-      {data ? (
+      {isLoading ? (
+        <Center>
+          <Spinner
+            thickness="4px"
+            speed="0.65s"
+            emptyColor="white"
+            color="#ed1b24"
+            size="xl"
+            m={"3rem"}
+            mb={"6rem"}
+          />
+        </Center>
+      ) : showError ? (
+        <Flex
+          flexDirection={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          mt={"3rem"}
+          mb={"4rem"}
+        >
+          <Text fontSize={"xl"}>Something unexpected happened</Text>
+          <Link to={"/track"}>
+            <Button
+              m={"2rem"}
+              bgColor={"#ed1b24"}
+              textColor={"white"}
+              _hover={{
+                bgColor: "#c51017",
+              }}
+            >
+              Back to Tracking
+            </Button>
+          </Link>
+        </Flex>
+      ) : (
         <Card
           w={"80%"}
           boxShadow="dark-lg"
@@ -190,17 +243,6 @@ const TrackingData = () => {
             ))}
           </Box>
         </Card>
-      ) : (
-        <Center>
-          <Spinner
-            thickness="4px"
-            speed="0.65s"
-            emptyColor="white"
-            color="#ed1b24"
-            size="xl"
-            m={"3rem"}
-          />
-        </Center>
       )}
     </div>
   );
