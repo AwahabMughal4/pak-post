@@ -1,4 +1,3 @@
-("use client");
 import React, { useState } from "react";
 import {
   Box,
@@ -86,7 +85,7 @@ export default function WithSubnavigation() {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
+        <MobileNav onClose={onToggle} />
       </Collapse>
     </Box>
   );
@@ -109,10 +108,11 @@ const DesktopNav = () => {
                   p={{ lg: "1", xl: "2" }}
                   fontSize={{ lg: "md", xl: "lg" }}
                   fontWeight={{ lg: "400", xl: "500" }}
-                  className={`text-white ${activeNavItem === index
-                      ? 'bg-[color:var(--secondary-color)]'
-                      : 'bg-[color:var(--primary-color)]'
-                    } transition-transform transform hover:scale-105 hover:bg-[color:var(--secondary-color)]`}
+                  className={`text-white ${
+                    activeNavItem === index
+                      ? "bg-[color:var(--secondary-color)]"
+                      : "bg-[color:var(--primary-color)]"
+                  } transition-transform transform hover:scale-105 hover:bg-[color:var(--secondary-color)]`}
                   onClick={() => handleNavItemClick(index)}
                 >
                   {navItem.label}
@@ -172,7 +172,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
   );
 };
 
-const MobileNav = () => {
+const MobileNav = ({ onClose }) => {
   return (
     <Stack
       bg={useColorModeValue("white", "gray.800")}
@@ -180,17 +180,24 @@ const MobileNav = () => {
       display={{ lg: "none" }}
     >
       {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label} {...navItem} />
+        <MobileNavItem key={navItem.label} onClose={onClose} {...navItem} />
       ))}
     </Stack>
   );
 };
 
-const MobileNavItem = ({ label, children, href }) => {
+const MobileNavItem = ({ label, children, href, onClose }) => {
   const { isOpen, onToggle } = useDisclosure();
 
+  const handleItemClick = () => {
+    onClose(); // Close the MobileNav when an item is clicked
+    if (children) {
+      onToggle(); // Toggle the sub-items
+    }
+  };
+
   return (
-    <Stack spacing={4} onClick={children && onToggle}>
+    <Stack spacing={4} onClick={handleItemClick}>
       <Link to={href ?? "#"}>
         <Box
           py={2}
@@ -251,47 +258,17 @@ const NAV_ITEMS = [
     href: "/about",
   },
   {
-    label: "Mail\u00A0Services",
-    children: [
-      {
-        id: "7",
-        label: "Domestic\u00A0Mail",
-        href: "/domesticservices",
-      },
-      {
-        id: "8",
-        label: "International\u00A0Mail",
-        href: "/internationalservices",
-      },
-    ],
-  },
-  {
     id: "3",
-    label: "Express\u00A0Services",
-    href: "/expressservices",
-  },
-  {
-    id: "4",
-    label: "Track",
+    label: "International\u00A0Tracking",
     href: "/track",
   },
   {
+    id: "4",
+    label: "Locate\u00A0Us",
+    href: "/locate",
+  },
+  {
     id: "5",
-    label: "Tariff",
-    href: "/tariff",
-  },
-  {
-    id: "6",
-    label: "Stamps",
-    href: "/stamps",
-  },
-  {
-    id: "7",
-    label: "News/Tenders",
-    href: "/news",
-  },
-  {
-    id: "8",
     label: "Contact\u00A0Us",
     href: "/contact",
   },

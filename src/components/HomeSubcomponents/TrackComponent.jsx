@@ -8,6 +8,8 @@ import {
   Stack,
 } from "@chakra-ui/react";
 
+import { AiOutlineSearch } from "react-icons/ai";
+
 import { useNavigate } from "react-router-dom";
 
 const TrackComponent = () => {
@@ -49,7 +51,7 @@ const TrackComponent = () => {
               required
               value={articleId}
               onChange={(e) => setArticleId(e.target.value)}
-              h={{ base: "35px", sm: "50px" }}
+              h={{ base: "30px", sm: "40px" }}
             />
 
             <Button
@@ -59,8 +61,7 @@ const TrackComponent = () => {
               p={{ base: "1", sm: "2" }}
               fontSize={{ base: "xl", sm: "3xl" }}
               fontWeight={{ base: "400", sm: "600" }}
-              h={{ base: "35px", sm: "50px" }}
-              w={"100px"}
+              h={{ base: "3px", sm: "40px" }}
               transform="skewX(-10deg)"
               borderRadius={"none"}
               css={{
@@ -69,11 +70,11 @@ const TrackComponent = () => {
                 },
               }}
             >
-              Track
+              <AiOutlineSearch color="white" size={"40"} />
             </Button>
           </HStack>
         </form>
-        <FormLabel mt={"10px"} mb={"20px"} fontWeight={"bold"}>
+        <FormLabel my={"5px"} fontWeight={"bold"}>
           Search or Track Packages
         </FormLabel>
       </FormControl>

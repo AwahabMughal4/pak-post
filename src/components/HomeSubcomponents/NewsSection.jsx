@@ -63,7 +63,7 @@ const NewsSection = () => {
           shadow={"xl"}
           w={{ base: "90%", sm: "48%" }}
         >
-          <Heading m={"1rem"} textColor={"#ED1B24"}>
+          <Heading m={"1rem"} mx={"auto"} textColor={"#ED1B24"}>
             News
           </Heading>
           <Box
@@ -71,6 +71,8 @@ const NewsSection = () => {
             p={"1rem"}
             h={["75vh", "50vh"]}
             overflowY={"scroll"}
+            borderTop={"2px solid #ed1b24"}
+            borderBottom={"2px solid #ed1b24"}
           >
             {NewsData.slice()
               .sort((a, b) => b.id - a.id)
@@ -112,7 +114,7 @@ const NewsSection = () => {
           shadow={"xl"}
           w={{ base: "90%", sm: "48%" }}
         >
-          <Heading m={"1rem"} textColor={"#ED1B24"}>
+          <Heading m={"1rem"} mx={"auto"} textColor={"#ED1B24"}>
             Tenders
           </Heading>
           <Box
@@ -120,6 +122,8 @@ const NewsSection = () => {
             p={"1rem"}
             h={["75vh", "50vh"]}
             overflowY={"scroll"}
+            borderTop={"2px solid #ed1b24"}
+            borderBottom={"2px solid #ed1b24"}
           >
             {TendersData.slice()
               .sort((a, b) => b.id - a.id)

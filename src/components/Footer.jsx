@@ -50,7 +50,7 @@ export default function Footer() {
     >
       <Container as={Stack} maxW={"6xl"} py={4}>
         <SimpleGrid
-          templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 1fr" }}
+          templateColumns={{ sm: "1fr 1fr", lg: "2fr 1fr 1fr 1fr" }}
           spacing={8}
         >
           <Stack spacing={3}>
@@ -107,9 +107,9 @@ export default function Footer() {
                 Manuals
               </Box>
             </Link>
-            <Link to={"/complaints"}>
+            <Link to={"/postcode"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>
-                Complaints
+                Postal Codes
               </Box>
             </Link>
           </Stack>
@@ -145,7 +145,7 @@ export default function Footer() {
               Director General Pakistan Post Office, G-8/4 Islamabad.
             </Box>
 
-            <HStack justifyContent={["", "space-between"]} mt={5}>
+            <HStack justifyContent={{ base: "", lg: "space-between" }} mt={5}>
               <Box
                 as="a"
                 href={"https://www.facebook.com/PakistanPostOffice.PK"}
