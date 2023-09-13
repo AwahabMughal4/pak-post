@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Table, Tbody, Tr, Td, Text } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 const FmsTariff = () => {
   return (
@@ -8,6 +9,7 @@ const FmsTariff = () => {
         {" "}
         Fax Mail Service Tariff
       </h1>
+      <BackButton />
       <Text
         className="content"
         color="var(--primary-color)"

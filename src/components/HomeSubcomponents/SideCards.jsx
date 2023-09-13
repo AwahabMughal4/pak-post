@@ -27,7 +27,7 @@ const SideCards = () => {
           <Box
             bgColor={"white"}
             h={"120px"}
-            w={{ base: "160px", lg: "100px", xl: "130px", "2xl": "150px"}}
+            w={{ base: "160px", lg: "100px", xl: "130px" }}
             borderRadius={"15px"}
             textColor={items.color}
             border={"1px solid"}

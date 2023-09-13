@@ -10,6 +10,7 @@ import {
   TableContainer,
   Text,
 } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 class EmsTariff extends Component {
   constructor() {
@@ -35,6 +36,7 @@ class EmsTariff extends Component {
           {" "}
           Express Mail Service Tariff
         </h1>
+        <BackButton />
         <TableContainer
           variant="striped"
           mt="4"

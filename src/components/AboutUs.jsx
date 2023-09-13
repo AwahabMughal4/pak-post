@@ -3,7 +3,7 @@ import image1 from "../assets/AboutUs/timthumb.jpg";
 import image2 from "../assets/AboutUs/2023-08-18-shahid-ashraf-tarar-federal-minister-for-communications.jpeg";
 import image3 from "../assets/AboutUs/2022-07-15-m-khurram-agha-secretary-sb.jpeg";
 import image4 from "../assets/AboutUs/HafizShakilDGJPG.jpg";
-import { Text } from "@chakra-ui/react";
+import { Text, Container, Box } from "@chakra-ui/react";
 const AboutUs = () => {
   return (
     <div className="hero-image-container">
@@ -36,7 +36,10 @@ const AboutUs = () => {
             </Text>
           </h1>
           <h1>
-            <p className="About-us-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] text-justify">
+            <Text
+              className="About-us-Text text-lg mt-[2rem] text-justify"
+              mx={{ base: "none", md: "3rem" }}
+            >
               <b>Pakistan Post </b>has a broad and varied role to play beyond
               provision of communication link for individuals and businesses. To
               keep pace with the changing communications market, Pakistan Post
@@ -45,13 +48,23 @@ const AboutUs = () => {
               its core postal business. Pakistan post is committed to make
               secure and timely delivery of mail, money and material at the
               doorsteps of the customers at affordable cost.
-            </p>
+            </Text>
           </h1>
         </div>
       </div>
 
-      <div className="images-container flex m-auto mx-[5rem] flex-col md:flex-row justify-around">
-        <div className="round-image1 flex-row align-center justify-center ">
+      <Box
+        display={"flex"}
+        flexWrap={"wrap"}
+        w={"80%"}
+        mx={"auto"}
+        justifyContent={"space-around"}
+      >
+        <Box
+          className="round-image1 flex-row align-center justify-center "
+          w={{ base: "80%", md: "50%", lg: "30%" }}
+          my={{ base: "2rem", lg: "0" }}
+        >
           <img
             src={image2}
             alt="Rounded Image1"
@@ -64,8 +77,12 @@ const AboutUs = () => {
           <h1 className="minister1 text-center font-bold">
             Federal Minister for Communications
           </h1>
-        </div>
-        <div className="round-image2 flex-row align-center justify-center">
+        </Box>
+        <Box
+          className="round-image2 flex-row align-center justify-center"
+          w={{ base: "80%", md: "50%", lg: "30%" }}
+          my={{ base: "2rem", lg: "0" }}
+        >
           <img
             src={image3}
             alt="Rounded Image1"
@@ -78,8 +95,12 @@ const AboutUs = () => {
           <h1 className="minister2 text-center font-bold">
             Secretary Ministry of Communications
           </h1>
-        </div>
-        <div className="round-image3 flex-row align-center justify-center">
+        </Box>
+        <Box
+          className="round-image3 flex-row align-center justify-center"
+          w={{ base: "80%", md: "50%", lg: "30%" }}
+          my={{ base: "2rem", lg: "0" }}
+        >
           <img
             src={image4}
             alt="Rounded Image1"
@@ -92,8 +113,8 @@ const AboutUs = () => {
           <h1 className="minister1 text-center font-bold">
             Chairman/Director General
           </h1>
-        </div>
-      </div>
+        </Box>
+      </Box>
 
       <div className="history-section my-[3rem] mx-[3rem] mb-[5rem]">
         <div className="history-heading inline-block ml-[3rem] ">
@@ -110,7 +131,10 @@ const AboutUs = () => {
           </Text>
         </div>
         <h1>
-          <p className="History-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] text-justify">
+          <Text
+            className="History-Text text-lg mt-[2rem] text-justify"
+            mx={{ base: "none", md: "3rem" }}
+          >
             <b>Pakistan Post office </b>is a <i>state enterprise </i>dedicated
             to providing wide range of postal products and public services. It
             is the premier national postal communication service holding
@@ -159,7 +183,7 @@ const AboutUs = () => {
               Pakistan with the ability to communicate and conduct business with
               each other and the world efficiently and economically.
             </i>
-          </p>
+          </Text>
         </h1>
       </div>
 
@@ -178,7 +202,10 @@ const AboutUs = () => {
           </Text>
         </div>
         <h1>
-          <p className="History-Text text-lg mt-[2rem] ml-[3rem] mr-[3rem] text-justify">
+          <Text
+            className="History-Text text-lg mt-[2rem] text-justify"
+            mx={{ base: "none", md: "3rem" }}
+          >
             Pakistan Post is providing postal services in every nook and corner
             of the country through a network of around{" "}
             <b>13,000 post offices</b>. Pakistan Post is providing delivery
@@ -201,7 +228,7 @@ const AboutUs = () => {
             strategy to ensure secure and timely delivery of mail, money and
             material at affordable cost through utilization of people, process
             and technology and innovative product offerings.
-          </p>
+          </Text>
         </h1>
       </div>
 
@@ -220,7 +247,10 @@ const AboutUs = () => {
           </Text>
         </div>
         <h1>
-          <p className="structure-text text-lg mt-[2rem] ml-[3rem] mr-[3rem] text-justify">
+          <Text
+            className="structure-text text-lg mt-[2rem] text-justify"
+            mx={{ base: "none", md: "3rem" }}
+          >
             The administrative control of Pakistan Post Office Department at the
             policy planning level is vested in a high powered Management Board
             headed by a <i>Chairperson </i>who is also the{" "}
@@ -243,7 +273,7 @@ const AboutUs = () => {
             forms, to manage the post office budget and to frame all policy
             directions with regard to postal and allied services, with the
             approval of the Government, where necessary.
-          </p>
+          </Text>
         </h1>
       </div>
 
@@ -262,7 +292,10 @@ const AboutUs = () => {
           </Text>
         </div>
         <h1>
-          <p className="roles-text text-lg mt-[2rem] ml-[3rem] mr-[3rem] flex justify-center text-justify">
+          <Text
+            className="roles-text text-lg mt-[2rem] flex justify-center text-justify"
+            mx={{ base: "none", md: "3rem" }}
+          >
             The post office in Pakistan has a broad and varied role. It provides
             and important communication link to individuals, communities and
             businesses for
@@ -289,7 +322,7 @@ const AboutUs = () => {
             Mail Service, Express Mail Service, Fax Mail Service, Urgent Money
             Order Services, Fax Money Order Service and Electronic Money Orders
             Service.
-          </p>
+          </Text>
         </h1>
       </div>
     </div>

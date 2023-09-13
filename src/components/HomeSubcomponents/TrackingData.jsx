@@ -76,7 +76,7 @@ const TrackingData = () => {
           mt={"3rem"}
           mb={"4rem"}
         >
-          <Text fontSize={"xl"}>Something unexpected happened</Text>
+          <Text fontSize={"xl"}>The server is not responding</Text>
           <Link to={"/track"}>
             <Button
               m={"2rem"}

@@ -10,6 +10,7 @@ import {
   Text,
   TableCaption,
 } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 const UmsTariff = () => {
   return (
@@ -18,6 +19,7 @@ const UmsTariff = () => {
         {" "}
         Urgent Mail Service Tariff
       </h1>
+      <BackButton />
       <Box w={{ base: "90%", md: "50%" }} mx={"auto"} my={"2rem"}>
         <Table variant="simple" size="sm" borderColor="gray.200">
           <TableCaption>

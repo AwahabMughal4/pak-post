@@ -10,6 +10,7 @@ import {
   TableContainer,
   Text,
 } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 const EmoTariff = () => {
   return (
@@ -17,6 +18,7 @@ const EmoTariff = () => {
       <h1 className="text-center text-4xl p-4 text-[red] font-bold">
         Electronic Money Order
       </h1>
+      <BackButton />
       <TableContainer
         w={{ base: "90%", md: "80%" }}
         border="1px"
