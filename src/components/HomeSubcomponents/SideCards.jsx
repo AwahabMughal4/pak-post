@@ -16,16 +16,17 @@ const SideCards = () => {
   return (
     <Flex
       w={{ base: "100%", lg: "30%" }}
+      //   h={{ base: "auto", lg: "50vh" }}
       flexWrap={"wrap"}
-      my={"0.5rem"}
-      justifyContent={"space-evenly"}
+      mt={"0rem"}
       alignContent={"space-around"}
+      justifyContent={"space-evenly"}
     >
       {SideCardsData.map((items) => (
         <Link to={items.link} key={items.id}>
           <Box
             bgColor={"white"}
-            h={"130px"}
+            h={"120px"}
             w={{ base: "160px", lg: "100px", xl: "130px" }}
             borderRadius={"15px"}
             textColor={items.color}
@@ -39,7 +40,6 @@ const SideCards = () => {
             flexDirection={"column"}
             alignItems={"center"}
             justifyContent={"center"}
-            p={"0.2rem"}
             mx={{ base: "auto", lg: "0" }}
             my={{ base: "0.5rem", lg: "0" }}
             style={{

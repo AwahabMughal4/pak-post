@@ -61,7 +61,7 @@ const TrackComponent = () => {
               p={{ base: "1", sm: "2" }}
               fontSize={{ base: "xl", sm: "3xl" }}
               fontWeight={{ base: "400", sm: "600" }}
-              h={{ base: "3px", sm: "40px" }}
+              h={{ base: "30px", sm: "40px" }}
               transform="skewX(-10deg)"
               borderRadius={"none"}
               css={{

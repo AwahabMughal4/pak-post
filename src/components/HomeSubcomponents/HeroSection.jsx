@@ -40,7 +40,11 @@ const HeroSection = () => {
   };
 
   return (
-    <Box w={{ base: "100%", lg: "70%" }} my={"0.5rem"}>
+    <Box
+      w={{ base: "100%", lg: "70%" }}
+      ml={{ base: "0", lg: "0.5rem" }}
+      mt={"1rem"}
+    >
       <div
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -55,7 +59,7 @@ const HeroSection = () => {
           {renderDots()}
         </div>
       </div>
-      <Box my={"1rem"} p={"1rem"}>
+      <Box mt={"1rem"} p={{ base: "1rem", lg: "0.3rem" }}>
         <Track />
       </Box>
     </Box>

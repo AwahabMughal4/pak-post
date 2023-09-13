@@ -5,3 +5,11 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+@keyframes moveText {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

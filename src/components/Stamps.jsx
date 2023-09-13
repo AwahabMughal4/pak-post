@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import {
   Box,
@@ -32,7 +31,7 @@ import {
 } from "../DataObjects/stamps_data";
 
 export default function Stamps() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Add state
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -42,13 +41,13 @@ export default function Stamps() {
     <div className="">
       {/* Menu button for small screens */}
       <IconButton
-        display={{ base: "block", md: "block" }}
+        display={{ base: "block", lg: "none" }}
         icon={isSidebarOpen ? <FaTimes /> : <FaBars />}
         onClick={toggleSidebar}
         size="lg"
         aria-label="Toggle Sidebar"
-        position="fixed"
-        top="6.5rem"
+        position="sticky"
+        top={{ base: "4rem", lg: "6.5rem" }}
         left="1rem"
         zIndex="9999"
         bgColor="rgba(0, 0, 0, 0)"
@@ -56,51 +55,63 @@ export default function Stamps() {
       <SidebarContent
         isOpen={isSidebarOpen}
         onClose={() => setIsSidebarOpen(false)}
+        bg={"gray.50"}
+        overflow={"auto"}
       />
-
       <Box
         ml={{
           base: isSidebarOpen ? "0" : "auto",
-          md: isSidebarOpen ? "0" : "auto",
+          sm: "1rem",
         }}
         p="1rem"
-        w={{ base: "100%", md: "100%" }}
+        w={{ base: "100%", sm: "100%", lg: "81%" }}
         border="1px"
-        borderColor={useColorModeValue("gray.200", "gray.700")}
-        h="full"
+        shadow="lg"
+        borderColor={useColorModeValue("red.200", "gray.700")}
+        mx={{ base: "0", sm: "0", lg: "18%" }}
+        my={{ base: "0", lg: "-90vh" }}
       >
-        <Contacts />
+        <Stampes />
       </Box>
-
-      {/* Sidebar for screens larger than 'md' */}
     </div>
   );
 }
 
+// The rest of your components and code remain unchanged.
+
 const SidebarContent = ({ isOpen, onClose, ...rest }) => {
   return (
+    //main box for buttons
     <Box
       display={{
         base: isOpen ? "block" : "none",
-        md: isOpen ? "block" : "none",
+        lg: "block",
       }}
-      bg={useColorModeValue("white", "zinc.500")}
-      position="fixed"
-      top="6.5rem"
-      left="0.5rem"
-      zIndex="3"
+      bg={useColorModeValue("slate.400", "zinc.500")}
+      position="Sticky"
+      top={"10vh"}
+      left={{ base: isOpen ? "0.5rem" : "auto", lg: "0" }}
+      zIndex={{ base: "1", lg: "3" }}
       borderRight="1px"
       borderBottom="1px"
-      borderColor={useColorModeValue("gray.200", "gray.700")}
-      w={{ base: "70%", md: "25%" }}
-      h={{ base: "65rem", md: "auto" }}
-      shadow={{ base: "dark-lg", md: "none" }}
+      borderColor={useColorModeValue("gray.300", "gray.700")}
+      w={{ base: "100%", lg: "17%" }}
+      h={{ base: "90vh", lg: "90vh" }}
+      shadow={{ base: "dark-lg", lg: "none" }}
       {...rest}
-      mx={"2"}
-
-      // bg={'zinc.200'}
+      mt={{ base: "0", lg: "0" }}
+      overflowY={"scroll"}
     >
-      <Flex h="20" alignItems="center" mx="8" justifyContent="center">
+      {/* sidebar //stamps */}
+      <Flex
+        h="20"
+        alignItems="center"
+        justifyContent="center"
+        display={{ base: isOpen ? "none" : "flex", lg: "flex" }}
+        bg={"gray.100"}
+        mb={"1vh"}
+        shadow={"lg"}
+      >
         <Text
           fontSize="2xl"
           fontFamily="monospace"
@@ -110,9 +121,20 @@ const SidebarContent = ({ isOpen, onClose, ...rest }) => {
           Stamps
         </Text>
       </Flex>
-      <Flex flexWrap={{ base: "wrap", md: "wrap" }}>
+
+      {/* main button div */}
+
+      <Flex
+        mb={{ base: "0", lg: "3rem" }}
+        className="flex flex-col-reverse items-center justify-center overflow-y-auto"
+      >
         {AllButtons.map((link) => (
-          <NavItem key={link.year} id={link.id} toggleSidebar={onClose}>
+          <NavItem
+            key={link.year}
+            id={link.id}
+            toggleSidebar={onClose}
+            className="font-semibold border border-red-500"
+          >
             {link.year}
           </NavItem>
         ))}
@@ -126,20 +148,23 @@ const NavItem = ({ children, toggleSidebar, id, ...rest }) => {
     toggleSidebar();
   };
 
+  //buttons
   return (
     <Box
       as="a"
       href={`#${id}`}
       onClick={handleNavItemClick}
       w={{ base: "calc(50% - 10px)", sm: "40%", lg: "calc(50% - 10px)" }} // 50% width for two buttons with 10px margin between them
-      mx={"5px"} // Margin between buttons
-      mb={"5px"} // Margin at the bottom of each row
+      mx={"2px"} // Margin between buttons
+      mb={"2px"} // Margin at the bottom of each row
       align="center"
-      px={{ base: "7", sm: "2", lg: "7" }}
-      py={{ base: "2", sm: "1", lg: "2" }}
+      px={{ base: "2", sm: "2", lg: "2" }}
+      py={{ base: "2", sm: "2", lg: "2" }}
+      mt={{ base: "1" }}
       borderRadius="lg"
       role="group"
       cursor="pointer"
+      bg={"zinc.50"}
       _hover={{
         bg: "#ed1b24",
         color: "red",
@@ -152,49 +177,22 @@ const NavItem = ({ children, toggleSidebar, id, ...rest }) => {
   );
 };
 
+// card
+
 function ProductCard({ heading, paragraph, image, pdfStamps }) {
   return (
-    // <Card
-    //   w={{ base: "100%", md: "46%", lg: "23%" }}
-    //   m={"0.5rem"}
-    //   p={"0.5rem"}
-    //   h={{ base: "70vh", md: "60vh", lg: "50vh" }}
-    //   shadow={"lg"}
-    // >
-    //   <Flex
-    //     alignItems={"center"}
-    //     justifyContent={"center"}
-    //     flexDirection={"column"}
-    //   >
-    //     <Image src={image} w={"150px"} h={"150px"} />
-    //     <Text fontWeight={"bold"}>{heading}</Text>
-    //     <Text textAlign={"center"}>{paragraph}</Text>
-    //   </Flex>
-    //   <Box
-    //     as="a"
-    //     href={pdfStamps}
-    //     cursor="pointer"
-    //     textColor={"red"}
-    //     margin={"auto 1rem 1rem auto"}
-    //     _hover={{
-    //       textDecoration: "underline",
-    //     }}
-    //   >
-    //     Read More
-    //   </Box>
-    // </Card>
-    <div className="p-1 m-4  shadow-lg bg-[#f5f5f5] ">
+    <div className="p-1 m-4 overflow-hidden shadow-lg bg-slate-200 animate_animated animate_bounceIn ">
       <div className="flex-wrap items-center justify-center px-5 py-4  shadow-lg bg-[#f1f5f9] h-[350px] ">
         <img src={image} alt="img1" className="w-[170px] h-[150px] rounded" />
 
         <div className="w-[180px] h-24   flex-wrap flex ">
-          <h2 className="px-1 mt-1  font-sans text-sm font-semibold ">
+          <h2 className="px-1 mt-1 font-sans text-sm font-semibold ">
             {heading}
           </h2>
           <h2 className="px-1 py-1 font-sans text-xs ">{paragraph}</h2>
         </div>
-        <div className=" flex justify-end items-end">
-          <a href={pdfStamps} className="text-red-600  font-semibold  text-sm">
+        <div className="flex items-end justify-end ">
+          <a href={pdfStamps} className="text-sm font-semibold text-red-600">
             Read More...
           </a>
         </div>
@@ -203,11 +201,11 @@ function ProductCard({ heading, paragraph, image, pdfStamps }) {
   );
 }
 
-const Contacts = () => {
+const Stampes = () => {
   return (
-    <div>
+    <div className="flex flex-col-reverse">
       {/* //div for button 2 */}
-      <div id="2006" className="pt-[8rem] mt-[-8rem] ">
+      <div id="2006" className="">
         <Heading
           textAlign={"center"}
           color={"white"}

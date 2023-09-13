@@ -49,7 +49,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex
-          flex={{ base: 1 }}
+          flex={{ base: 1, lg: 0.5 }}
           justify={{ base: "center", lg: "start" }}
           alignItems={"center"}
         >
@@ -63,6 +63,35 @@ export default function WithSubnavigation() {
           >
             Pakistan{"\u00A0"}Post
           </Text>
+        </Flex>
+        <Flex
+          flex={{ base: 1 }}
+          justify={{ base: "center", lg: "start" }}
+          display={{ base: "none", lg: "flex" }}
+          alignItems={"center"}
+          overflow={"hidden"} // Hide the overflow to prevent the text from displaying outside the container
+          position="relative" // Position relative is needed to position the moving text
+        >
+          <div
+            className="moving-text-container"
+            style={{
+              animation: "moveText 40s linear infinite", // Adjust the duration as needed
+              whiteSpace: "nowrap", // Prevent text from wrapping to the next line
+              transform: "translateX(100%)",
+            }}
+          >
+            <Text
+              ml={"1rem"}
+              className="text-[25px] italic text-[color:var(--primary-color)]"
+            >
+              Pakistan Post moves 7 steps upwards in World Postal Ranking by
+              UPU. International Ranking of Postal Sector is based on four
+              pillars i.e. Reliability, Reach, Relevance and Resilience. In
+              2022, Pakistan Post has achieved 55th position out of 162
+              countries in the Postal Ranking Index issued by Universal Postal
+              Union.
+            </Text>
+          </div>
         </Flex>
 
         <Stack
