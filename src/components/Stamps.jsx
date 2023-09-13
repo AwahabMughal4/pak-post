@@ -69,7 +69,7 @@ export default function Stamps() {
         shadow="lg"
         borderColor={useColorModeValue("red.200", "gray.700")}
         mx={{ base: "0", sm: "0", lg: "18%" }}
-        my={{ base: "0", lg: "-90vh" }}
+        mt={{ base: "0", lg: "-90vh" }}
       >
         <Stampes />
       </Box>
@@ -154,13 +154,12 @@ const NavItem = ({ children, toggleSidebar, id, ...rest }) => {
       as="a"
       href={`#${id}`}
       onClick={handleNavItemClick}
-      w={{ base: "calc(50% - 10px)", sm: "40%", lg: "calc(50% - 10px)" }} // 50% width for two buttons with 10px margin between them
-      mx={"2px"} // Margin between buttons
-      mb={"2px"} // Margin at the bottom of each row
-      align="center"
-      px={{ base: "2", sm: "2", lg: "2" }}
-      py={{ base: "2", sm: "2", lg: "2" }}
-      mt={{ base: "1" }}
+      w={"50%"}
+      h={"40px"}
+      display={"flex"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      m={"0.4rem"}
       borderRadius="lg"
       role="group"
       cursor="pointer"
@@ -211,7 +210,7 @@ const Stampes = () => {
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"2rem"}
+          mt={"1rem"}
         >
           2006
         </Heading>

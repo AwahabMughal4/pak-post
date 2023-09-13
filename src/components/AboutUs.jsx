@@ -50,7 +50,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="images-container flex m-auto mx-[5rem] flex-col md:flex-row ">
+      <div className="images-container flex m-auto mx-[5rem] flex-col md:flex-row justify-around">
         <div className="round-image1 flex-row align-center justify-center ">
           <img
             src={image2}
@@ -65,7 +65,7 @@ const AboutUs = () => {
             Federal Minister for Communications
           </h1>
         </div>
-        <div className="round-image2 flex-row align-center justify-center ml-[17rem]">
+        <div className="round-image2 flex-row align-center justify-center">
           <img
             src={image3}
             alt="Rounded Image1"
@@ -79,7 +79,7 @@ const AboutUs = () => {
             Secretary Ministry of Communications
           </h1>
         </div>
-        <div className="round-image3 flex-row align-center justify-center ml-[17rem]">
+        <div className="round-image3 flex-row align-center justify-center">
           <img
             src={image4}
             alt="Rounded Image1"
