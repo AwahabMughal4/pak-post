@@ -7,8 +7,6 @@ import {
   Text,
   Heading,
   IconButton,
-  Card,
-  Image,
 } from "@chakra-ui/react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {
