@@ -67,7 +67,7 @@ export default function Stamps() {
         w={{ base: "100%", sm: "100%", lg: "81%" }}
         border="1px"
         shadow="lg"
-        borderColor={useColorModeValue("red.200", "gray.700")}
+        borderColor={useColorModeValue("gray.200", "gray.700")}
         mx={{ base: "0", sm: "0", lg: "18%" }}
         mt={{ base: "0", lg: "-90vh" }}
       >
