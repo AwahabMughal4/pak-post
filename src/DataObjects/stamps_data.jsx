@@ -620,16 +620,16 @@ export const Buttond = [
   },
   {
     id: 28,
-    heading: "heading 4",
+    heading: "08 October 2008",
     year: "2008",
-    paragraph: "paragraph 4",
+    paragraph: "3rd Anniversary of Earthquake",
     image: img1d1a,
   },
   {
     id: 29,
-    heading: "heading 5",
+    heading: "10 December 2008",
     year: "2008",
-    paragraph: "paragraph 5",
+    paragraph: "United Nations Human Rights Award 2008 For Mohtarma Benazir Bhutto",
     image: img1e1a,
   },
   {
@@ -641,16 +641,16 @@ export const Buttond = [
   },
   {
     id: 31,
-    heading: "heading 8",
+    heading: "21 June 2008",
     year: "2008",
-    paragraph: "paragraph 8",
+    paragraph: "55th Birthday Celebrations of Mohtarma Benazir Bhutto (Shaheed)",
     image: img1g1a,
   },
   {
     id: 32,
-    heading: "heading 8",
+    heading: "21 June 2008",
     year: "2008",
-    paragraph: "paragraph 8",
+    paragraph: "55th Birthday Celebrations of Mohtarma Benazir Bhutto (Shaheed)",
     image: img1h1a,
   },
 ];
