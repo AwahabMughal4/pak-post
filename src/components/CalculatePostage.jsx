@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Text,
-} from "@chakra-ui/react";
-import { InternationalTariff } from "../DataObjects/InternationalTariff.jsx"
+import { Box, Text } from "@chakra-ui/react";
+import { InternationalTariff } from "../DataObjects/InternationalTariff.jsx";
 
 const CalculatePostage = () => {
   const [formData, setFormData] = useState({
@@ -25,9 +22,6 @@ const CalculatePostage = () => {
   const [isclient2, setclient2] = useState(false);
   const [isclient3, setclient3] = useState(false);
 
-
-
-
   const handleArticle = (e) => {
     const { name, value } = e.target;
     if (name === "value") {
@@ -39,11 +33,13 @@ const CalculatePostage = () => {
   const handleClient = (e) => {
     const { value } = e.target;
     setClientType(value);
-    InternationalTariff.map((country) => {
+
+    InternationalTariff.forEach((country) => {
       if (value === country.country) {
         setCountry(country.country);
       }
     });
+
     switch (value) {
       case "0":
         setclient0(true);
@@ -72,6 +68,9 @@ const CalculatePostage = () => {
         setclient1(false);
         setclient2(false);
         setclient3(true);
+        break;
+      default:
+        console.log("error");
         break;
     }
   };
@@ -135,13 +134,14 @@ const CalculatePostage = () => {
     } else if (isInternational) {
       setArticleWeight("0");
       setResult(0);
-      InternationalTariff.map((country) => {
+      InternationalTariff.forEach((country) => {
         if (clientType === country.country) {
           if (articleWeight > 0 && articleWeight <= 1000) {
             postageResult = country.weight;
           } else if (articleWeight > 1000) {
-            const additionalWeight = articleWeight - 500;
-            const additionalCharge = Math.ceil(additionalWeight / 500) * country.addl;
+            const additionalWeight = articleWeight - 1000;
+            const additionalCharge =
+              Math.ceil(additionalWeight / 500) * country.addl;
             postageResult = country.weight + additionalCharge;
           }
         }
@@ -169,7 +169,11 @@ const CalculatePostage = () => {
     <div>
       <div className="button flex flex-row space-x-5 justify-center items-center p-5">
         <button
-          className={`p-3 bg-${isDomestic ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isDomestic ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
+          className={`p-3 bg-${
+            isDomestic ? "[color:var(--primary-color)] " : "slate-200"
+          }  text-${
+            isDomestic ? "white" : "black"
+          } hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
             setArticleWeight("0"); // Reset the article weight when the form is reset
             setResult(0);
@@ -183,9 +187,14 @@ const CalculatePostage = () => {
         >
           Domestic Services
         </button>
-        <button className={`p-3 bg-${isInternational ? '[color:var(--primary-color)] ' : 'slate-200'}  text-${isInternational ? 'white' : 'black'} hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
+        <button
+          className={`p-3 bg-${
+            isInternational ? "[color:var(--primary-color)] " : "slate-200"
+          }  text-${
+            isInternational ? "white" : "black"
+          } hover:bg-[color:var(--primary-color)] rounded-none hover:text-white shadow-lg `}
           onClick={() => {
-            setCountry("AFGHANISTAN")
+            setCountry("AFGHANISTAN");
             setArticleWeight("0"); // Reset the article weight when the form is reset
             setResult(0);
             setDomestic(false);
@@ -198,7 +207,6 @@ const CalculatePostage = () => {
         >
           International Services
         </button>
-
       </div>
       <form
         name="FrontPage_Form1"
@@ -208,40 +216,27 @@ const CalculatePostage = () => {
       >
         <div className="flex flex-row items-center justify-center py-2 space-x-6 shadow-lg bg-[color:var(--primary-color)]  rounded-t-md"></div>
         <div className="flex justify-center shadow-xs">
-          <div className="px-2 py-2 mt-2 text-lg font-semibold shadow-sm">Calculate Postage</div>
+          <div className="px-2 py-2 mt-2 text-lg font-semibold shadow-sm">
+            Calculate Postage
+          </div>
         </div>
         <div className="flex flex-row">
           <table className="m-auto mt-2 mb-3">
             <tbody className="p-2 ">
+              <tr>
+                {isInternational && (
+                  <td className="font-base pr-4">Article weight</td>
+                )}
+                {isclient0 && (
+                  <td className="font-base pr-4">Article weight</td>
+                )}
 
-              <tr >
-                {
-                  isInternational && <td className="font-base pr-4">
-                    Article weight
-                  </td>
-                }
-                {
-                  isclient0 && <td className="font-base pr-4">
-                    Article weight
-                  </td>
-                }
+                {isclient1 && (
+                  <td className="font-base pr-4">Article weight</td>
+                )}
 
-                {
-                  isclient1 && <td className="font-base pr-4">
-                    Article weight
-                  </td>
-                }
-
-                {
-                  isclient2 && <td className="font-base pr-4">
-                    Amount
-                  </td>
-                }
-                {
-                  isclient3 && <td className="font-base pr-4">
-                    Amount
-                  </td>
-                }
+                {isclient2 && <td className="font-base pr-4">Amount</td>}
+                {isclient3 && <td className="font-base pr-4">Amount</td>}
                 <td>
                   <input
                     type="text"
@@ -252,35 +247,31 @@ const CalculatePostage = () => {
                     maxLength="5"
                     className="w-full mt-4 px-3 py-2 border rounded-none border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                   />
-                  {isclient0 &&
+                  {isclient0 && (
                     <span className="text-sm font-semibold text-blue-600 font-base">
                       (grams)
                     </span>
-                  }
-                  {
-                    isclient1 &&
+                  )}
+                  {isclient1 && (
                     <span className="text-sm font-semibold text-blue-600 font-base">
                       (grams)
                     </span>
-                  }
-                  {
-                    isInternational &&
+                  )}
+                  {isInternational && (
                     <span className="text-sm font-semibold text-blue-600 font-base">
                       (grams)
                     </span>
-                  }
-                  {isclient2 &&
+                  )}
+                  {isclient2 && (
                     <span className="text-sm font-semibold text-blue-600 font-base">
                       (Rs)
                     </span>
-                  }
-                  {
-                    isclient3 &&
+                  )}
+                  {isclient3 && (
                     <span className="text-sm font-semibold text-blue-600 font-base">
                       (Rs)
                     </span>
-                  }
-
+                  )}
                 </td>
               </tr>
               <tr>
@@ -293,10 +284,10 @@ const CalculatePostage = () => {
                   >
                     {isDomestic && (
                       <>
-                        <option value="0">Urgent Mail Service  </option>
-                        <option value="1" >Cash On Delivery</option>
-                        <option value="2" >Fax Money Order </option>
-                        <option value="3" >Urgent Money Order</option>
+                        <option value="0">Urgent Mail Service </option>
+                        <option value="1">Cash On Delivery</option>
+                        <option value="2">Fax Money Order </option>
+                        <option value="3">Urgent Money Order</option>
                       </>
                     )}
                     {isInternational && (
@@ -306,7 +297,6 @@ const CalculatePostage = () => {
                             {country.country}
                           </option>
                         ))}
-
                       </>
                     )}
                   </select>
@@ -345,7 +335,8 @@ const CalculatePostage = () => {
                   color="var(--primary-color)"
                 >
                   Calculated Postage For UMS
-                </Text>)}
+                </Text>
+              )}
               {isclient1 && (
                 <Text
                   fontSize="xl"
@@ -354,7 +345,8 @@ const CalculatePostage = () => {
                   color="var(--primary-color)"
                 >
                   Calculated Postage For COD
-                </Text>)}
+                </Text>
+              )}
               {isclient2 && (
                 <Text
                   fontSize="xl"
@@ -363,7 +355,8 @@ const CalculatePostage = () => {
                   color="var(--primary-color)"
                 >
                   Calculated Postage For FMO
-                </Text>)}
+                </Text>
+              )}
               {isclient3 && (
                 <Text
                   fontSize="xl"
@@ -372,7 +365,8 @@ const CalculatePostage = () => {
                   color="var(--primary-color)"
                 >
                   Calculated Postage For UMO
-                </Text>)}
+                </Text>
+              )}
               {isInternational && (
                 <Text
                   fontSize="xl"
@@ -381,7 +375,8 @@ const CalculatePostage = () => {
                   color="var(--primary-color)"
                 >
                   Calculated Postage For {country}
-                </Text>)}
+                </Text>
+              )}
               <Text>
                 <b>Tariff:{"    "}</b> {result}Rs/-
               </Text>
@@ -393,7 +388,7 @@ const CalculatePostage = () => {
               >
                 GST
               </Text>
-              
+
               <div>
                 <Text>
                   <b>Islamabad:</b> 16%

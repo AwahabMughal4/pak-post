@@ -3,7 +3,7 @@ import image1 from "../assets/AboutUs/timthumb.jpg";
 import image2 from "../assets/AboutUs/2023-08-18-shahid-ashraf-tarar-federal-minister-for-communications.jpeg";
 import image3 from "../assets/AboutUs/2022-07-15-m-khurram-agha-secretary-sb.jpeg";
 import image4 from "../assets/AboutUs/HafizShakilDGJPG.jpg";
-import { Text, Container, Box } from "@chakra-ui/react";
+import { Text, Box } from "@chakra-ui/react";
 const AboutUs = () => {
   return (
     <div className="hero-image-container">
