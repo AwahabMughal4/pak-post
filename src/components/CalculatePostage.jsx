@@ -92,7 +92,7 @@ const CalculatePostage = () => {
       } else if (articleWeight > 500) {
         const additionalWeight = articleWeight - 500;
         const additionalCharge = Math.ceil(additionalWeight / 500) * 75;
-        postageResult = 122 + additionalCharge;
+        postageResult = 230 + additionalCharge;
       }
     } else if (isclient1) {
       setArticleWeight("0");
