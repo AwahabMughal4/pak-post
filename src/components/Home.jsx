@@ -7,6 +7,7 @@ import ImageSlider from "./HomeSubcomponents/ImageSlider";
 import ImpLinks from "./HomeSubcomponents/ImpLinks";
 import SideCards from "./HomeSubcomponents/SideCards";
 import { Flex } from "@chakra-ui/react";
+import IntroSection from "./HomeSubcomponents/IntroSection";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
         <HeroSection />
         <SideCards />
       </Flex>
-
+      <IntroSection />
       <NewsSection />
       <ImageSlider slides={SliderData} />
       <ImpLinks />

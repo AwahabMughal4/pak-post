@@ -127,7 +127,12 @@ const DesktopNav = () => {
     setActiveNavItem(index);
   };
   return (
-    <Stack direction={"row"} spacing={{ lg: "1", xl: "4" }}>
+    <Stack
+      direction={"row"}
+      spacing={{ lg: "0.5", xl: "3" }}
+      m={"-0.5rem"}
+      bgColor={"white"}
+    >
       {NAV_ITEMS.map((navItem, index) => (
         <Box key={navItem.label} w={"fit-content"}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
@@ -141,7 +146,7 @@ const DesktopNav = () => {
                     activeNavItem === index
                       ? "bg-[color:var(--secondary-color)]"
                       : "bg-[color:var(--primary-color)]"
-                  } transition-transform transform hover:scale-105 hover:bg-[color:var(--secondary-color)]`}
+                  } transition-transform transform hover:scale-105 hover:bg-[white] hover:text-[color:var(--primary-color)] shadow-sm shadow-red-200`}
                   onClick={() => handleNavItemClick(index)}
                 >
                   {navItem.label}

@@ -53,7 +53,7 @@ const Card = ({ heading, img, href }) => {
 
 export default function gridListWith() {
   return (
-    <Box p={4} my={{base: "2rem", "2xl": "1rem"}}>
+    <Box p={4} my={{ base: "3rem", "2xl": "1rem" }}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Center>
           <Heading
@@ -73,7 +73,7 @@ export default function gridListWith() {
         </Text>
       </Stack>
 
-      <Container maxW={{base: "5xl", "2xl": "none"}} mt={12}>
+      <Container maxW={{ base: "5xl", "2xl": "none" }} mt={12}>
         <Flex
           flexWrap="wrap"
           gridGap={6}

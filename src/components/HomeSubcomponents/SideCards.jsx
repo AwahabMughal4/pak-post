@@ -16,9 +16,8 @@ const SideCards = () => {
   return (
     <Flex
       w={{ base: "100%", lg: "30%" }}
-      //   h={{ base: "auto", lg: "50vh" }}
+      h={{ base: "auto", lg: "55vh" }}
       flexWrap={"wrap"}
-      mt={"0rem"}
       alignContent={"space-around"}
       justifyContent={"space-evenly"}
     >
@@ -26,7 +25,7 @@ const SideCards = () => {
         <Link to={items.link} key={items.id}>
           <Box
             bgColor={"white"}
-            h={"120px"}
+            h={"110px"}
             w={{ base: "160px", lg: "100px", xl: "130px" }}
             borderRadius={"15px"}
             textColor={items.color}

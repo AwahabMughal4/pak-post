@@ -12,6 +12,7 @@ import {
   Center,
   Button,
 } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 const TrackingData = () => {
   const { articleId } = useParams();
@@ -56,6 +57,7 @@ const TrackingData = () => {
       <Heading textColor={"#ed1b24"} textAlign={"center"} m={"2rem"}>
         Tracking
       </Heading>
+      <BackButton />
       {isLoading ? (
         <Center>
           <Spinner
