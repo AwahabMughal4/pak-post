@@ -9,6 +9,7 @@ import {
   Thead,
   TableContainer,
 } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 const UmsOverNight = () => {
   return (
@@ -23,6 +24,7 @@ const UmsOverNight = () => {
           </Tr>
         </Tbody>
       </Table>
+      <BackButton />
       <Text w={"80%"} mx={"auto"} my={"2rem"}>
         Effective 19th June, 2023, introductory tariff for the service is as
         under:-

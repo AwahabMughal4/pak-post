@@ -9,6 +9,7 @@ import {
   TableContainer,
   Thead,
 } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 const UmoTariff = () => {
   return (
@@ -16,6 +17,7 @@ const UmoTariff = () => {
       <h1 className="text-center text-4xl p-4 text-[red] font-bold">
         UMO Tariff
       </h1>
+      <BackButton />
       <h3 className="text-center text-xl p-4 ">
         Urgent Money Order (UMO) Fee/Commission in Case of UMS-CASH On Delivery
         (COD)

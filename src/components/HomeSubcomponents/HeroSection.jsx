@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Hero_Section_Pics } from "../../DataObjects/data";
+import { Box } from "@chakra-ui/react";
+import Track from "./TrackComponent";
 
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -38,7 +40,11 @@ const HeroSection = () => {
   };
 
   return (
-    <div>
+    <Box
+      w={{ base: "100%", lg: "70%" }}
+      ml={{ base: "0", lg: "0.5rem" }}
+      mt={"1rem"}
+    >
       <div
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -53,7 +59,10 @@ const HeroSection = () => {
           {renderDots()}
         </div>
       </div>
-    </div>
+      <Box mt={"1rem"} p={{ base: "1rem", lg: "0.3rem" }}>
+        <Track />
+      </Box>
+    </Box>
   );
 };
 

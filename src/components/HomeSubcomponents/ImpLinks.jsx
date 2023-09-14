@@ -19,14 +19,14 @@ import pcp from "../../assets/ImpPortalsImages/pcp.png";
 const Card = ({ heading, img, href }) => {
   return (
     <Box
-      maxW={{ base: "full", md: "275px" }}
+      maxW={{ base: "full", md: "275px", "2xl": "30%" }}
       w={"full"}
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
       p={5}
     >
-      <Stack align={"start"} spacing={2}>
+      <Stack align={"center"} spacing={2}>
         <Flex
           w={"20"}
           h={"20"}
@@ -53,7 +53,7 @@ const Card = ({ heading, img, href }) => {
 
 export default function gridListWith() {
   return (
-    <Box p={4} marginTop={"20"} marginBottom={"20"}>
+    <Box p={4} my={{base: "2rem", "2xl": "1rem"}}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Center>
           <Heading
@@ -73,7 +73,7 @@ export default function gridListWith() {
         </Text>
       </Stack>
 
-      <Container maxW={"5xl"} mt={12}>
+      <Container maxW={{base: "5xl", "2xl": "none"}} mt={12}>
         <Flex
           flexWrap="wrap"
           gridGap={6}

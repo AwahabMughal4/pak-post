@@ -76,7 +76,7 @@ const TrackingData = () => {
           mt={"3rem"}
           mb={"4rem"}
         >
-          <Text fontSize={"xl"}>Something unexpected happened</Text>
+          <Text fontSize={"xl"}>The server is not responding</Text>
           <Link to={"/track"}>
             <Button
               m={"2rem"}
@@ -169,78 +169,91 @@ const TrackingData = () => {
               Dispatch Events
             </Heading>
 
-            {data.Event.map((event, index) => (
-              <Flex key={index} flexDirection={"column"} my={"1rem"}>
-                <Text textColor={"#ed1b24"} fontWeight={"bold"} pl={"0.5rem"}>
-                  {event.Date}
-                </Text>
-                {event.EventsDetails.map((detail, detailIndex) => (
-                  <Flex
-                    key={detailIndex}
-                    flexDirection={"column"}
-                    w={"90%"}
-                    mx={"auto"}
-                    my={"1rem"}
-                  >
-                    {detail.SubEvent.map((time, timeIndex) => (
+            {data.Event &&
+              data.Event.map((event, index) => (
+                <Flex key={index} flexDirection={"column"} my={"1rem"}>
+                  <Text textColor={"#ed1b24"} fontWeight={"bold"} pl={"0.5rem"}>
+                    {event.Date}
+                  </Text>
+                  {event.EventsDetails &&
+                    event.EventsDetails.map((detail, detailIndex) => (
                       <Flex
-                        key={timeIndex}
+                        key={detailIndex}
                         flexDirection={"column"}
-                        boxShadow="base"
-                        rounded="md"
-                        my={"0.5rem"}
-                        py={"0.5rem"}
+                        w={"90%"}
+                        mx={"auto"}
+                        my={"1rem"}
                       >
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: time.Time,
-                          }}
-                          style={{
-                            paddingLeft: "1rem",
-                            color: "#ed1b24",
-                            fontWeight: "500",
-                          }}
-                        />
-                        <Box>
-                          {time.SubEventsDetails.map((sub, subIndex) => (
+                        {detail.SubEvent &&
+                          detail.SubEvent.map((time, timeIndex) => (
                             <Flex
-                              key={subIndex}
-                              w={"100%"}
-                              flexDirection={{ base: "column", md: "row" }}
-                              my={{ base: "1rem", md: "0" }}
+                              key={timeIndex}
+                              flexDirection={"column"}
+                              boxShadow="base"
+                              rounded="md"
+                              my={"0.5rem"}
+                              py={"0.5rem"}
                             >
-                              <Flex
-                                w={{ base: "100%", md: "30%" }}
-                                justifyContent={"center"}
-                                my={{ base: "0.5rem", md: "0" }}
-                              >
-                                <div
-                                  dangerouslySetInnerHTML={{
-                                    __html: sub.Location,
-                                  }}
-                                />
-                              </Flex>
-                              <Flex
-                                w={{ base: "100%", md: "70%" }}
-                                textAlign={{ base: "center", md: "none" }}
-                                justifyContent={{ base: "center", md: "left" }}
-                                my={{ base: "0.5rem", md: "0" }}
-                              >
-                                <div
-                                  dangerouslySetInnerHTML={{
-                                    __html: sub.Description,
-                                  }}
-                                />
-                              </Flex>
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: time.Time,
+                                }}
+                                style={{
+                                  paddingLeft: "1rem",
+                                  color: "#ed1b24",
+                                  fontWeight: "500",
+                                }}
+                              />
+                              <Box>
+                                {time.SubEventsDetails &&
+                                  time.SubEventsDetails.map((sub, subIndex) => (
+                                    <Flex
+                                      key={subIndex}
+                                      w={"100%"}
+                                      flexDirection={{
+                                        base: "column",
+                                        md: "row",
+                                      }}
+                                      my={{ base: "1rem", md: "0" }}
+                                    >
+                                      <Flex
+                                        w={{ base: "100%", md: "30%" }}
+                                        justifyContent={"center"}
+                                        my={{ base: "0.5rem", md: "0" }}
+                                      >
+                                        <div
+                                          dangerouslySetInnerHTML={{
+                                            __html: sub.Location,
+                                          }}
+                                        />
+                                      </Flex>
+                                      <Flex
+                                        w={{ base: "100%", md: "70%" }}
+                                        textAlign={{
+                                          base: "center",
+                                          md: "none",
+                                        }}
+                                        justifyContent={{
+                                          base: "center",
+                                          md: "left",
+                                        }}
+                                        my={{ base: "0.5rem", md: "0" }}
+                                      >
+                                        <div
+                                          dangerouslySetInnerHTML={{
+                                            __html: sub.Description,
+                                          }}
+                                        />
+                                      </Flex>
+                                    </Flex>
+                                  ))}
+                              </Box>
                             </Flex>
                           ))}
-                        </Box>
                       </Flex>
                     ))}
-                  </Flex>
-                ))}
-              </Flex>
-            ))}
+                </Flex>
+              ))}
           </Box>
         </Card>
       )}

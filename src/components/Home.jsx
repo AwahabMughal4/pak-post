@@ -2,18 +2,20 @@ import React from "react";
 import { SliderData } from "../DataObjects/StampsSlider";
 
 import HeroSection from "./HomeSubcomponents/HeroSection";
-import TrackSection from "./HomeSubcomponents/TrackSection";
-import ServicesSection from "./HomeSubcomponents/ServicesSection";
 import NewsSection from "./HomeSubcomponents/NewsSection";
 import ImageSlider from "./HomeSubcomponents/ImageSlider";
 import ImpLinks from "./HomeSubcomponents/ImpLinks";
+import SideCards from "./HomeSubcomponents/SideCards";
+import { Flex } from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <>
-      <HeroSection />
-      <TrackSection />
-      <ServicesSection />
+      <Flex flexDir={{ base: "column", lg: "row" }}>
+        <HeroSection />
+        <SideCards />
+      </Flex>
+
       <NewsSection />
       <ImageSlider slides={SliderData} />
       <ImpLinks />

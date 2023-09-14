@@ -4,6 +4,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { InternationalTariff } from "../DataObjects/InternationalTariff.jsx"
+
 const CalculatePostage = () => {
   const [formData, setFormData] = useState({
     value: "0",
@@ -23,6 +24,8 @@ const CalculatePostage = () => {
   const [isclient1, setclient1] = useState(false);
   const [isclient2, setclient2] = useState(false);
   const [isclient3, setclient3] = useState(false);
+
+
 
 
   const handleArticle = (e) => {
@@ -47,6 +50,7 @@ const CalculatePostage = () => {
         setclient1(false);
         setclient2(false);
         setclient3(false);
+
         break;
 
       case "1":
@@ -68,7 +72,6 @@ const CalculatePostage = () => {
         setclient1(false);
         setclient2(false);
         setclient3(true);
-
         break;
     }
   };
@@ -176,7 +179,6 @@ const CalculatePostage = () => {
             setclient1(false);
             setclient2(false);
             setclient3(false);
-
           }}
         >
           Domestic Services
@@ -192,7 +194,6 @@ const CalculatePostage = () => {
             setclient1(false);
             setclient2(false);
             setclient3(false);
-
           }}
         >
           International Services
@@ -205,10 +206,7 @@ const CalculatePostage = () => {
         onSubmit={handleSubmit}
         className="max-w-md mb-4  m-auto bg-slate-50 hover:bg-slate-100 shadow-lg border border-slate-300 rounded-t-md"
       >
-        <div className="flex flex-row items-center justify-center py-2 space-x-6 shadow-lg bg-[color:var(--primary-color)]  rounded-t-md">
-
-
-        </div>
+        <div className="flex flex-row items-center justify-center py-2 space-x-6 shadow-lg bg-[color:var(--primary-color)]  rounded-t-md"></div>
         <div className="flex justify-center shadow-xs">
           <div className="px-2 py-2 mt-2 text-lg font-semibold shadow-sm">Calculate Postage</div>
         </div>
@@ -244,7 +242,6 @@ const CalculatePostage = () => {
                     Amount
                   </td>
                 }
-
                 <td>
                   <input
                     type="text"
@@ -309,23 +306,35 @@ const CalculatePostage = () => {
                             {country.country}
                           </option>
                         ))}
+
                       </>
                     )}
                   </select>
                 </td>
               </tr>
-              <tr >
-                <td colSpan="2" align="right" >
-                  <button type="submit" className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300"> Submit</button>
-                  <button type="submit" className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300" onClick={handleReset}> Reset</button>
-
+              <tr>
+                <td colSpan="2" align="right">
+                  <button
+                    type="submit"
+                    className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300"
+                  >
+                    {" "}
+                    Submit
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-3 py-1 mt-3 mr-2 border rounded shadow-lg hover:bg-slate-200 border-slate-300"
+                    onClick={handleReset}
+                  >
+                    {" "}
+                    Reset
+                  </button>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        {
-          isSubmit &&
+        {isSubmit && (
           <div className=" flex flex-col space-x-5 justify-center items-center p-5">
             <Box w={{ base: "90%", md: "80%" }} mx={"auto"} my={"2rem"}>
               {isclient0 && (
@@ -404,11 +413,9 @@ const CalculatePostage = () => {
               </div>
             </Box>
           </div>
-        }
-      </form >
-
-
-    </div >
+        )}
+      </form>
+    </div>
   );
 };
 

@@ -59,39 +59,41 @@ function Tenders() {
         boxShadow={"2px 2px 2px 2px rgba(237, 27, 36, 0.7)"}
       >
         <SimpleGrid columns={{ base: 1 }} spacing={5}>
-          {TendersData.map((TendersData) => (
-            <HStack
-              key={TendersData.id}
-              align={"top"}
-              rounded={"20px"}
-              py={"0.5rem"}
-              boxShadow={"2px 2px 2px 2px rgba(237, 27, 36, 0.7)"}
-            >
-              <Box color={"green.400"} px={2}>
-                <HiOutlineNewspaper size={40} color={"#ed1b24"} />
-              </Box>
-              <VStack align={"start"}>
-                <Link href={TendersData.url} target={"blank"}>
-                  {TendersData.title}
-                </Link>
-                <Link href={TendersData.url2} target={"blank"}>
-                  {TendersData.title2}
-                </Link>
-                <Link href={TendersData.url3} target={"blank"}>
-                  {TendersData.title3}
-                </Link>
-                <Link href={TendersData.url4} target={"blank"}>
-                  {TendersData.title4}
-                </Link>
-                <Link href={TendersData.url5} target={"blank"}>
-                  {TendersData.title5}
-                </Link>
-                <Link href={TendersData.url6} target={"blank"}>
-                  {TendersData.title6}
-                </Link>
-              </VStack>
-            </HStack>
-          ))}
+          {TendersData.slice()
+            .sort((a, b) => b.id - a.id)
+            .map((TendersData) => (
+              <HStack
+                key={TendersData.id}
+                align={"top"}
+                rounded={"20px"}
+                py={"0.5rem"}
+                boxShadow={"2px 2px 2px 2px rgba(237, 27, 36, 0.7)"}
+              >
+                <Box color={"green.400"} px={2}>
+                  <HiOutlineNewspaper size={40} color={"#ed1b24"} />
+                </Box>
+                <VStack align={"start"}>
+                  <Link href={TendersData.url} target={"blank"}>
+                    {TendersData.title}
+                  </Link>
+                  <Link href={TendersData.url2} target={"blank"}>
+                    {TendersData.title2}
+                  </Link>
+                  <Link href={TendersData.url3} target={"blank"}>
+                    {TendersData.title3}
+                  </Link>
+                  <Link href={TendersData.url4} target={"blank"}>
+                    {TendersData.title4}
+                  </Link>
+                  <Link href={TendersData.url5} target={"blank"}>
+                    {TendersData.title5}
+                  </Link>
+                  <Link href={TendersData.url6} target={"blank"}>
+                    {TendersData.title6}
+                  </Link>
+                </VStack>
+              </HStack>
+            ))}
         </SimpleGrid>
       </Container>
     </Box>
@@ -130,24 +132,26 @@ function News() {
         boxShadow={"2px 2px 2px 2px rgba(237, 27, 36, 0.7)"}
       >
         <SimpleGrid columns={{ base: 1 }} spacing={5}>
-          {NewsData.map((NewsData) => (
-            <HStack
-              key={NewsData.id}
-              align={"top"}
-              rounded={"20px"}
-              py={"0.5rem"}
-              boxShadow={"2px 2px 2px 2px rgba(237, 27, 36, 0.7)"}
-            >
-              <Box color={"green.400"} px={2}>
-                <HiOutlineNewspaper size={40} color={"#ed1b24"} />
-              </Box>
-              <VStack align={"start"}>
-                <Link href={NewsData.url} target={"blank"}>
-                  {NewsData.title}
-                </Link>
-              </VStack>
-            </HStack>
-          ))}
+          {NewsData.slice()
+            .sort((a, b) => b.id - a.id)
+            .map((NewsData) => (
+              <HStack
+                key={NewsData.id}
+                align={"top"}
+                rounded={"20px"}
+                py={"0.5rem"}
+                boxShadow={"2px 2px 2px 2px rgba(237, 27, 36, 0.7)"}
+              >
+                <Box color={"green.400"} px={2}>
+                  <HiOutlineNewspaper size={40} color={"#ed1b24"} />
+                </Box>
+                <VStack align={"start"}>
+                  <Link href={NewsData.url} target={"blank"}>
+                    {NewsData.title}
+                  </Link>
+                </VStack>
+              </HStack>
+            ))}
         </SimpleGrid>
       </Container>
     </Box>

@@ -10,10 +10,12 @@ import {
   ListItem,
   TableContainer,
 } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 const SameDayDelivery = () => {
   return (
     <Box mx="auto">
+      <BackButton />
       <Table w="100%">
         <Tbody>
           <Tr>

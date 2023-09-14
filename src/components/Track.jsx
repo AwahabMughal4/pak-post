@@ -46,6 +46,7 @@ const Track = () => {
             display={"inline-block"}
             textAlign={"center"}
             px={"0.5rem"}
+            my={{ base: "1rem", lg: "0" }}
           >
             International Tracking
           </Text>
@@ -74,7 +75,11 @@ const Track = () => {
 
               <Flex my={"2rem"} wrap={"wrap"} justifyContent={"space-evenly"}>
                 {continents.countries.map((country) => (
-                  <Flex w={"20%"} justifyContent={"center"} my={"0.5rem"}>
+                  <Flex
+                    w={{ base: "50%", md: "20%" }}
+                    justifyContent={"center"}
+                    my={"0.5rem"}
+                  >
                     <a href={country.Website} target="blank">
                       <Text
                         _hover={{

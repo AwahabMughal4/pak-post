@@ -9,6 +9,7 @@ import {
   Text,
   TableContainer,
 } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 const FmoTariff = () => {
   return (
@@ -23,6 +24,7 @@ const FmoTariff = () => {
           </Tr>
         </Tbody>
       </Table>
+      <BackButton />
       <TableContainer
         border="1px"
         borderColor="gray.200"

@@ -11,11 +11,13 @@ import {
   Thead,
   Tr,
 } from "@chakra-ui/react";
+import BackButton from "../Extras/BackButton";
 
 const CodTariff = () => {
   return (
     <Box mx="auto">
       <Container maxW="container.xl">
+        <BackButton />
         <Heading
           as="h1"
           fontSize={["2xl", "4xl"]}
@@ -162,6 +164,7 @@ const CodTariff = () => {
           </Tbody>
         </Table>
       </Container>
+
       <Box w={{ base: "90%", md: "80%" }} mx={"auto"} my={"2rem"}>
         <Text
           fontSize="xl"

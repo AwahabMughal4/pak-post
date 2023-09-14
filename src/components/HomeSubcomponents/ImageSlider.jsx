@@ -25,7 +25,7 @@ const ImageSlider = ({ slides }) => {
       <Center>
         <Heading
           m={{ base: "1rem", sm: "2rem" }}
-          mb={{ base: "5rem", sm: "5rem" }}
+          mb={{ base: "5rem", sm: "5rem", "2xl": "0"}}
           display={"inline-block"}
           borderBottom={"2px solid red"}
           p={2}
