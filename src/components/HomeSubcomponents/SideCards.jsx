@@ -16,14 +16,18 @@ const SideCards = () => {
   return (
     <Flex
       w={{ base: "100%", lg: "30%" }}
-      //   h={{ base: "auto", lg: "50vh" }}
+        h={{ base: "auto", lg: "55vh" }}
       flexWrap={"wrap"}
       mt={"0rem"}
       alignContent={"space-around"}
       justifyContent={"space-evenly"}
+      // position={'absolute'}
+      // top={'0'}
+      // bottom={'2rem'}
     >
       {SideCardsData.map((items) => (
-        <Link to={items.link} key={items.id}>
+        <Link to={items.link} key={items.id} className="">
+          {/* relative top-3 left-[73rem] my-2 */}
           <Box
             bgColor={"white"}
             h={"120px"}
