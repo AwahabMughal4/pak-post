@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, useMediaQuery } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -12,6 +12,8 @@ import {
 
 const SideCards = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
+  const [isLargerThan980] = useMediaQuery("(min-width: 980px)");
+  const [isSmallerThan1050] = useMediaQuery("(max-width: 1050px)");
 
   return (
     <Flex
@@ -29,8 +31,16 @@ const SideCards = () => {
           {/* relative top-3 left-[73rem] my-2 */}
           <Box
             bgColor={"white"}
-            h={"110px"}
-            w={{ base: "160px", lg: "100px", xl: "130px" }}
+            h={
+              isLargerThan980 && isSmallerThan1050
+                ? { base: "90px" }
+                : { base: "110px" }
+            }
+            w={
+              isLargerThan980 && isSmallerThan1050
+                ? { base: "90px" }
+                : { base: "160px", lg: "100px", xl: "130px" }
+            }
             borderRadius={"15px"}
             textColor={items.color}
             border={"1px solid"}
