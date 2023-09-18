@@ -46,9 +46,9 @@ const Track = () => {
             display={"inline-block"}
             textAlign={"center"}
             px={"0.5rem"}
-            my={{ base: "1rem", lg: "0" }}
+            mt={{ base: "2rem", lg: "0" }}
           >
-            International Tracking
+            International{"\u00A0"}Tracking
           </Text>
         </Center>
         <Text color={"gray.600"} fontSize={"xl"} mb={"3rem"}>

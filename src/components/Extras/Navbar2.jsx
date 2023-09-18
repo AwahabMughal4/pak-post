@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="py-2 pl-5 ">
       <div className="flex flex-row space-x-2 items-center justify-between">
-        <Link to={"/"}>
+        <Link to={"/testppo/"}>
           <div className="flex flex-row items-center space-x-2">
             <img
               src={logo}
@@ -31,7 +31,7 @@ const Navbar = () => {
         </Link>
         <div className=" ">
           <ul className=" bg-[color:var(--primary-color)] ml-2 rounded-l-full  flex flex-row h-full">
-            <Link to={"/"}>
+            <Link to={"/testppo/"}>
               <li className="px-8 py-2 space-x-5 border-l  hover:transform hover:-skew-x-12 -skew-x-12 h-full text-white font-bold hover:bg-[color:var(--secondary-color)]  bg-[color:var(--primary-color)]">
                 Home
               </li>

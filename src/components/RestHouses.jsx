@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PopupCard from "./PopupCard"; // Import the PopupCard component
+import { Box, Flex, Button } from "@chakra-ui/react";
 
 function PostalRestHouse() {
   const [showPopup, setShowPopup] = useState(false);
@@ -342,7 +343,7 @@ function PostalRestHouse() {
         POSTAL REST HOUSE FACILITY AVAILABLE FOR THE GENERAL PUBLIC
       </h1>
 
-      <table className="w-[70%] mx-auto border-collapse border border-gray-400">
+      <table className="w-[80%] mx-auto border-collapse border border-gray-400">
         <thead>
           <tr className="bg-red-600">
             <th className="py-2 px-4 border text-white">Category</th>
@@ -365,12 +366,15 @@ function PostalRestHouse() {
         </tbody>
       </table>
 
-      <div className="flex justify-center text-2xl font-bold my-4 text-justify mr-80">
+      <div className="flex justify-center text-2xl font-bold my-[2rem] text-justify ">
         <p>Reservation Procedure and Other Necessary Information:</p>
       </div>
 
-      <div className="w-[70%] mx-auto grid grid-cols-2 gap-4">
-        <div className="bg-gray-100 p-4 rounded-lg">
+      <Flex
+        flexDirection={{ base: "column", md: "row" }}
+        justifyContent={"center"}
+      >
+        <div className="bg-gray-100 p-4 rounded-lg m-[0.5rem]">
           <p className="font-semibold">Reservation Officer:</p>
           <p>
             Ahsan Waheed Bajwa
@@ -379,15 +383,15 @@ function PostalRestHouse() {
             Islamabad.
           </p>
         </div>
-        <div className="bg-gray-100 p-4 rounded-lg">
+        <div className="bg-gray-100 p-4 rounded-lg m-[0.5rem]">
           <p className="font-semibold">Contact No:</p>
           <p>051-9261937</p>
           <p className="font-semibold mt-5">WhatsApp:</p>
           <p>051-9261937</p>
         </div>
-      </div>
+      </Flex>
 
-      <div className="w-[70%] m-[auto]">
+      <Box w={{ base: "90%", md: "80%" }} mx={"auto"}>
         <div className="  mt-8 text-left text-justify">
           <h2 className="font-semibold text-xl mb-4">
             Reservation Terms and Conditions:
@@ -440,29 +444,41 @@ function PostalRestHouse() {
             </li>
           </ul>
         </div>
-      </div>
+      </Box>
 
-      <div className="bg-red-600 mt-8 w-[70%] m-auto text-white p-4 mb-8 rounded-lg text-center">
+      <Box
+        w={{ base: "90%", md: "80%" }}
+        mx={"auto"}
+        className="bg-red-600 my-8 text-white p-4 rounded-lg text-center"
+      >
         <h2 className="text-2xl font-bold mb-2">
           Category wise list of Rest Houses of Pakistan Post for renting out to
           general public
         </h2>
-      </div>
+      </Box>
 
-      <div className="grid grid-cols-3 gap-6 w-[70%] m-auto">
+      <Flex
+        w={{ base: "90%", md: "80%" }}
+        className="gap-6"
+        flexWrap={"wrap"}
+        mx={"auto"}
+        justifyContent={"center"}
+      >
         {restHouseData.map((restHouse, index) => (
-          <button
-            key={index}
-            className="bg-white border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-100 text-black font-semibold py-2 px-4 "
-            onClick={() => togglePopup(restHouse)}
-          >
-            <div className="text-red-600 text-1xl font-sarif font-bold">
-              {restHouse.name}
-            </div>
-            Total Rooms: {restHouse.rooms.length}
-          </button>
+          <Box w={{ base: "100%", md: "45%", lg: "31%" }}>
+            <button
+              key={index}
+              className="bg-white border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-100 text-black font-semibold py-2 px-4 w-[100%]"
+              onClick={() => togglePopup(restHouse)}
+            >
+              <div className="text-red-600 text-1xl font-sarif font-bold">
+                {restHouse.name}
+              </div>
+              Total Rooms: {restHouse.rooms.length}
+            </button>
+          </Box>
         ))}
-      </div>
+      </Flex>
 
       {/* Render the PopupCard component when showPopup is true */}
       {showPopup && (

@@ -52,12 +52,12 @@ export default function WithSubnavigation() {
           flex={{ base: 1, lg: 0.5 }}
           justify={{ base: "center", lg: "start" }}
           alignItems={"center"}
+          as={"a"}
+          variant={"unstyled"}
+          href={"/testppo/"}
         >
           <Image src={logo} w={"3rem"} />
           <Text
-            as={"a"}
-            variant={"unstyled"}
-            href={"/"}
             ml={"1rem"}
             className="text-[25px] font-bold italic text-[color:var(--primary-color)]"
           >
@@ -284,7 +284,7 @@ const NAV_ITEMS = [
   {
     id: "1",
     label: "Home",
-    href: "/",
+    href: "/testppo/",
   },
   {
     id: "2",

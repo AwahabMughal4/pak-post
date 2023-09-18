@@ -67,7 +67,7 @@ export default function Footer() {
           </Stack>
           <Stack align={"flex-start "} mx={{ base: "1rem" }}>
             <ListHeader>Pages</ListHeader>
-            <Link to={"/"}>
+            <Link to={"/testppo/"}>
               <Box _hover={{ color: "#ed1b24", fontWeight: "500" }}>Home</Box>
             </Link>
             <Link to={"/about"}>

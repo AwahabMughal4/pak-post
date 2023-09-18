@@ -166,7 +166,7 @@ const CalculatePostage = () => {
   };
 
   return (
-    <div>
+    <Box w={{ base: "90%", md: "80%" }} mx={"auto"}>
       <div className="button flex flex-row space-x-5 justify-center items-center p-5">
         <button
           className={`p-3 bg-${
@@ -410,7 +410,7 @@ const CalculatePostage = () => {
           </div>
         )}
       </form>
-    </div>
+    </Box>
   );
 };
 

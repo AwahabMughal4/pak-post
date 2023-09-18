@@ -30,7 +30,7 @@ function Manual() {
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Center>
           <Text
-            fontSize={"3xl"}
+            fontSize={{ base: "xl", md: "3xl" }}
             color={"white"}
             bgColor={"#ed1b24"}
             transform="skewX(-10deg)"

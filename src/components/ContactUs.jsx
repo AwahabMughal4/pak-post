@@ -116,7 +116,7 @@ const Card = ({ designation, name, email, phone }) => {
       m={"0.5rem"}
     >
       <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
-        <Heading size="md" color={"#ed1b24"}>
+        <Heading size={{ base: "sm", md: "md" }} color={"#ed1b24"}>
           {designation}
         </Heading>
         <Text textAlign={"center"}>{name}</Text>
@@ -132,12 +132,13 @@ const Contacts = () => {
     <div>
       <div id="dg" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Directorate General
         </Heading>
@@ -162,12 +163,13 @@ const Contacts = () => {
       </div>
       <div id="ccc" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Customer Care Centers
         </Heading>
@@ -184,12 +186,13 @@ const Contacts = () => {
       </div>
       <div id="gbc" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           FC & GB Circle Islamabad
         </Heading>
@@ -206,12 +209,13 @@ const Contacts = () => {
       </div>
       <div id="ajkc" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           AJK Circle Muzaffarabad
         </Heading>
@@ -228,12 +232,13 @@ const Contacts = () => {
       </div>
       <div id="gpun" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Postmaster General Punjab
         </Heading>
@@ -250,12 +255,13 @@ const Contacts = () => {
       </div>
       <div id="npun" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Northern Punjab Circle Rawalpindi
         </Heading>
@@ -272,12 +278,13 @@ const Contacts = () => {
       </div>
       <div id="cpun" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Central Punjab Circle Lahore
         </Heading>
@@ -294,12 +301,13 @@ const Contacts = () => {
       </div>
       <div id="spun" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Southern Punjab Circle Multan
         </Heading>
@@ -316,12 +324,13 @@ const Contacts = () => {
       </div>
       <div id="gsb" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Postmaster General Sindh & Baluchistan
         </Heading>
@@ -338,12 +347,13 @@ const Contacts = () => {
       </div>
       <div id="karc" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Metropolitan Circle Karachi
         </Heading>
@@ -360,12 +370,13 @@ const Contacts = () => {
       </div>
       <div id="nsin" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Northern Sindh Circle Hyderabad
         </Heading>
@@ -382,12 +393,13 @@ const Contacts = () => {
       </div>
       <div id="balc" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Balochistan Circle Quetta
         </Heading>
@@ -404,12 +416,13 @@ const Contacts = () => {
       </div>
       <div id="kpkc" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Khyber Pakhtunkhwa Circle Peshawar
         </Heading>

@@ -23,11 +23,11 @@ const OfficialEmails = () => {
     <Box>
       <Center>
         <Text
-          fontSize={"3xl"}
+          fontSize={{ base: "2xl", md: "3xl" }}
           fontWeight="bold"
           color={"white"}
           bgColor={"#ed1b24"}
-          p={"5"}
+          p={{ base: "2", md: "5" }}
           transform="skewX(-10deg)"
           borderRadius={"none"}
           display={"inline-block"}
@@ -79,11 +79,11 @@ const OfficialEmails = () => {
 
         <div className="my-[1rem]">
           <Text
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", md: "2xl" }}
             fontWeight="bold"
             color={"white"}
             bgColor={"#ed1b24"}
-            p={"3"}
+            p={{ base: "2", md: "3" }}
             transform="skewX(-10deg)"
             borderRadius={"none"}
             display={"inline-block"}
@@ -109,11 +109,11 @@ const OfficialEmails = () => {
         </div>
         <div className="my-[1rem]">
           <Text
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", md: "2xl" }}
             fontWeight="bold"
             color={"white"}
             bgColor={"#ed1b24"}
-            p={"3"}
+            p={{ base: "2", md: "3" }}
             transform="skewX(-10deg)"
             borderRadius={"none"}
             display={"inline-block"}
@@ -136,11 +136,11 @@ const OfficialEmails = () => {
         </div>
         <div className="my-[1rem]">
           <Text
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", md: "2xl" }}
             fontWeight="bold"
             color={"white"}
             bgColor={"#ed1b24"}
-            p={"3"}
+            p={{ base: "2", md: "3" }}
             transform="skewX(-10deg)"
             borderRadius={"none"}
             display={"inline-block"}
@@ -161,11 +161,11 @@ const OfficialEmails = () => {
         </div>
         <div className="my-[1rem]">
           <Text
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", md: "2xl" }}
             fontWeight="bold"
             color={"white"}
             bgColor={"#ed1b24"}
-            p={"3"}
+            p={{ base: "2", md: "3" }}
             transform="skewX(-10deg)"
             borderRadius={"none"}
             display={"inline-block"}

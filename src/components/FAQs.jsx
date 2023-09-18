@@ -6,7 +6,6 @@ import {
   AccordionButton,
   AccordionPanel,
   Flex,
-  useColorModeValue,
   Text,
   Center,
   Box,
@@ -31,7 +30,9 @@ const Sections = ({ question, answer, link1, link2, link3 }) => {
         _hover={{ bg: "#ed1b24", color: "white" }}
         _expanded={{ bg: "#ed1b24", color: "white" }}
       >
-        <Text fontSize="md">{question}</Text>
+        <Text fontSize="md" textAlign="left">
+          {question}
+        </Text>
         <ChevronDownIcon fontSize="24px" />
       </AccordionButton>
       <AccordionPanel pb={4}>
@@ -76,11 +77,11 @@ export default function FAQs() {
     <>
       <Center>
         <Text
-          fontSize={isLargerThan62 ? "5xl" : "4xl"}
+          fontSize={{ base: "2xl", md: "3xl" }}
           fontWeight="bold"
           color={"white"}
           bgColor={"#ed1b24"}
-          py={"5"}
+          py={{ base: "3", md: "5" }}
           px={isLargerThan62 ? "5" : "2"}
           transform="skewX(-10deg)"
           borderRadius={"none"}
@@ -93,23 +94,14 @@ export default function FAQs() {
       </Center>
       <Flex
         minH={"100vh"}
-        w={"80%"}
+        w={{ base: "95%", md: "80%" }}
         m={"auto"}
         my={5}
-        py={"10"}
-        px={isLargerThan62 ? "10" : "4"}
         align={"center"}
         justify={"center"}
-        bg={useColorModeValue("gray.50", "gray.800")}
       >
         <Box w={"100%"}>
-          <Accordion
-            allowToggle
-            width={"100%"}
-            minW={"lg"}
-            bg={"white"}
-            rounded={"lg"}
-          >
+          <Accordion allowToggle width={"100%"} bg={"white"} rounded={"lg"}>
             {Questions.map((Questions) => {
               return (
                 <Sections

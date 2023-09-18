@@ -32,7 +32,7 @@ const Footer = () => (
       {/* Quick Links */}
       <div className="md:my-3 sm:my-6">
         <p className="text-[#ed1b24] font-semibold text-lg shadow-2xl">Pages</p>
-        <Link to={"/"} className=" hover:font-semibold md:text-sm ">
+        <Link to={"/testppo/"} className=" hover:font-semibold md:text-sm ">
           Home
         </Link>
         <br />
@@ -51,7 +51,7 @@ const Footer = () => (
         </Link>
         <br />
         <Link
-          to={"/"}
+          to={"/emails"}
           className=" hover:font-semibold hover:md:text-md md:text-sm"
         >
           Official Emails

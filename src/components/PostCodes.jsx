@@ -11,7 +11,6 @@ import {
   Input,
   Center,
   Text,
-  Button,
   Spinner,
   Flex,
 } from "@chakra-ui/react";
@@ -25,7 +24,7 @@ function PostCodes() {
     <Box>
       <Center>
         <Text
-          fontSize={"3xl"}
+          fontSize={{ base: "2xl", md: "3xl" }}
           fontWeight="bold"
           color={"white"}
           bgColor={"#ed1b24"}
@@ -55,19 +54,16 @@ function PostCodes() {
         <br />
         <br />
         Click below given links to download the New Post Code Directory:-
-        <br />
-        <br />
         <a href={NDPOCodes} target="blank">
-          <Button variant={"link"} colorScheme={"red"} size={"md"}>
+          <Text textColor={"red"} fontWeight={"bold"}>
             POST CODE DIRECTORY OF NON DELIVERY POST OFFICES
-          </Button>
+          </Text>
         </a>
         <br />
-        <br />
         <a href={DPOCodes} target="blank">
-          <Button variant={"link"} colorScheme={"red"} size={"md"}>
+          <Text textColor={"red"} fontWeight={"bold"}>
             POST CODE DIRECTORY OF DELIVERY POST OFFICES
-          </Button>
+          </Text>
         </a>
       </Text>
       <NDPostOffices />
@@ -113,7 +109,7 @@ function NDPostOffices() {
   };
 
   return (
-    <Box w={"80%"} mx={"auto"} my={"3rem"}>
+    <Box w={"80%"} mx={"auto"} my={{ base: "1rem", md: "3rem" }}>
       <Center>
         <Text
           fontSize={"2xl"}
@@ -253,7 +249,7 @@ function DPostOffices() {
   };
 
   return (
-    <Box w={"80%"} mx={"auto"} my={"3rem"}>
+    <Box w={"80%"} mx={"auto"} my={{ base: "1rem", md: "3rem" }}>
       <Center>
         <Text
           fontSize={"2xl"}

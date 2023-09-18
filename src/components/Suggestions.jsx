@@ -1,25 +1,27 @@
-import { Text } from "@chakra-ui/react";
+import { Text, Center, Box } from "@chakra-ui/react";
 import React from "react";
 
 const Suggestions = () => {
   return (
-    <div className="mx-auto px-9 ">
+    <Box className="mx-auto" w={{ base: "95%", md: "80%" }}>
       <div>
-        <Text
-          fontSize={"2xl"}
-          fontWeight="bold"
-          color={"white"}
-          bgColor={"#ed1b24"}
-          p={"3"}
-          transform="skewX(-10deg)"
-          borderRadius={"none"}
-          display={"inline-block"}
-          textAlign={"center"}
-          m={"4"}
-        >
-          Complaints & Suggestions
-        </Text>
-        <p className="text-base px-3">
+        <Center>
+          <Text
+            fontSize={{ base: "xl", md: "2xl" }}
+            fontWeight="bold"
+            color={"white"}
+            bgColor={"#ed1b24"}
+            p={"3"}
+            transform="skewX(-10deg)"
+            borderRadius={"none"}
+            display={"inline-block"}
+            textAlign={"center"}
+            m={"4"}
+          >
+            Complaints & Suggestions
+          </Text>
+        </Center>
+        <p className="text-justify mx-[2rem]">
           The complaints and suggestions can be forwarded directly to complaint
           Cell Directorate General Pakistan Post G-8/4, Islamabad through mail,
           phone, fax, E-Mail or by any other mean. While making complaint about
@@ -31,7 +33,7 @@ const Suggestions = () => {
       <div className="mt-10  mx-3 px-3">
         <Table />
       </div>
-    </div>
+    </Box>
   );
 };
 

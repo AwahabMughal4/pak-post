@@ -61,7 +61,7 @@ export const navlinks = [
   {
     id: 1,
     text: "Home",
-    url: "/",
+    url: "/testppo/",
   },
   {
     id: 2,

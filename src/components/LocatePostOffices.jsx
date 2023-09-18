@@ -102,7 +102,7 @@ const Card = ({ name, location, link }) => {
       m={"0.5rem"}
     >
       <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
-        <Heading size="md" color={"#ed1b24"}>
+        <Heading size={{ base: "sm", md: "md" }} color={"#ed1b24"}>
           {name}
         </Heading>
         <a href={link} target="blank">
@@ -118,12 +118,13 @@ const Contacts = () => {
     <div>
       <div id="fed" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Federal Post Offices
         </Heading>
@@ -139,12 +140,13 @@ const Contacts = () => {
       </div>
       <div id="kashmir" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Kashmir Post Offices
         </Heading>
@@ -160,12 +162,13 @@ const Contacts = () => {
       </div>
       <div id="gilgit" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Gilgit Post Offices
         </Heading>
@@ -181,12 +184,13 @@ const Contacts = () => {
       </div>
       <div id="punjab" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Punjab Post Offices
         </Heading>
@@ -202,12 +206,13 @@ const Contacts = () => {
       </div>
       <div id="sindh" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Sindh Post Offices
         </Heading>
@@ -223,12 +228,13 @@ const Contacts = () => {
       </div>
       <div id="balochistan" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Balochistan Post Offices
         </Heading>
@@ -244,12 +250,13 @@ const Contacts = () => {
       </div>
       <div id="kpk" className="pt-[8rem] mt-[-8rem]">
         <Heading
-          p={"1rem"}
+          p={{ base: "0.5rem", md: "1rem" }}
           textAlign={"center"}
           color={"white"}
           bgColor={"#ed1b24"}
           transform="skewX(-10deg)"
-          mt={"1rem"}
+          mt={{ base: "0.5rem", md: "1rem" }}
+          fontSize={{ base: "xl", md: "2xl" }}
         >
           Khyber Pakhtunkhwa Post Offices
         </Heading>

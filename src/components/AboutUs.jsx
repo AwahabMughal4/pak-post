@@ -15,7 +15,7 @@ const AboutUs = () => {
         />
       </div>
       <div className="head-text">
-        <p className="my-[4.5rem] text-5xl italic text-center text-[#ed1b24] font-serif font-bold">
+        <p className="my-[4.5rem] text-5xl px-[1rem] italic text-center text-[#ed1b24] font-serif font-bold">
           "Delivery & Information at lightning Speed."
         </p>
       </div>
@@ -233,17 +233,18 @@ const AboutUs = () => {
       </div>
 
       <div className="structure-and-organization my-[3rem] mx-[3rem] mt-[5rem]">
-        <div className="structure-heading inline-block ml-[3rem] ">
+        <div className="structure-heading inline-block">
           <Text
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", md: "2xl" }}
             fontWeight="bold"
             color={"white"}
             bgColor={"#ed1b24"}
             p={"2"}
             transform="skewX(-10deg)"
             borderRadius={"none"}
+            ml={{ base: "0", md: "3rem" }}
           >
-            Structure and Organization
+            Structure{"\u00A0"}and{"\u00A0"}Organization
           </Text>
         </div>
         <h1>
@@ -278,15 +279,16 @@ const AboutUs = () => {
       </div>
 
       <div className="roles-and-services my-[3rem] mx-[3rem] mt-[5rem]">
-        <div className="roles-heading inline-block ml-[3rem] ">
+        <div className="roles-heading inline-block ">
           <Text
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", md: "2xl" }}
             fontWeight="bold"
             color={"white"}
             bgColor={"#ed1b24"}
             p={"2"}
             transform="skewX(-10deg)"
             borderRadius={"none"}
+            ml={{ base: "0", md: "3rem" }}
           >
             Assigned Roles, Functions & Services
           </Text>
