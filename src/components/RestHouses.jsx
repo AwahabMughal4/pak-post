@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PopupCard from "./PopupCard"; // Import the PopupCard component
-import { Box, Flex, Button } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 
 function PostalRestHouse() {
   const [showPopup, setShowPopup] = useState(false);
