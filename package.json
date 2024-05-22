@@ -1,5 +1,6 @@
 {
   "name": "pak-post",
+  "homepage": "https://pakpost.gov.pk/testppo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -57,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "concurrently": "^8.2.1",
     "tailwindcss": "^3.3.3"
   }
